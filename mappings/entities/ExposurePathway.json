@@ -1,0 +1,54 @@
+{
+	"title": "ExposurePathway",
+	"description": "A route from environmental presence to human or biota exposure.",
+	"type": "object",
+	"required": [
+		"id",
+		"type",
+		"pathway_label",
+		"route"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique pathway identifier."
+		},
+		"type": {
+			"const": "ExposurePathway",
+			"description": "Type tag for the node."
+		},
+		"pathway_label": {
+			"type": "string",
+			"description": "Label (e.g., ingestion_drinking_water, inhalation_indoor_air)."
+		},
+		"route": {
+			"type": "string",
+			"enum": [
+				"oral",
+				"inhalation",
+				"dermal"
+			],
+			"description": "Primary exposure route."
+		},
+		"intake_metric": {
+			"type": "string",
+			"description": "Metric describing intake (e.g., µg/day, particles/day)."
+		},
+		"population_context": {
+			"type": "string",
+			"description": "Population or subpopulation (e.g., adults, infants, workers)."
+		},
+		"assumptions_notes": {
+			"type": "string",
+			"description": "Assumptions behind pathway estimates or models."
+		},
+		"citations_ref": {
+			"type": "array",
+			"description": "References supporting the pathway.",
+			"items": {
+				"type": "string"
+			}
+		}
+	}
+}

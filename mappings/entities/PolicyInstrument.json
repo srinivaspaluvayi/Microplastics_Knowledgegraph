@@ -1,0 +1,79 @@
+{
+	"title": "PolicyInstrument",
+	"description": "A policy or regulation relevant to microplastics sources, definitions, and required metrics.",
+	"type": "object",
+	"required": [
+		"id",
+		"type",
+		"title",
+		"jurisdiction"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique policy identifier."
+		},
+		"type": {
+			"const": "PolicyInstrument",
+			"description": "Type tag for the node."
+		},
+		"title": {
+			"type": "string",
+			"description": "Official policy title."
+		},
+		"jurisdiction": {
+			"type": "string",
+			"description": "Jurisdiction or governing body (e.g., EU, US-CA, WHO)."
+		},
+		"effective_dates": {
+			"type": "object",
+			"description": "Policy effective period.",
+			"additionalProperties": false,
+			"properties": {
+				"start": {
+					"type": "string",
+					"description": "Start date (YYYY-MM-DD)."
+				},
+				"end": {
+					"type": [
+						"string",
+						"null"
+					],
+					"description": "End date or null if ongoing."
+				}
+			}
+		},
+		"scope": {
+			"type": "string",
+			"description": "Scope definition or reference (e.g., intentionally added MPs, tire wear)."
+		},
+		"targeted_sources": {
+			"type": "array",
+			"description": "Source IDs or labels targeted by this policy.",
+			"items": {
+				"type": "string"
+			}
+		},
+		"required_metrics": {
+			"type": "array",
+			"description": "Required measurement/reporting metrics for compliance.",
+			"items": {
+				"type": "string",
+				"enum": [
+					"count",
+					"mass",
+					"size_ranges"
+				]
+			}
+		},
+		"compliance_requirements": {
+			"type": "string",
+			"description": "Compliance or reporting requirements text."
+		},
+		"notes": {
+			"type": "string",
+			"description": "Additional policy notes and context."
+		}
+	}
+}

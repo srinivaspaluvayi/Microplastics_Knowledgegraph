@@ -1,0 +1,62 @@
+{
+	"title": "Biomarker",
+	"description": "A measurable indicator linked to a mechanism or health outcome.",
+	"type": "object",
+	"required": [
+		"id",
+		"type",
+		"name"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique biomarker identifier."
+		},
+		"type": {
+			"const": "Biomarker",
+			"description": "Type tag for the node."
+		},
+		"name": {
+			"type": "string",
+			"description": "Biomarker name (e.g., IL-6, ROS, CRP)."
+		},
+		"assay_type": {
+			"type": "string",
+			"description": "Assay or method used to measure the biomarker."
+		},
+		"tissue_matrix": {
+			"type": "string",
+			"description": "Matrix or tissue where measured (e.g., blood, lung tissue)."
+		},
+		"direction_of_change": {
+			"type": "string",
+			"enum": [
+				"increase",
+				"decrease",
+				"variable",
+				"unknown"
+			],
+			"description": "Typical direction of change."
+		},
+		"threshold": {
+			"type": "number",
+			"description": "Threshold associated with effect, if known."
+		},
+		"threshold_unit": {
+			"type": "string",
+			"description": "Unit for the threshold value."
+		},
+		"clinical_relevance_notes": {
+			"type": "string",
+			"description": "Notes on clinical interpretation or significance."
+		},
+		"citations_ref": {
+			"type": "array",
+			"description": "References supporting biomarker role.",
+			"items": {
+				"type": "string"
+			}
+		}
+	}
+}

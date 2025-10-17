@@ -1,0 +1,48 @@
+{
+	"title": "Shape",
+	"description": "The morphology of a particle (e.g., fiber, fragment, bead).",
+	"type": "object",
+	"required": [
+		"id",
+		"type",
+		"label"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique shape identifier."
+		},
+		"type": {
+			"const": "Shape",
+			"description": "Type tag for the node."
+		},
+		"label": {
+			"type": "string",
+			"enum": [
+				"fiber",
+				"fragment",
+				"bead",
+				"film",
+				"foam",
+				"other"
+			],
+			"description": "Shape category."
+		},
+		"synonyms": {
+			"type": "array",
+			"description": "Alternate shape terms.",
+			"items": {
+				"type": "string"
+			}
+		},
+		"definition_notes": {
+			"type": "string",
+			"description": "Clarifying details about the shape category."
+		},
+		"artifact_notes": {
+			"type": "string",
+			"description": "Potential artifacts or misidentification issues."
+		}
+	}
+}

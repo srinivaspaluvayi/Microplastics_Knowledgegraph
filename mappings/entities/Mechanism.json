@@ -1,0 +1,85 @@
+{
+	"title": "Mechanism",
+	"description": "A biological mechanism implicated in effects from microplastic exposure.",
+	"type": "object",
+	"required": [
+		"id",
+		"type",
+		"label"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique mechanism identifier."
+		},
+		"type": {
+			"const": "Mechanism",
+			"description": "Type tag for the node."
+		},
+		"label": {
+			"type": "string",
+			"enum": [
+				"oxidative_stress",
+				"inflammation",
+				"endocrine_disruption",
+				"genotoxicity",
+				"metabolic_disturbance",
+				"immune_dysregulation",
+				"other"
+			],
+			"description": "Mechanism category."
+		},
+		"evidence_type": {
+			"type": "string",
+			"enum": [
+				"in_vitro",
+				"in_vivo",
+				"human_observational",
+				"review"
+			],
+			"description": "Evidence domain supporting the mechanism."
+		},
+		"dose_context": {
+			"type": "object",
+			"description": "Dose range context for reported effects.",
+			"additionalProperties": false,
+			"properties": {
+				"min": {
+					"type": "number",
+					"description": "Minimum dose in reported range."
+				},
+				"max": {
+					"type": "number",
+					"description": "Maximum dose in reported range."
+				},
+				"unit": {
+					"type": "string",
+					"description": "Dose unit (e.g., µg/kg-day, particles/mL)."
+				}
+			}
+		},
+		"key_biomarkers": {
+			"type": "array",
+			"description": "Associated biomarker names.",
+			"items": {
+				"type": "string"
+			}
+		},
+		"species_scope": {
+			"type": "string",
+			"description": "Species or model in which mechanism is supported."
+		},
+		"notes": {
+			"type": "string",
+			"description": "Additional context or caveats."
+		},
+		"citations_ref": {
+			"type": "array",
+			"description": "References supporting the mechanism.",
+			"items": {
+				"type": "string"
+			}
+		}
+	}
+}

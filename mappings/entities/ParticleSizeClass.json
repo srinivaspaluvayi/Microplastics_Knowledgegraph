@@ -1,0 +1,17 @@
+{
+  "title": "ParticleSizeClass",
+  "description": "A size bin for a microplastic particle (e.g. 1–10 µm, 1–5 mm).",
+  "type": "object",
+  "required": ["id", "type", "label", "min_micrometer", "max_micrometer"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "description": "Unique identifier for the size class." },
+    "type": { "const": "ParticleSizeClass", "description": "Type tag for the node." },
+    "label": { "type": "string", "description": "Human-readable name for the size class." },
+    "min_micrometer": { "type": "number", "description": "Lower size boundary (µm)." },
+    "max_micrometer": { "type": "number", "description": "Upper size boundary (µm)." },
+    "bin_type": { "type": "string", "enum": ["nano", "micro"], "description": "General category, nanoplastic or microplastic." },
+    "synonyms": { "type": "array", "items": { "type": "string" }, "description": "Alternate names for this size class." },
+    "definition_notes": { "type": "string", "description": "Clarifying notes about this bin." }
+  }
+}
