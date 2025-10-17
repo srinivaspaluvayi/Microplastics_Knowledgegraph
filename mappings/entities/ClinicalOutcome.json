@@ -1,0 +1,61 @@
+{
+	"title": "ClinicalOutcome",
+	"description": "A health endpoint associated with exposure and biological mechanisms.",
+	"type": "object",
+	"required": [
+		"id",
+		"type",
+		"label"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique clinical outcome identifier."
+		},
+		"type": {
+			"const": "ClinicalOutcome",
+			"description": "Type tag for the node."
+		},
+		"label": {
+			"type": "string",
+			"description": "Outcome label (e.g., respiratory_symptoms, cardiovascular_effects)."
+		},
+		"outcome_type": {
+			"type": "string",
+			"enum": [
+				"symptom",
+				"diagnosis",
+				"function_metric",
+				"composite"
+			],
+			"description": "Outcome category."
+		},
+		"population": {
+			"type": "string",
+			"description": "Population context (e.g., general, occupational, animal model)."
+		},
+		"strength_of_evidence": {
+			"type": "string",
+			"enum": [
+				"limited",
+				"suggestive",
+				"moderate",
+				"strong",
+				"inconclusive"
+			],
+			"description": "Qualitative assessment of evidentiary strength."
+		},
+		"citations_ref": {
+			"type": "array",
+			"description": "References supporting outcome association.",
+			"items": {
+				"type": "string"
+			}
+		},
+		"notes": {
+			"type": "string",
+			"description": "Additional context, definitions, or caveats."
+		}
+	}
+}

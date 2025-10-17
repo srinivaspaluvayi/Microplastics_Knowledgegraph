@@ -1,0 +1,57 @@
+{
+	"title": "Method",
+	"description": "An analytical method used for microplastic detection/quantification.",
+	"type": "object",
+	"required": [
+		"id",
+		"type",
+		"method_class"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique method ID."
+		},
+		"type": {
+			"const": "Method",
+			"description": "Type tag for the node."
+		},
+		"method_class": {
+			"type": "string",
+			"description": "General class (e.g., micro_FTIR, micro_Raman, pyrolysis_GC_MS)."
+		},
+		"min_size_reliable": {
+			"type": "number",
+			"description": "Minimum reliable size (µm)."
+		},
+		"max_size_reliable": {
+			"type": "number",
+			"description": "Maximum reliable size (µm)."
+		},
+		"identification_capability": {
+			"type": "string",
+			"description": "What the method can identify (polymer, shape, both, none)."
+		},
+		"reporting_basis": {
+			"type": "string",
+			"description": "Type of result (count, mass, both)."
+		},
+		"LOD": {
+			"type": "number",
+			"description": "Limit of detection."
+		},
+		"LOQ": {
+			"type": "number",
+			"description": "Limit of quantification."
+		},
+		"detects_particles": {
+			"type": "boolean",
+			"description": "Method detects discrete particles."
+		},
+		"identifies_polymer": {
+			"type": "boolean",
+			"description": "Distinguishes polymer type."
+		}
+	}
+}

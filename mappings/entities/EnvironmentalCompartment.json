@@ -1,0 +1,15 @@
+{
+  "title": "EnvironmentalCompartment",
+  "description": "Represents a physico-chemical location (e.g., marine water, air, sediment).",
+  "type": "object",
+  "required": ["id", "type", "label"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "description": "Compartment node identifier." },
+    "type": { "const": "EnvironmentalCompartment", "description": "Type tag for the node." },
+    "label": { "type": "string", "description": "Name of the compartment." },
+    "subcompartment": { "type": "string", "description": "More specific location (e.g., surface microlayer)." },
+    "geo_context": { "type": "object", "properties": { "region": { "type": "string" }, "country": { "type": "string" } }, "description": "Geographical context." },
+    "depth_or_height_range": { "type": "object", "properties": { "min": { "type": "number" }, "max": { "type": "number" }, "unit": { "type": "string" } }, "description": "Vertical range (meters)." }
+  }
+}

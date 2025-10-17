@@ -1,0 +1,54 @@
+{
+	"title": "TissueOrgan",
+	"description": "A target tissue or organ where effects are measured or occur.",
+	"type": "object",
+	"required": [
+		"id",
+		"type",
+		"label"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique tissue/organ identifier."
+		},
+		"type": {
+			"const": "TissueOrgan",
+			"description": "Type tag for the node."
+		},
+		"label": {
+			"type": "string",
+			"enum": [
+				"lung",
+				"gut",
+				"liver",
+				"kidney",
+				"placenta",
+				"brain",
+				"blood",
+				"other"
+			],
+			"description": "Tissue or organ label."
+		},
+		"species": {
+			"type": "string",
+			"description": "Species or model (e.g., human, mouse, fish)."
+		},
+		"histology_notes": {
+			"type": "string",
+			"description": "Histological context or features relevant to interpretation."
+		},
+		"vulnerability_notes": {
+			"type": "string",
+			"description": "Notes on susceptibility/vulnerability (e.g., barrier properties)."
+		},
+		"citations_ref": {
+			"type": "array",
+			"description": "References supporting tissue relevance.",
+			"items": {
+				"type": "string"
+			}
+		}
+	}
+}

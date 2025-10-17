@@ -1,0 +1,83 @@
+{
+	"title": "Source",
+	"description": "An activity or product category emitting microplastics.",
+	"type": "object",
+	"required": [
+		"id",
+		"type",
+		"label",
+		"source_type"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique source identifier."
+		},
+		"type": {
+			"const": "Source",
+			"description": "Type tag for the node."
+		},
+		"label": {
+			"type": "string",
+			"enum": [
+				"textiles",
+				"tire_wear",
+				"pellets",
+				"personal_care",
+				"paint",
+				"agricultural_mulch",
+				"urban_runoff",
+				"industrial_process",
+				"other"
+			],
+			"description": "Source label."
+		},
+		"source_type": {
+			"type": "string",
+			"enum": [
+				"primary",
+				"secondary"
+			],
+			"description": "Primary vs secondary microplastic source."
+		},
+		"sector": {
+			"type": "string",
+			"description": "Sector or industry (e.g., transport, consumer)."
+		},
+		"emission_rate_estimate": {
+			"type": "object",
+			"description": "Estimated emission with unit and uncertainty.",
+			"additionalProperties": false,
+			"properties": {
+				"value": {
+					"type": "number",
+					"description": "Emission magnitude."
+				},
+				"unit": {
+					"type": "string",
+					"description": "Emission unit (e.g., kg/year)."
+				},
+				"context": {
+					"type": "string",
+					"description": "Context or assumptions for estimate."
+				},
+				"uncertainty": {
+					"type": "number",
+					"description": "Uncertainty value (relative or absolute)."
+				}
+			}
+		},
+		"mitigation_options_ref": {
+			"type": "array",
+			"description": "References to mitigation options or policies.",
+			"items": {
+				"type": "string"
+			}
+		},
+		"notes": {
+			"type": "string",
+			"description": "Additional source notes."
+		}
+	}
+}

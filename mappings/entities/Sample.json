@@ -1,0 +1,81 @@
+{
+	"title": "Sample",
+	"description": "A collected specimen from an environmental or biological matrix for analysis.",
+	"type": "object",
+	"required": [
+		"id",
+		"type",
+		"matrix",
+		"collection_date"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique sample identifier."
+		},
+		"type": {
+			"const": "Sample",
+			"description": "Type tag for the node."
+		},
+		"matrix": {
+			"type": "string",
+			"description": "Matrix or compartment identifier."
+		},
+		"collection_date": {
+			"type": "string",
+			"description": "Date of collection in ISO-8601 format (YYYY-MM-DD)."
+		},
+		"location": {
+			"type": "object",
+			"description": "Geographic coordinates and region.",
+			"additionalProperties": false,
+			"properties": {
+				"lat": {
+					"type": "number",
+					"description": "Latitude in decimal degrees."
+				},
+				"lon": {
+					"type": "number",
+					"description": "Longitude in decimal degrees."
+				},
+				"region": {
+					"type": "string",
+					"description": "Region or locality name."
+				}
+			}
+		},
+		"depth_or_height": {
+			"type": "number",
+			"description": "Depth or height of sampling (m)."
+		},
+		"volume_or_mass_processed": {
+			"type": "number",
+			"description": "Total matrix processed for analysis."
+		},
+		"volume_or_mass_unit": {
+			"type": "string",
+			"description": "Unit for processed amount (e.g., L, m3, kg)."
+		},
+		"sample_prep": {
+			"type": "string",
+			"description": "Preparation notes (digestion, filters, sieving, drying)."
+		},
+		"contamination_controls": {
+			"type": "string",
+			"description": "Field/lab blanks or contamination checks used."
+		},
+		"storage_conditions": {
+			"type": "string",
+			"description": "Storage details (temperature, container, duration)."
+		},
+		"collector": {
+			"type": "string",
+			"description": "Person or organization collecting the sample."
+		},
+		"notes": {
+			"type": "string",
+			"description": "Additional notes on sampling context."
+		}
+	}
+}
