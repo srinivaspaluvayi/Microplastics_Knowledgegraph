@@ -1,0 +1,1940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.3 20210610//EN" "JATS-journalpublishing1-3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.3" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="publisher-id">nanomaterials</journal-id>
+      <journal-title-group>
+        <journal-title>Nanomaterials</journal-title>
+        <abbrev-journal-title abbrev-type="publisher">Nanomaterials</abbrev-journal-title>
+        <abbrev-journal-title abbrev-type="pubmed">Nanomaterials</abbrev-journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2079-4991</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.3390/nano13081404</article-id>
+      <article-id pub-id-type="publisher-id">nanomaterials-13-01404</article-id>
+      <article-categories>
+        <subj-group>
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Micro- and Nanoplastics Breach the Blood&#x2013;Brain Barrier (BBB): Biomolecular Corona&#x2019;s Role Revealed</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-7512-1398</contrib-id>
+          <name>
+            <surname>Kopatz</surname>
+            <given-names>Verena</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x2013; original draft</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+          <xref rid="af1-nanomaterials-13-01404" ref-type="aff">1</xref>
+          <xref rid="af2-nanomaterials-13-01404" ref-type="aff">2</xref>
+          <xref rid="af3-nanomaterials-13-01404" ref-type="aff">3</xref>
+          <xref rid="af4-nanomaterials-13-01404" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wen</surname>
+            <given-names>Kevin</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <xref rid="af5-nanomaterials-13-01404" ref-type="aff">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kov&#xE1;cs</surname>
+            <given-names>Tibor</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <xref rid="af6-nanomaterials-13-01404" ref-type="aff">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Keimowitz</surname>
+            <given-names>Alison S.</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Resources" vocab-term-identifier="https://credit.niso.org/contributor-roles/resources/">Resources</role>
+          <xref rid="af5-nanomaterials-13-01404" ref-type="aff">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0003-4544-2438</contrib-id>
+          <name>
+            <surname>Pichler</surname>
+            <given-names>Verena</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+          <xref rid="af3-nanomaterials-13-01404" ref-type="aff">3</xref>
+          <xref rid="af7-nanomaterials-13-01404" ref-type="aff">7</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-9972-6690</contrib-id>
+          <name>
+            <surname>Widder</surname>
+            <given-names>Joachim</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+          <xref rid="af2-nanomaterials-13-01404" ref-type="aff">2</xref>
+          <xref rid="af4-nanomaterials-13-01404" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Vethaak</surname>
+            <given-names>A. Dick</given-names>
+          </name>
+          <xref rid="af8-nanomaterials-13-01404" ref-type="aff">8</xref>
+          <xref rid="af9-nanomaterials-13-01404" ref-type="aff">9</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Holl&#xF3;czki</surname>
+            <given-names>Oldamur</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x2013; original draft</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
+          <xref rid="af6-nanomaterials-13-01404" ref-type="aff">6</xref>
+          <xref rid="c1-nanomaterials-13-01404" ref-type="corresp">*</xref>
+          <xref rid="fn1-nanomaterials-13-01404" ref-type="fn">&#x2020;</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kenner</surname>
+            <given-names>Lukas</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
+          <xref rid="af1-nanomaterials-13-01404" ref-type="aff">1</xref>
+          <xref rid="af3-nanomaterials-13-01404" ref-type="aff">3</xref>
+          <xref rid="af4-nanomaterials-13-01404" ref-type="aff">4</xref>
+          <xref rid="af10-nanomaterials-13-01404" ref-type="aff">10</xref>
+          <xref rid="af11-nanomaterials-13-01404" ref-type="aff">11</xref>
+          <xref rid="c1-nanomaterials-13-01404" ref-type="corresp">*</xref>
+          <xref rid="fn1-nanomaterials-13-01404" ref-type="fn">&#x2020;</xref>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Luque-Garcia</surname>
+            <given-names>Jose L.</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-nanomaterials-13-01404"><label>1</label>Division of Experimental and Laboratory Animal Pathology, Department of Pathology, Medical University of Vienna, 1090 Vienna, Austria; <email>verena.kopatz@meduniwien.ac.at</email></aff>
+      <aff id="af2-nanomaterials-13-01404"><label>2</label>Department for Radiation Oncology, Medical University of Vienna, 1090 Vienna, Austria</aff>
+      <aff id="af3-nanomaterials-13-01404"><label>3</label>Center for Biomarker Research in Medicine (CBmed), microOne, 8010 Graz, Austria</aff>
+      <aff id="af4-nanomaterials-13-01404"><label>4</label>Comprehensive Cancer Center Vienna, Medical University of Vienna, 1090 Vienna, Austria</aff>
+      <aff id="af5-nanomaterials-13-01404"><label>5</label>Chemistry Department, Vassar College, 124 Raymond Avenue, Poughkeepsie, NY 12604, USA</aff>
+      <aff id="af6-nanomaterials-13-01404"><label>6</label>Department of Physical Chemistry, Faculty of Science and Technology, University of Debrecen, Egyetem t&#xE9;r 1, 4032 Debrecen, Hungary</aff>
+      <aff id="af7-nanomaterials-13-01404"><label>7</label>Department of Pharmaceutical Sciences, Division of Pharmaceutical Chemistry, University of Vienna, 1090 Vienna, Austria</aff>
+      <aff id="af8-nanomaterials-13-01404"><label>8</label>Institute for Risk Assessment Sciences, Department of Population Health Sciences, Faculty of Veterinary Medicine, Utrecht University, 3584 Utrecht, The Netherlands</aff>
+      <aff id="af9-nanomaterials-13-01404"><label>9</label>Department of Environment and Health, Vrije Universiteit Amsterdam, 1081 Amsterdam, The Netherlands</aff>
+      <aff id="af10-nanomaterials-13-01404"><label>10</label>Christian Doppler Laboratory for Applied Metabolomics, Medical University of Vienna, 1090 Vienna, Austria</aff>
+      <aff id="af11-nanomaterials-13-01404"><label>11</label>Unit of Laboratory Animal Pathology, University of Veterinary Medicine Vienna, 1210 Vienna, Austria</aff>
+      <author-notes>
+        <corresp id="c1-nanomaterials-13-01404"><label>*</label>Correspondence: <email>holloczki.oldamur@science.unideb.hu</email> (O.H.); <email>lukas.kenner@vetmeduni.ac.at</email> (L.K.)</corresp>
+        <fn id="fn1-nanomaterials-13-01404">
+          <label>&#x2020;</label>
+          <p>These authors contributed equally to this work.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>19</day>
+        <month>04</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>04</month>
+        <year>2023</year>
+      </pub-date>
+      <volume>13</volume>
+      <issue>8</issue>
+      <elocation-id>1404</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>30</day>
+          <month>03</month>
+          <year>2023</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>14</day>
+          <month>04</month>
+          <year>2023</year>
+        </date>
+        <date date-type="accepted">
+          <day>17</day>
+          <month>04</month>
+          <year>2023</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2023 by the authors.</copyright-statement>
+        <copyright-year>2023</copyright-year>
+        <license license-type="open-access">
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Humans are continuously exposed to polymeric materials such as in textiles, car tires and packaging. Unfortunately, their break down products pollute our environment, leading to widespread contamination with micro- and nanoplastics (MNPs). The blood&#x2013;brain barrier (BBB) is an important biological barrier that protects the brain from harmful substances. In our study we performed short term uptake studies in mice with orally administered polystyrene micro-/nanoparticles (9.55 &#xB5;m, 1.14 &#xB5;m, 0.293 &#xB5;m). We show that nanometer sized particles&#x2014;but not bigger particles&#x2014;reach the brain within only 2 h after gavage. To understand the transport mechanism, we performed coarse-grained molecular dynamics simulations on the interaction of DOPC bilayers with a polystyrene nanoparticle in the presence and absence of various coronae. We found that the composition of the biomolecular corona surrounding the plastic particles was critical for passage through the BBB. Cholesterol molecules enhanced the uptake of these contaminants into the membrane of the BBB, whereas the protein model inhibited it. These opposing effects could explain the passive transport of the particles into the brain.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>polystyrene</kwd>
+        <kwd>micro-/nanoplastic</kwd>
+        <kwd>blood&#x2013;brain barrier</kwd>
+        <kwd>biomolecular corona</kwd>
+        <kwd>computational uptake modeling</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>BMK</funding-source>
+          <funding-source>BMDW</funding-source>
+        </award-group>
+        <award-group>
+          <funding-source>Austrian Research Promotion Agency</funding-source>
+          <award-id>FA791A0906.FFG</award-id>
+        </award-group>
+        <award-group>
+          <funding-source>three European Union Horizon 2020 Marie Sklodowska-Curie Doctoral Network</funding-source>
+        </award-group>
+        <award-group>
+          <funding-source>BM Fonds</funding-source>
+          <award-id>15142</award-id>
+        </award-group>
+        <award-group>
+          <funding-source>Margaretha Hehberger Stiftung</funding-source>
+          <award-id>15142</award-id>
+        </award-group>
+        <award-group>
+          <funding-source>Christian-Doppler Lab for Applied Metabolomics (CDL-AM)</funding-source>
+          <funding-source>Austrian Science Fund</funding-source>
+          <award-id>P26011</award-id>
+          <award-id>P29251</award-id>
+          <award-id>P34781</award-id>
+        </award-group>
+        <award-group>
+          <funding-source>National Research, Development and Innovation Office</funding-source>
+        </award-group>
+        <award-group>
+          <funding-source>J&#xE1;nos Bolyai Research Scholarship of the Hungarian Academy of Sciences</funding-source>
+          <funding-source>National Research, Development and Innovation Fund</funding-source>
+        </award-group>
+        <funding-statement>L.K. is supported by microONE, which is a COMET Modul under the lead of CBmed GmbH (Graz, Austria; <uri>www.cbmed.at</uri>) within the COMET&#x2014;Competence Centers for Excellent Technologies&#x2014;program, funded by the federal ministries BMK and BMDW, as well as the provinces of Styria and Vienna, and managed by the Austrian Research Promotion Agency (FFG; <uri>www.ffg.at/en</uri>; FA791A0906.FFG). LK also received funds from three European Union Horizon 2020 Marie Sklodowska-Curie Doctoral Network grant, (ALKATRAS),(FANTOM) and (eRaDicate) awards. LK was supported by the BM Fonds (n. 15142), the Margaretha Hehberger Stiftung (n. 15142), the Christian-Doppler Lab for Applied Metabolomics (CDL-AM) and by the Austrian Science Fund (grants FWF: P26011, P29251, and P34781). The financial support for O.H. by the National Research, Development and Innovation Office through the project OTKA-FK 138823 is gratefully acknowledged. O.H. is grateful for the support from the J&#xE1;nos Bolyai Research Scholarship of the Hungarian Academy of Sciences, and the &#xDA;NKP-22-5 New National Excellence Program from the National Research, Development and Innovation Fund. ADV is co-coordinator of the Dutch Zon-Mw MOMENTUM consortium on microplastics and human health.</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1-nanomaterials-13-01404" sec-type="intro">
+      <title>1. Introduction</title>
+      <p>Micro-/nanoplastics (MNPs) are a growing concern, both for human health and the environment, due to their widespread distribution and potential harmfulness. Humans ingest a significant amount of MNPs through their diet [<xref ref-type="bibr" rid="B1-nanomaterials-13-01404">1</xref>], and plastic fragments are increasingly found in body fluids and tissues, such as blood and the placenta [<xref ref-type="bibr" rid="B2-nanomaterials-13-01404">2</xref>,<xref ref-type="bibr" rid="B3-nanomaterials-13-01404">3</xref>,<xref ref-type="bibr" rid="B4-nanomaterials-13-01404">4</xref>]. The definition of nanoplastic is still a topic of debate and varies from a range of 1000&#x2013;1 nm to 100&#x2013;1 nm [<xref ref-type="bibr" rid="B5-nanomaterials-13-01404">5</xref>,<xref ref-type="bibr" rid="B6-nanomaterials-13-01404">6</xref>,<xref ref-type="bibr" rid="B7-nanomaterials-13-01404">7</xref>]. To mitigate the potential harm of MNPs to human health and the environment, it is critical to limit exposure and reduce their use while continuing to study their effects [<xref ref-type="bibr" rid="B1-nanomaterials-13-01404">1</xref>,<xref ref-type="bibr" rid="B8-nanomaterials-13-01404">8</xref>]. MNPs can enter the body and cross impermeable barriers such as the intestinal mucosal barrier and the blood&#x2013;brain barrier. The mechanism of transport of MNPs through these barriers is a complex process that depends on several factors such as particle size, charge, surface chemistry and the type of cell with which they interact [<xref ref-type="bibr" rid="B9-nanomaterials-13-01404">9</xref>]. For larger particles in the &#xB5;m range, transport occurs through the binding of the particle to cell surface receptors [<xref ref-type="bibr" rid="B10-nanomaterials-13-01404">10</xref>] and the formation of a phagocytic shell that eventually fuses with lysosomes [<xref ref-type="bibr" rid="B11-nanomaterials-13-01404">11</xref>]. MNPs can also enter cells by endocytosis [<xref ref-type="bibr" rid="B12-nanomaterials-13-01404">12</xref>], in which the cell membrane engulfs the particle and brings it into the cell without the formation of a phagosome. On the other hand, particles less than 0.5 &#x3BC;m in diameter can potentially cross lipid bilayers through a process known as transcytosis [<xref ref-type="bibr" rid="B13-nanomaterials-13-01404">13</xref>], where the particle can diffuse through the lipid bilayer and exit at its other side without being engulfed into the cell. Nanoparticles applied for medicinal purposes revealed also passage via tight junctions for sizes of around 1.4 nm [<xref ref-type="bibr" rid="B14-nanomaterials-13-01404">14</xref>]. Further investigations are required to determine if this is also true for nanoplastic particles. However, the success of this process depends on the thermodynamics of the phase transfer from the aqueous medium into the membrane. The relative energy of the individual states must be similar for the transfer to occur at a reasonable rate [<xref ref-type="bibr" rid="B15-nanomaterials-13-01404">15</xref>]. If the particle is too stabilized or destabilized in the hydrophobic environment, the transport will be hindered by a barrier.</p>
+      <p>Earlier simulation studies [<xref ref-type="bibr" rid="B16-nanomaterials-13-01404">16</xref>,<xref ref-type="bibr" rid="B17-nanomaterials-13-01404">17</xref>,<xref ref-type="bibr" rid="B18-nanomaterials-13-01404">18</xref>,<xref ref-type="bibr" rid="B19-nanomaterials-13-01404">19</xref>,<xref ref-type="bibr" rid="B20-nanomaterials-13-01404">20</xref>,<xref ref-type="bibr" rid="B21-nanomaterials-13-01404">21</xref>] found that when nanometer-sized polystyrene (PS) particles absorb into the hydrophobic core of lipid bilayers, the polymer chains that make up the plastic particle may disentangle and form a network of macromolecules within the membrane. This process is dependent on the polymer type and the presence of cross-links and branches in the plastic material, but it can cause severe changes in the bilayer that can have physiological consequences. The calculations suggest that the hydrophilic polymer is significantly stabilized within the hydrophobic core of the membrane. Therefore, it would not be able to cross through this biological barrier effectively. The results of these experiments, however, raise the question: how can a particle with such thermodynamic properties cross the blood&#x2013;brain barrier?</p>
+      <p>The surface of MNPs is crucial to their behavior in the human body, as it defines interactions between the particle and its environment. MNPs form a protein corona on their surface [<xref ref-type="bibr" rid="B22-nanomaterials-13-01404">22</xref>] which has been shown for nanoparticles of other materials to alter their interactions and toxicity. Walczyk et al., 2010 found that the protein corona, rather than the bare material properties of the particle, greatly influences interactions with the environment [<xref ref-type="bibr" rid="B23-nanomaterials-13-01404">23</xref>]. This is confirmed by recent studies with MNPs indicating that the protein corona acquired by plastic particles could significantly impact uptake and toxicity, such as in zebrafish [<xref ref-type="bibr" rid="B24-nanomaterials-13-01404">24</xref>] and mice [<xref ref-type="bibr" rid="B25-nanomaterials-13-01404">25</xref>]. Thus, the history of the coronated particle affects the outcome of experiments, emphasizing the need for rigorous methodologies when investigating the physiological effects of MNPs [<xref ref-type="bibr" rid="B24-nanomaterials-13-01404">24</xref>,<xref ref-type="bibr" rid="B25-nanomaterials-13-01404">25</xref>]. It is therefore essential to understand the changes that various coronae can introduce into the MNP&#x2013;biomolecular interactions, especially regarding crossing the blood&#x2013;brain barrier.</p>
+    </sec>
+    <sec id="sec2-nanomaterials-13-01404">
+      <title>2. Materials and Methods</title>
+      <sec id="sec2dot1-nanomaterials-13-01404">
+        <title>2.1. Materials </title>
+        <p>Commercially available polystyrene micro- and nanoplastic particles were purchased from microparticles GmbH (Berlin, Germany). Particles were delivered in aqueous solution without modifier and used as received. In total, 3 different sizes were used (9.55 &#xB1; 0.13 &#xB5;m particles, stained in blue; 1.14 &#xB1; 0.03 &#xB5;m particles stained fluorescent red Ex/Em 530 nm/607 nm; 0.293 &#xB1; 0.008 &#xB5;m particles stained fluorescent green, Ex/Em 502 nm/528 nm) and mixed at equal weight concentrations of 0.3 mg/size/dose in sterile water for application in mice.</p>
+      </sec>
+      <sec id="sec2dot2-nanomaterials-13-01404">
+        <title>2.2. Material Characterization and Stability </title>
+        <p>Microparticles of 1.14 &#xB5;m size were measured for their &#x3B6;-potential (mV), size distribution and polydispersity index (PDI) by means of a Zetasizer Pro (Malvern Pananalytical) and data were analyzed using ZS Xplorer software. The cuvettes were ZETASIZER Nano Series Disposable folded capillary cells (DTS1070) at 25 &#xB0;C. The particles were delivered in an aqueous solution and were measured at a concentration of 0.5 mg/mL diluted in deionized water (0.55 &#xB5;S), PBS and fully supplemented RPMI-1640 Media including 10% FBS and 1% L-glutamine. Deionized water, PBS and fully supplemented RPMI-1640 Media was filtered with a MILLEX-GV 0.22 &#xB5;m filter to avoid particulate matter from the matrix. The 10 and 0.293 &#xB5;m particles had to be excluded because the Zetasizer has a measurement range of 10&#x2013;0.3 &#xB5;m. For assessment of stability, MNPs of 1.14 and 0.293 nm size were incubated in simulated gastric fluid. Simulated gastric fluids were prepared as described within the U.S. Pharmacopoeia (0.16 M aq. HCl, 2 g/L NaCl and 3.2 g/L pepsin). Samples were incubated at 37 &#xB0;C for 24 h and the supernatants were measured for fluorescence at Ex/Em 530 nm/607 nm and Ex/Em 502 nm/528 nm, respectively, in a Tecan Infinite M200 Plate Reader. </p>
+      </sec>
+      <sec id="sec2dot3-nanomaterials-13-01404">
+        <title>2.3. In Vivo Experiments </title>
+        <p>In total, 6 wild-type male C57Bl/6J mice were used in this proof of principle study (<italic>n</italic> = 2/group). Animals were bred in-house and kept under standard conditions (ambient temperature at 12/12 h light/dark cycle). Food and water were provided <italic>ad libitum</italic>. Experiments were conducted according to Austrian animal welfare legislation (license 2022-0.257.045), and experimental setups were approved by the local animal ethics committee. Briefly, mice were assigned randomly to 3 treatment groups and either left untreated (ctr) or gavaged with a single dose of 100 &#xB5;L of MNP mixture as described above. Control and MNP-exposed mice were euthanized after 2 h or 4 h post gavage and mouse brains were harvested and processed according to a modified isopropanol protocol [<xref ref-type="bibr" rid="B26-nanomaterials-13-01404">26</xref>]. </p>
+      </sec>
+      <sec id="sec2dot4-nanomaterials-13-01404">
+        <title>2.4. Fluorescent Microscopy Analysis </title>
+        <p>Three micrometer tissue sections were cut and processed according to isopropanol protocol for immunofluorescence staining. Nuclei were counterstained with DAPI (Merck, Darmstadt, Germany). Images were taken at a Zeiss Axio Imager M2 microcope (63&#xD7; objective). For image processing Zeiss Zen blue (version 3.5) was used.</p>
+      </sec>
+      <sec id="sec2dot5-nanomaterials-13-01404">
+        <title>2.5. Molecular Dynamics Simulations </title>
+        <p>We chose 1,2-Dioleoyl-sn-glycero-3-phosphocholine (DOPC) as a model lipid; it is a predominant phospholipid in the human body, which has also been used extensively in simple and effective models for the blood&#x2013;brain barrier [<xref ref-type="bibr" rid="B27-nanomaterials-13-01404">27</xref>]. The 2704 DOPC molecules in each membrane leaflet gave a 43.16 nm &#xD7; 43.16 nm bilayer. The nanoplastic investigated here contained 4 chains of polystyrene, each with 100 styrene monomer units, folded together into a ca. 5 nm nanoparticle through a simulated annealing approach described elsewhere [<xref ref-type="bibr" rid="B28-nanomaterials-13-01404">28</xref>]. The effect of the particle size was not investigated here, as it has been demonstrated before that the absorption of the plastic nanoparticles into membranes was exothermic regardless of the size, i.e., qualitatively highly similar, although quantitatively the absorption energy changed [<xref ref-type="bibr" rid="B21-nanomaterials-13-01404">21</xref>]. It is reasonable to assume that this statement is valid unless the mechanism of the transfer through the bilayer changes to transcytosis, which happens at a much larger size threshold, at ca. 500 nm, beyond which point the absorption of the particle into the bilayer does not occur. Since in the present study only the direction of the absorption into the membrane will be discussed, as well as trends, and not the exact energetics, tracking the consequences of particle sizes is unnecessary.</p>
+        <p>The simulation boxes were generated by employing PACKMOL 20.10. [<xref ref-type="bibr" rid="B29-nanomaterials-13-01404">29</xref>,<xref ref-type="bibr" rid="B30-nanomaterials-13-01404">30</xref>]. Applying previously established coarse-grained models for the components of the system within the framework of the MARTINI force field [<xref ref-type="bibr" rid="B19-nanomaterials-13-01404">19</xref>,<xref ref-type="bibr" rid="B31-nanomaterials-13-01404">31</xref>], we used the GROMACS program package version 2020.3 for the simulations and the subsequent analysis [<xref ref-type="bibr" rid="B32-nanomaterials-13-01404">32</xref>,<xref ref-type="bibr" rid="B33-nanomaterials-13-01404">33</xref>,<xref ref-type="bibr" rid="B34-nanomaterials-13-01404">34</xref>,<xref ref-type="bibr" rid="B35-nanomaterials-13-01404">35</xref>,<xref ref-type="bibr" rid="B36-nanomaterials-13-01404">36</xref>]. The plastic particle was steered from the bulk of the liquid into the hydrophobic core of the membrane through umbrella sampling [<xref ref-type="bibr" rid="B37-nanomaterials-13-01404">37</xref>]. In this process, the membrane&#x2013;plastic system was simulated in water, with the distance of the plastic to the lipid bilayer set to a defined value via an external harmonic potential. By repeating the simulations at different distances, the free energy profile of the phase transfer can be obtained using the weighted histogram analysis method (WHAM) [<xref ref-type="bibr" rid="B37-nanomaterials-13-01404">37</xref>,<xref ref-type="bibr" rid="B38-nanomaterials-13-01404">38</xref>]. The timestep in the simulations was set to 10 fs. Each system underwent a 60 ns equilibration in the NpT ensemble with a semi-isotropic Berendsen barostat set to 1 bar and a velocity rescale thermostat set to 310 K. The 40 ns production run was conducted at 310 K in an NVT ensemble. The same settings were used for the unbiased simulations, but the production run was conducted for 1 &#x3BC;s.</p>
+      </sec>
+    </sec>
+    <sec id="sec3-nanomaterials-13-01404" sec-type="results">
+      <title>3. Results and Discussion</title>
+      <p>Polystyrene is a commonly used model plastic for studying the transfer of nanoplastic particles through membranes due to its widespread use and high environmental pollution levels, potentially leading to high exposure to the fragments. The size of the nanoparticles in the modeling part of this study was chosen to be ca. 5 nm, and a well-established coarse-grained model of PS was selected to make the calculations more efficient, along with a matching force field for the biomolecules in the system. For simulating the transfer of the plastics through the blood&#x2013;brain barrier, DOPC bilayers were selected as a model membrane. In total, 4 models were used to study the role of the corona in the transfer: (1) pristine plastic, (2) a particle with a corona made of 100 cholesterol molecules, (3) a particle with a corona made of 150 cholesterol molecules and (4) a particle with a corona made of 40 protein molecules. Through these models, the importance of the corona in the transfer of the PS particle through the blood&#x2013;brain barrier can be addressed. Protein coronae have been observed in experiments with various proteins, including human serum albumin [<xref ref-type="bibr" rid="B22-nanomaterials-13-01404">22</xref>,<xref ref-type="bibr" rid="B39-nanomaterials-13-01404">39</xref>]. Since in an earlier study we found that tryptophan has a large affinity to plastics in aqueous solutions [<xref ref-type="bibr" rid="B40-nanomaterials-13-01404">40</xref>], we chose a small protein featuring several of these amino acids to model the protein corona (PDB ID: 1LE1).</p>
+      <p>The analysis suggests a strong interaction between the coronated plastic particle and its corona in the aqueous phase. This is evident from the swelling of the polymer chains in the presence of protein or cholesterol molecules, which is more extensive for the thicker corona of 150 cholesterol molecules (see the radius of gyration R<sub>g</sub> values in <xref ref-type="fig" rid="nanomaterials-13-01404-f001">Figure 1</xref> in the first 200 ns). This swelling occurs because the non-polar molecules in the corona penetrate the plastic chains, leading to an increase in the surface and volume of the particle. The same effect can also be observed from the shrinking of the protein corona. Initial simulations showed striking differences, with pristine and protein-coronated plastic particles not entering the membrane within 1 &#x3BC;s. At the same time, those with cholesterol transferred spontaneously into the hydrophobic core of the membrane (<xref ref-type="fig" rid="nanomaterials-13-01404-f001">Figure 1</xref>).</p>
+      <p>The mechanism for facilitating particle transfer was also identified in the two cholesterol simulations. The polar groups of cholesterol interacted with the DOPC in the membrane, resulting in a stable close contact as the coronated particle approached the bilayer (<xref ref-type="fig" rid="nanomaterials-13-01404-f002">Figure 2</xref>). The interaction is amplified by the deformation of the lipid bilayer, forming a bulge towards the cholesterol corona molecules. As a result of this bulge, the closer lipid leaflet becomes looser, creating enough space for the cholesterol and plastic to diffuse into the membrane. The DOPC molecules rearrange to point their hydrophobic tails towards the incoming hydrophobic particles, leading to gradual encapsulation of the plastic by the hydrophobic tails. In contrast, the cholesterol molecules dissociate from the polymer and disperse in the lipid bilayer (<xref ref-type="fig" rid="nanomaterials-13-01404-f002">Figure 2</xref>). Once the nanoplastic enters the hydrophobic core of the membrane, it is entirely surrounded and covered by lipids, leading to its slow dissolution and disentanglement of chains in the lipid bilayer, as previously observed. The behavior is dependent on the cross-links between polymer chains, as discussed in earlier studies. However, the membrane with the plastic in its hydrophobic core still retains some overall structure despite significant, potentially pathologically harmful differences compared to the neat bilayer. In the next set of simulations, the thermodynamics of the phase transfer process were calculated by steering the plastic particle into the membrane using umbrella sampling. For the pristine particle, an energy gain of &#x2212;138 kJ/mol was found, in good qualitative agreement with previous data [<xref ref-type="bibr" rid="B39-nanomaterials-13-01404">39</xref>]. We found that the particle with the thinner cholesterol corona had a similarly exergonic phase transfer (&#x2212;132 kJ/mol) to the pristine plastic, still with more cholesterol molecules, the driving force increased, exhibiting a free energy drop of &#x2212;203 kJ/mol upon absorption into the membrane. In other words, the plastic without a corona or with a cholesterol corona can easily enter the blood&#x2013;brain barrier but cannot exit it and thus cannot enter the neural tissue. In agreement, Notman and coworkers found that the entry of a pristine polystyrene nanoparticle into a DPPC membrane becomes more exothermic when cholesterol is present in the lipid bilayer [<xref ref-type="bibr" rid="B21-nanomaterials-13-01404">21</xref>]. The authors suggested that the reason for this finding may be that the cholesterol&#x2013;polystyrene interplay is stronger than the DPPC&#x2013;polystyrene interactions, although they also pointed out that the plastic does not seem to separate the cholesterol from the phospholipids. Our results here also suggest that there are more complicated effects at play, since cholesterol is in interaction with the polystyrene already before entering the membrane, thus&#x2014;if it would come down only to the strength of the interactions&#x2014;no increase in absorption energy should be observed.</p>
+      <p>Interestingly, for the plastic with a protein corona, the energy demand for entry was too high (+218 kJ/mol), indicating that it cannot enter the blood&#x2013;brain barrier at all. The corona on the surface of the plastic apparently affects its thermodynamics for diffusion into the membrane. Therefore, it seems feasible that with the right combination of molecules, it can allow for the plastic to be absorbed into the membrane and cross over to the neural tissue. </p>
+      <p>To underline these computational findings of MNP uptake into the brain, we performed short-term exposure experiments in mice with commercially available PS particles of 3 different sizes (9.55 &#xB5;m, stained in blue; 1.14 &#xB5;m particles stained fluorescent red Ex/Em 530 nm/607 nm; 0.293 &#xB5;m particles stained fluorescent green, Ex/Em 502 nm/528 nm). The microplastic particles of the size 1.14 &#xB5;m were characterized for their &#x3B6;-potential, average size and polydispersity index (PDI) in aqueous solution, PBS and fully supplemented cell culture media (<xref ref-type="table" rid="nanomaterials-13-01404-t001">Table 1</xref>). A similar trend of decreasing &#x3B6;-potential and increasing size and PDI were observed with increasing salt and component concentration within the matrix. The increased size is caused by the build-up of the protein corona in fully supplemented media. To test the stability of the MNPs, the particles were incubated in simulated gastric fluid to identify potential to leach out of the fluorophore at 37 &#xB0;C for 24 h. No fluorescent signal was detected in the supernatant after the indicated time range. This result is in accordance with previously published leaching experiments [<xref ref-type="bibr" rid="B41-nanomaterials-13-01404">41</xref>].</p>
+      <p>For animal experiments, we administered MNP PS particle mixtures of 3 different sizes via oral gavage to wild-type mice and examined whether the particles can cross the BBB. To our surprise, we found specific nanometer-sized green fluorescent signals in the brain tissue of MNP-exposed mice after only 2 h, indicating that the 0.293 &#xB5;m particles were already taken up shortly after administration (<xref ref-type="fig" rid="nanomaterials-13-01404-f003">Figure 3</xref>). Numerous nanometer particles were detected at 2 h after gavage, whereas at 4 h the number was already lower. However, only the specific signal for the nanometer-scale PS particles was detectable. These findings together with the computer model underline that MNP PS particles can cross the gastrointestinal barrier and the BBB within a short time, but only 0.293 &#xB5;m sized particles were able to be taken up from the gastrointestinal tract and to penetrate the BBB. This suggests that the size of the particles may be a critical factor in their ability to penetrate the BBB [<xref ref-type="bibr" rid="B42-nanomaterials-13-01404">42</xref>]. The BBB is an important barrier that protects the brain from toxins and other harmful substances, and its breach can lead to various neurological problems. Thus, short-term health effects of MNP will have to be considered, as MNP contamination in brain tissue can lead to cognitive impairment, neurological disorders and neurotoxicity [<xref ref-type="bibr" rid="B42-nanomaterials-13-01404">42</xref>], which may be attributed to the inhibition of acetylcholinesterase activity and altered neurotransmitter levels, both of which can contribute to behavioral changes [<xref ref-type="bibr" rid="B43-nanomaterials-13-01404">43</xref>]. Plastic particles at the nanoscale have a higher surface area to volume ratio, and they can be more reactive and potentially more harmful than larger microplastics [<xref ref-type="bibr" rid="B44-nanomaterials-13-01404">44</xref>]. Our in vivo findings are consistent with other experimental studies, e.g., in mice brain [<xref ref-type="bibr" rid="B45-nanomaterials-13-01404">45</xref>] and the brain tissue of zebrafish larvae [<xref ref-type="bibr" rid="B46-nanomaterials-13-01404">46</xref>]. </p>
+      <p>Further research is needed to fully understand the health implications and toxicological mechanisms of MNP exposure and develop appropriate safety measures. Specifically, it will be important to investigate the long-term effects of MNP exposure, and the potential for accumulation and distribution of these particles in other tissues and organs. </p>
+    </sec>
+    <sec id="sec4-nanomaterials-13-01404" sec-type="conclusions">
+      <title>4. Conclusions</title>
+      <p>In recent years, plastic pollution has become an increasingly important environmental and human health issue. Although the environmental impacts of plastic pollution have been widely studied, the potential health consequences of plastic consumption on mammals including humans remain to be elucidated. The biomolecular corona is a layer of proteins and other biomolecules that can accumulate on the surface of plastic particles when they are exposed to biological fluids. Before entering the body, MNPs acquire an environmental or eco-corona consisting of biomolecules, organic matter and chemical and biological contaminants, contributing to the corona&#x2019;s complex and variable composition [<xref ref-type="bibr" rid="B8-nanomaterials-13-01404">8</xref>]. The type of corona can therefore significantly impact their ability to enter the BBB and their overall toxicity.</p>
+      <p>Our computer models show that PS plastic particles are able to enter/cross the BBB depending on their specific surface corona, and in vivo mouse models verified these findings, showing accumulations of specifical signals of nanometer-sized PS particles in brain tissues as early as 2 h after exposure. The research also highlighted the importance of understanding the &#x201C;corona&#x201D; on the surface of plastic particles when assessing their toxicity. These new insights into the mechanisms for plastic particle transfer provide a valuable foundation for future research and policies aimed at mitigating their harmful effects on human health. Given the widespread use of plastics in our daily lives and the growing concern over the impact of microplastics on the environment and our health, there is an urgent need for more research in this field. By understanding the underlying mechanisms of plastic particle toxicity, we can develop policies and practices to reduce the risks associated with plastic consumption and protect human health.</p>
+    </sec>
+  </body>
+  <back>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization, O.H. and L.K.; Methodology, V.K.; Formal analysis, V.K., K.W., T.K. and V.P.; Investigation, V.K., K.W., T.K. and V.P.; Resources, A.S.K.; Writing&#x2014;original draft, V.K. and O.H.; Writing&#x2014;review and editing, V.P., J.W., A.D.V. and L.K.; Visualization, V.K.; Supervision, O.H. and L.K. All authors have read and agreed to the published version of the manuscript.</p>
+    </notes>
+    <notes>
+      <title>Data Availability Statement</title>
+      <p>The data presented in this study are available on request from the corresponding authors.</p>
+    </notes>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>We thank all funding partners for financial support. We thank Carolin Bapp and Nowras Rahhal for the support during the &#x3B6;-potential measurements and Julia Wallner for help with immunofluorescence imaging. The CPU time from the Governmental Information Technology Development Agency (KIF&#xDC;) is gratefully acknowledged. </p>
+    </ack>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-nanomaterials-13-01404">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mohamed Nor</surname>
+              <given-names>N.H.</given-names>
+            </name>
+            <name>
+              <surname>Kooi</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Diepens</surname>
+              <given-names>N.J.</given-names>
+            </name>
+            <name>
+              <surname>Koelmans</surname>
+              <given-names>A.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Lifetime Accumulation of Microplastic in Children and Adults</article-title>
+          <source>Environ. Sci. Technol.</source>
+          <year>2021</year>
+          <volume>55</volume>
+          <fpage>5084</fpage>
+          <lpage>5096</lpage>
+          <pub-id pub-id-type="doi">10.1021/acs.est.0c07384</pub-id>
+          <pub-id pub-id-type="pmid">33724830</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-nanomaterials-13-01404">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leslie</surname>
+              <given-names>H.A.</given-names>
+            </name>
+            <name>
+              <surname>van Velzen</surname>
+              <given-names>M.J.M.</given-names>
+            </name>
+            <name>
+              <surname>Brandsma</surname>
+              <given-names>S.H.</given-names>
+            </name>
+            <name>
+              <surname>Vethaak</surname>
+              <given-names>A.D.</given-names>
+            </name>
+            <name>
+              <surname>Garcia-Vallejo</surname>
+              <given-names>J.J.</given-names>
+            </name>
+            <name>
+              <surname>Lamoree</surname>
+              <given-names>M.H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Discovery and Quantification of Plastic Particle Pollution in Human Blood</article-title>
+          <source>Environ. Int.</source>
+          <year>2022</year>
+          <volume>163</volume>
+          <fpage>107199</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.envint.2022.107199</pub-id>
+          <pub-id pub-id-type="pmid">35367073</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-nanomaterials-13-01404">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ragusa</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Svelato</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Santacroce</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Catalano</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Notarstefano</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Carnevali</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Papa</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Rongioletti</surname>
+              <given-names>M.C.A.</given-names>
+            </name>
+            <name>
+              <surname>Baiocco</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Draghi</surname>
+              <given-names>S.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Plasticenta: First Evidence of Microplastics in Human Placenta</article-title>
+          <source>Environ. Int.</source>
+          <year>2021</year>
+          <volume>146</volume>
+          <fpage>106274</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.envint.2020.106274</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-nanomaterials-13-01404">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gruber</surname>
+              <given-names>E.S.</given-names>
+            </name>
+            <name>
+              <surname>Stadlbauer</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Pichler</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Resch-Fauster</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Todorovic</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Meisel</surname>
+              <given-names>T.C.</given-names>
+            </name>
+            <name>
+              <surname>Trawoeger</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Holl&#xF3;czki</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>S.D.</given-names>
+            </name>
+            <name>
+              <surname>Wadsak</surname>
+              <given-names>W.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>To Waste or Not to Waste: Questioning Potential Health Risks of Micro- and Nanoplastics with a Focus on Their Ingestion and Potential Carcinogenicity</article-title>
+          <source>Expo. Health</source>
+          <year>2023</year>
+          <volume>15</volume>
+          <fpage>33</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="doi">10.1007/s12403-022-00470-8</pub-id>
+          <pub-id pub-id-type="pmid">36873245</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-nanomaterials-13-01404">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gigault</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>ter Halle</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Baudrimont</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Pascal</surname>
+              <given-names>P.Y.</given-names>
+            </name>
+            <name>
+              <surname>Gauffre</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Phi</surname>
+              <given-names>T.L.</given-names>
+            </name>
+            <name>
+              <surname>El Hadri</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Grassl</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Reynaud</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Current Opinion: What Is a Nanoplastic?</article-title>
+          <source>Environ. Pollut.</source>
+          <year>2018</year>
+          <volume>235</volume>
+          <fpage>1030</fpage>
+          <lpage>1034</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.envpol.2018.01.024</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6-nanomaterials-13-01404">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Allan</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Belz</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Hoeveler</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Hugas</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Okuda</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Patri</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Rauscher</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Silva</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Slikker</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Sokull-Kluettgen</surname>
+              <given-names>B.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Regulatory Landscape of Nanotechnology and Nanoplastics from a Global Perspective</article-title>
+          <source>Regul. Toxicol. Pharmacol.</source>
+          <year>2021</year>
+          <volume>122</volume>
+          <fpage>104885</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.yrtph.2021.104885</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-nanomaterials-13-01404">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Caldwell</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Taladriz-Blanco</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Lehner</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Lubskyy</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Ortuso</surname>
+              <given-names>R.D.</given-names>
+            </name>
+            <name>
+              <surname>Rothen-Rutishauser</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Petri-Fink</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Micro-, Submicron-, and Nanoplastic Hunt: A Review of Detection Methods for Plastic Particles</article-title>
+          <source>Chemosphere</source>
+          <year>2022</year>
+          <volume>293</volume>
+          <fpage>133514</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.chemosphere.2022.133514</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-nanomaterials-13-01404">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vethaak</surname>
+              <given-names>A.D.</given-names>
+            </name>
+            <name>
+              <surname>Legler</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Microplastics and Human Health</article-title>
+          <source>Science</source>
+          <year>2021</year>
+          <volume>371</volume>
+          <fpage>672</fpage>
+          <lpage>674</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.abe5041</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-nanomaterials-13-01404">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lerch</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Dass</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Musyanovych</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Landfester</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Mail&#xE4;nder</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Polymeric Nanoparticles of Different Sizes Overcome the Cell Membrane Barrier</article-title>
+          <source>Eur. J. Pharm. Biopharm.</source>
+          <year>2013</year>
+          <volume>84</volume>
+          <fpage>265</fpage>
+          <lpage>274</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ejpb.2013.01.024</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10-nanomaterials-13-01404">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Foged</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Brodin</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Frokjaer</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Sundblad</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Particle size and surface charge affect particle uptake by human dendritic cells in an in vitro model</article-title>
+          <source>Int. J. Pharm.</source>
+          <year>2005</year>
+          <volume>298</volume>
+          <fpage>315</fpage>
+          <lpage>322</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijpharm.2005.03.035</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-nanomaterials-13-01404">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayorga</surname>
+              <given-names>L.S.</given-names>
+            </name>
+            <name>
+              <surname>Bertini</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Stahl</surname>
+              <given-names>P.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Fusion of Newly Formed Phagosomes with Endosomes in Intact Cells and in a Cell-Free System</article-title>
+          <source>J. Biol. Chem.</source>
+          <year>1991</year>
+          <volume>266</volume>
+          <fpage>6511</fpage>
+          <lpage>6517</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0021-9258(18)38147-X</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12-nanomaterials-13-01404">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bhaskar</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Tian</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Stoeger</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Kreyling</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>de la Fuente</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Graz&#xFA;</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Borm</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Estrada</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Ntziachristos</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Razansky</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Multifunctional Nanocarriers for Diagnostics, Drug Delivery and Targeted Treatment across Blood-Brain Barrier: Perspectives on Tracking and Neuroimaging</article-title>
+          <source>Part. Fibre Toxicol.</source>
+          <year>2010</year>
+          <volume>7</volume>
+          <fpage>3</fpage>
+          <pub-id pub-id-type="doi">10.1186/1743-8977-7-3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-nanomaterials-13-01404">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thuenauer</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>M&#xFC;ller</surname>
+              <given-names>S.K.</given-names>
+            </name>
+            <name>
+              <surname>R&#xF6;mer</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Pathways of Protein and Lipid Receptor-Mediated Transcytosis in Drug Delivery</article-title>
+          <source>Expert Opin. Drug Deliv.</source>
+          <year>2017</year>
+          <volume>14</volume>
+          <fpage>341</fpage>
+          <lpage>351</lpage>
+          <pub-id pub-id-type="doi">10.1080/17425247.2016.1220364</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-nanomaterials-13-01404">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Semmler-Behnke</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Kreyling</surname>
+              <given-names>W.G.</given-names>
+            </name>
+            <name>
+              <surname>Lipka</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Fertsch</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Wenk</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Takenaka</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Schmid</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Brandau</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Biodistribution of 1.4- and 18-Nm Gold Particles in Rats</article-title>
+          <source>Small</source>
+          <year>2008</year>
+          <volume>4</volume>
+          <fpage>2108</fpage>
+          <lpage>2111</lpage>
+          <pub-id pub-id-type="doi">10.1002/smll.200800922</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-nanomaterials-13-01404">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martinotti</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Ruiz-Perez</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Deplazes</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Mancera</surname>
+              <given-names>R.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular Dynamics Simulation of Small Molecules Interacting with Biological Membranes</article-title>
+          <source>ChemPhysChem</source>
+          <year>2020</year>
+          <volume>21</volume>
+          <fpage>1486</fpage>
+          <lpage>1514</lpage>
+          <pub-id pub-id-type="doi">10.1002/cphc.202000219</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-nanomaterials-13-01404">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rossi</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Monticelli</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modeling the Effect of Nano-Sized Polymer Particles on the Properties of Lipid Membranes</article-title>
+          <source>J. Phys. Condens. Matter</source>
+          <year>2014</year>
+          <volume>26</volume>
+          <fpage>503101</fpage>
+          <pub-id pub-id-type="doi">10.1088/0953-8984/26/50/503101</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-nanomaterials-13-01404">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bochicchio</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Panizon</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Monticelli</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Rossi</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Interaction of Hydrophobic Polymers with Model Lipid Bilayers</article-title>
+          <source>Sci. Rep.</source>
+          <year>2017</year>
+          <volume>7</volume>
+          <fpage>6357</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-017-06668-0</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18-nanomaterials-13-01404">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Holl&#xF3;czki</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Gehrke</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Can Nanoplastics Alter Cell Membranes?</article-title>
+          <source>ChemPhysChem</source>
+          <year>2020</year>
+          <volume>21</volume>
+          <fpage>9</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="doi">10.1002/cphc.201900481</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19-nanomaterials-13-01404">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rossi</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Barnoud</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Monticelli</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Polystyrene Nanoparticles Perturb Lipid Membranes</article-title>
+          <source>J. Phys. Chem. Lett.</source>
+          <year>2014</year>
+          <volume>5</volume>
+          <fpage>241</fpage>
+          <lpage>246</lpage>
+          <pub-id pub-id-type="doi">10.1021/jz402234c</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20-nanomaterials-13-01404">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fleury</surname>
+              <given-names>J.B.</given-names>
+            </name>
+            <name>
+              <surname>Baulin</surname>
+              <given-names>V.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Microplastics Destabilize Lipid Membranes by Mechanical Stretching</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2021</year>
+          <volume>118</volume>
+          <fpage>e2104610118</fpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.2104610118</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21-nanomaterials-13-01404">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thake</surname>
+              <given-names>T.H.F.</given-names>
+            </name>
+            <name>
+              <surname>Webb</surname>
+              <given-names>J.R.</given-names>
+            </name>
+            <name>
+              <surname>Nash</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Rappoport</surname>
+              <given-names>J.Z.</given-names>
+            </name>
+            <name>
+              <surname>Notman</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Permeation of Polystyrene Nanoparticles across Model Lipid Bilayer Membranes</article-title>
+          <source>Soft Matter</source>
+          <year>2013</year>
+          <volume>9</volume>
+          <fpage>10265</fpage>
+          <lpage>10274</lpage>
+          <pub-id pub-id-type="doi">10.1039/c3sm51225h</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22-nanomaterials-13-01404">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kihara</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Ghosh</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>McDougall</surname>
+              <given-names>D.R.</given-names>
+            </name>
+            <name>
+              <surname>Whitten</surname>
+              <given-names>A.E.</given-names>
+            </name>
+            <name>
+              <surname>Mata</surname>
+              <given-names>J.P.</given-names>
+            </name>
+            <name>
+              <surname>K&#xF6;per</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>McGillivray</surname>
+              <given-names>D.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Structure of Soft and Hard Protein Corona around Polystyrene Nanoplastics&#x2014;Particle Size and Protein Types</article-title>
+          <source>Biointerphases</source>
+          <year>2020</year>
+          <volume>15</volume>
+          <fpage>051002</fpage>
+          <pub-id pub-id-type="doi">10.1116/6.0000404</pub-id>
+          <pub-id pub-id-type="pmid">32948094</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-nanomaterials-13-01404">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Walczyk</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Bombelli</surname>
+              <given-names>F.B.</given-names>
+            </name>
+            <name>
+              <surname>Monopoli</surname>
+              <given-names>M.P.</given-names>
+            </name>
+            <name>
+              <surname>Lynch</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Dawson</surname>
+              <given-names>K.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>What the Cell &#x201C;Sees&#x201D; in Bionanoscience</article-title>
+          <source>J. Am. Chem. Soc.</source>
+          <year>2010</year>
+          <volume>132</volume>
+          <fpage>5761</fpage>
+          <lpage>5768</lpage>
+          <pub-id pub-id-type="doi">10.1021/ja910675v</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-nanomaterials-13-01404">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Luo</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Du</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Zhong</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Protein-Coated Microplastics Corona Complex: An Underestimated Risk of Microplastics</article-title>
+          <source>Sci. Total Environ.</source>
+          <year>2022</year>
+          <volume>851</volume>
+          <fpage>157948</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.scitotenv.2022.157948</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25-nanomaterials-13-01404">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Du</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Shao</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Aging of Nanoplastics Significantly Affects Protein Corona Composition Thus Enhancing Macrophage Uptake</article-title>
+          <source>Environ. Sci. Technol.</source>
+          <year>2023</year>
+          <volume>57</volume>
+          <fpage>3206</fpage>
+          <lpage>3217</lpage>
+          <pub-id pub-id-type="doi">10.1021/acs.est.2c05772</pub-id>
+          <pub-id pub-id-type="pmid">36730723</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-nanomaterials-13-01404">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gon&#xE7;alves</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Martins</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Costa</surname>
+              <given-names>M.H.</given-names>
+            </name>
+            <name>
+              <surname>Costa</surname>
+              <given-names>P.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Development of a Method for the Detection of Polystyrene Microplastics in Paraffin-Embedded Histological Sections</article-title>
+          <source>Histochem. Cell Biol.</source>
+          <year>2018</year>
+          <volume>149</volume>
+          <fpage>187</fpage>
+          <lpage>191</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00418-017-1613-1</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27-nanomaterials-13-01404">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carpenter</surname>
+              <given-names>T.S.</given-names>
+            </name>
+            <name>
+              <surname>Kirshner</surname>
+              <given-names>D.A.</given-names>
+            </name>
+            <name>
+              <surname>Lau</surname>
+              <given-names>E.Y.</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>S.E.</given-names>
+            </name>
+            <name>
+              <surname>Nilmeier</surname>
+              <given-names>J.P.</given-names>
+            </name>
+            <name>
+              <surname>Lightstone</surname>
+              <given-names>F.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>A Method to Predict Blood-Brain Barrier Permeability of Drug-Like Compounds Using Molecular Dynamics Simulations</article-title>
+          <source>Biophys. J.</source>
+          <year>2014</year>
+          <volume>107</volume>
+          <fpage>630</fpage>
+          <lpage>641</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.bpj.2014.06.024</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-nanomaterials-13-01404">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Holl&#xF3;czki</surname>
+              <given-names>O.</given-names>
+            </name>
+          </person-group>
+          <article-title>Evidence for Protein Misfolding in the Presence of Nanoplastics</article-title>
+          <source>Int. J. Quantum. Chem.</source>
+          <year>2021</year>
+          <volume>121</volume>
+          <fpage>e26372</fpage>
+          <pub-id pub-id-type="doi">10.1002/qua.26372</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-nanomaterials-13-01404">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martinez</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Andrade</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Birgin</surname>
+              <given-names>E.G.</given-names>
+            </name>
+            <name>
+              <surname>Mart&#xED;nez</surname>
+              <given-names>J.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>PACKMOL: A Package for Building Initial Configurations for Molecular Dynamics Simulations</article-title>
+          <source>J. Comput. Chem.</source>
+          <year>2009</year>
+          <volume>30</volume>
+          <fpage>2157</fpage>
+          <lpage>2164</lpage>
+          <pub-id pub-id-type="doi">10.1002/jcc.21224</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30-nanomaterials-13-01404">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mart&#xED;nez</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Mart&#xED;nez</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Packing Optimization for Automated Generation of Complex System&#x2019;s Initial Configurations for Molecular Dynamics and Docking</article-title>
+          <source>J. Comput. Chem.</source>
+          <year>2003</year>
+          <volume>24</volume>
+          <fpage>819</fpage>
+          <lpage>825</lpage>
+          <pub-id pub-id-type="doi">10.1002/jcc.10216</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31-nanomaterials-13-01404">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marrink</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Risselada</surname>
+              <given-names>H.J.</given-names>
+            </name>
+            <name>
+              <surname>Yefimov</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Tieleman</surname>
+              <given-names>D.P.</given-names>
+            </name>
+            <name>
+              <surname>de Vries</surname>
+              <given-names>A.H.</given-names>
+            </name>
+          </person-group>
+          <article-title>The MARTINI Force Field: Coarse Grained Model for Biomolecular Simulations</article-title>
+          <source>J. Phys. Chem. B</source>
+          <year>2007</year>
+          <volume>111</volume>
+          <fpage>7812</fpage>
+          <lpage>7824</lpage>
+          <pub-id pub-id-type="doi">10.1021/jp071097f</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32-nanomaterials-13-01404">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mamatkulov</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Fyta</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Netz</surname>
+              <given-names>R.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Force Fields for Divalent Cations Based on Single-Ion and Ion-Pair Properties</article-title>
+          <source>J. Chem. Phys.</source>
+          <year>2013</year>
+          <volume>138</volume>
+          <fpage>024505</fpage>
+          <pub-id pub-id-type="doi">10.1063/1.4772808</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33-nanomaterials-13-01404">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lindahl</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Hess</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>van der Spoel</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>GROMACS 3.0: A Package for Molecular Simulation and Trajectory Analysis</article-title>
+          <source>J. Mol. Model.</source>
+          <year>2001</year>
+          <volume>7</volume>
+          <fpage>306</fpage>
+          <lpage>317</lpage>
+          <pub-id pub-id-type="doi">10.1007/s008940100045</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-nanomaterials-13-01404">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>van der Spoel</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Lindahl</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Hess</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Groenhof</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Mark</surname>
+              <given-names>A.E.</given-names>
+            </name>
+            <name>
+              <surname>Berendsen</surname>
+              <given-names>H.J.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>GROMACS: Fast, Flexible, and Free</article-title>
+          <source>J. Comput. Chem.</source>
+          <year>2005</year>
+          <volume>26</volume>
+          <fpage>1701</fpage>
+          <lpage>1718</lpage>
+          <pub-id pub-id-type="doi">10.1002/jcc.20291</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35-nanomaterials-13-01404">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pronk</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>P&#xE1;ll</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Schulz</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Larsson</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Bjelkmar</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Apostolov</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Shirts</surname>
+              <given-names>M.R.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>J.C.</given-names>
+            </name>
+            <name>
+              <surname>Kasson</surname>
+              <given-names>P.M.</given-names>
+            </name>
+            <name>
+              <surname>van der Spoel</surname>
+              <given-names>D.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>GROMACS 4.5: A High-Throughput and Highly Parallel Open Source Molecular Simulation Toolkit</article-title>
+          <source>Bioinformatics</source>
+          <year>2013</year>
+          <volume>29</volume>
+          <fpage>845</fpage>
+          <lpage>854</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btt055</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-nanomaterials-13-01404">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abraham</surname>
+              <given-names>M.J.</given-names>
+            </name>
+            <name>
+              <surname>Murtola</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Schulz</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>P&#xE1;ll</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>J.C.</given-names>
+            </name>
+            <name>
+              <surname>Hess</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Lindah</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Gromacs: High Performance Molecular Simulations through Multi-Level Parallelism from Laptops to Supercomputers</article-title>
+          <source>SoftwareX</source>
+          <year>2015</year>
+          <volume>1</volume>
+          <fpage>19</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.softx.2015.06.001</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B37-nanomaterials-13-01404">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>K&#xE4;stner</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Umbrella Sampling</article-title>
+          <source>Wiley Interdiscip. Rev. Comput. Mol. Sci.</source>
+          <year>2011</year>
+          <volume>1</volume>
+          <fpage>932</fpage>
+          <lpage>942</lpage>
+          <pub-id pub-id-type="doi">10.1002/wcms.66</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B38-nanomaterials-13-01404">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Souaille</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Roux</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Extension to the Weighted Histogram Analysis Method: Combining Umbrella Sampling with Free Energy Calculations</article-title>
+          <source>Comput. Phys. Commun.</source>
+          <year>2001</year>
+          <volume>135</volume>
+          <fpage>40</fpage>
+          <lpage>57</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0010-4655(00)00215-0</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B39-nanomaterials-13-01404">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gopinath</surname>
+              <given-names>P.M.</given-names>
+            </name>
+            <name>
+              <surname>Saranya</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Vijayakumar</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Mythili Meera</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Ruprekha</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Kunal</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Pranay</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Mukherjee</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Chandrasekaran</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Assessment on Interactive Prospectives of Nanoplastics with Plasma Proteins and the Toxicological Impacts of Virgin, Coronated and Environmentally Released-Nanoplastics</article-title>
+          <source>Sci. Rep.</source>
+          <year>2019</year>
+          <volume>9</volume>
+          <fpage>8860</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-019-45139-6</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B40-nanomaterials-13-01404">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Holl&#xF3;czki</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Gehrke</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Nanoplastics Can Change the Secondary Structure of Proteins</article-title>
+          <source>Sci. Rep.</source>
+          <year>2019</year>
+          <volume>9</volume>
+          <fpage>16013</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-019-52495-w</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B41-nanomaterials-13-01404">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Behnke</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>W&#xFC;rth</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Laux</surname>
+              <given-names>E.M.</given-names>
+            </name>
+            <name>
+              <surname>Hoffmann</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Resch-Genger</surname>
+              <given-names>U.</given-names>
+            </name>
+          </person-group>
+          <article-title>Simple Strategies towards Bright Polymer Particles via One-Step Staining Procedures</article-title>
+          <source>Dye. Pigment.</source>
+          <year>2012</year>
+          <volume>94</volume>
+          <fpage>247</fpage>
+          <lpage>257</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.dyepig.2012.01.021</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B42-nanomaterials-13-01404">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gonz&#xE1;lez-Acedo</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Garc&#xED;a-Recio</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Illescas-Montes</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Ramos-Torrecillas</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Melguizo-Rodr&#xED;guez</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Costela-Ruiz</surname>
+              <given-names>V.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Evidence from in Vitro and in Vivo Studies on the Potential Health Repercussions of Micro- and Nanoplastics</article-title>
+          <source>Chemosphere</source>
+          <year>2021</year>
+          <volume>280</volume>
+          <fpage>130826</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.chemosphere.2021.130826</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B43-nanomaterials-13-01404">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pr&#xFC;st</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Meijer</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Westerink</surname>
+              <given-names>R.H.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Plastic Brain: Neurotoxicity of Micro- and Nanoplastics</article-title>
+          <source>Part. Fibre Toxicol.</source>
+          <year>2020</year>
+          <volume>17</volume>
+          <fpage>24</fpage>
+          <pub-id pub-id-type="doi">10.1186/s12989-020-00358-y</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B44-nanomaterials-13-01404">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rist</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Baun</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Hartmann</surname>
+              <given-names>N.B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Ingestion of Micro- and Nanoplastics in Daphnia Magna&#x2014;Quantification of Body Burdens and Assessment of Feeding Rates and Reproduction</article-title>
+          <source>Environ. Pollut.</source>
+          <year>2017</year>
+          <volume>228</volume>
+          <fpage>398</fpage>
+          <lpage>407</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.envpol.2017.05.048</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B45-nanomaterials-13-01404">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shan</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Zeng</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>X.</given-names>
+            </name>
+          </person-group>
+          <article-title>Polystyrene Nanoplastics Penetrate across the Blood-Brain Barrier and Induce Activation of Microglia in the Brain of Mice</article-title>
+          <source>Chemosphere</source>
+          <year>2022</year>
+          <volume>298</volume>
+          <fpage>134261</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.chemosphere.2022.134261</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B46-nanomaterials-13-01404">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>S&#xF6;kmen</surname>
+              <given-names>T.&#xD6;.</given-names>
+            </name>
+            <name>
+              <surname>Sulukan</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>T&#xFC;rko&#x11F;lu</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Baran</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>&#xD6;zkaraca</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Ceyhun</surname>
+              <given-names>S.B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Polystyrene Nanoplastics (20 Nm) Are Able to Bioaccumulate and Cause Oxidative DNA Damages in the Brain Tissue of Zebrafish Embryo (Danio Rerio)</article-title>
+          <source>Neurotoxicology</source>
+          <year>2020</year>
+          <volume>77</volume>
+          <fpage>51</fpage>
+          <lpage>59</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuro.2019.12.010</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="display-objects">
+      <title>Figures and Table</title>
+      <fig id="nanomaterials-13-01404-f001" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Development of the distances between the polystyrene particle and the DOPC bilayer in the four simulations (z component of the distance vector between the centers of mass, <bold>above</bold>), and that of the radius of gyration versus time (<bold>below</bold>).</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="nanomaterials-13-01404-g001.tif"/>
+      </fig>
+      <fig id="nanomaterials-13-01404-f002" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p>Snapshots of the simulations showing the entry of the plastic particle with a corona of 150 cholesterol molecules into the DOPC bilayer, a model blood&#x2013;brain barrier (orange: hydrophobic moieties of the DOPC molecules; green: hydrophilic groups of the DOPC; dark grey: polystyrene; light grey: cholesterol). The nanoparticle approaches the membrane in the beginning of the simulation (<bold>above</bold>), and then spontaneously diffuses into its hydrophobic core, followed by the dissociation of its corona, and the disentanglement of the polymer chains by the end of the 1 &#x3BC;s run (<bold>below</bold>).</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="nanomaterials-13-01404-g002.tif"/>
+      </fig>
+      <fig id="nanomaterials-13-01404-f003" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p>Nanometer-scale PS plastic particles were detected in mouse brain only 2 h after administration. Representative immunofluorescence images of male mouse brains, control (Ctr) and 2 or 4 h after single dose MNP gavage. Tissue sections were counterstained with Dapi (blue). Arrows indicate green fluorescent nanoplastic particles (0.293 &#xB1; 0.008 &#xB5;m). Scale bar 20 &#xB5;m.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="nanomaterials-13-01404-g003.tif"/>
+      </fig>
+      <table-wrap id="nanomaterials-13-01404-t001" position="float">
+        <object-id pub-id-type="pii">nanomaterials-13-01404-t001_Table 1</object-id>
+        <label>Table 1</label>
+        <caption>
+          <p>Matrix-induced change of the zeta potential, average size and polydispersity index of 1 &#xB5;m sized PS particles at pH 7.4 and 25 &#xB0;C.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Particles</th>
+              <th align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin"> </th>
+              <th align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin">&#x3B6;-Potential <break/>(mV)</th>
+              <th align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Average Size <break/>(nm)</th>
+              <th align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin">PDI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" valign="middle">1.14 &#xB1; 0.03 &#xB5;m</td>
+              <td align="left" valign="middle">H<sub>2</sub>O (0.55 &#xB5;S)</td>
+              <td align="left" valign="middle">&#x2212;67.81</td>
+              <td align="left" valign="middle">1206</td>
+              <td align="left" valign="middle">0.01031</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle"> </td>
+              <td align="left" valign="middle">PBS</td>
+              <td align="left" valign="middle">&#x2212;45.89</td>
+              <td align="left" valign="middle">1259</td>
+              <td align="left" valign="middle">0.07191</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="border-bottom:solid thin"> </td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">RPMI-1640 (fs)</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">&#x2212;14.03</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">1419</td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">0.05526</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>fs = fully supplemented.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+    </sec>
+    <fn-group>
+      <fn>
+        <p><bold>Disclaimer/Publisher&#x2019;s Note:</bold> The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>

@@ -1,0 +1,45 @@
+Here is the resulting JSON object:
+
+```
+{
+  "nodes": [
+    {
+      "id": "air pollution",
+      "type": "Source",
+      "label": "Air Pollution",
+      "attributes": {}
+    },
+    {
+      "id": "microplastics",
+      "type": "Polymer",
+      "label": "Microplastics",
+      "attributes": {}
+    },
+    {
+      "id": "dementia",
+      "type": "ClinicalOutcome",
+      "label": "Dementia",
+      "attributes": {}
+    },
+    {
+      "id": "neurological health",
+      "type": "ClinicalOutcome",
+      "label": "Neurological Health",
+      "attributes": {}
+    },
+    {
+      "id": "Synthetic Textiles",
+      "type": "Source",
+      "label": "Synthetic Textiles",
+      "attributes": {}
+    }
+  ],
+  "relationships": [
+    {"source": "air pollution", "relation_type": "emits_to", "target": "microplastics"},
+    {"source": "microplastics", "relation_type": "produces", "target": "dementia"},
+    {"source": "microplastics", "relation_type": "has_polymer", "target": "air pollution"}
+  ]
+}
+```
+
+Note that I've only included nodes and relationships that are directly mentioned in the abstract, or can be inferred from it. Let me know if you'd like me to clarify any of the decisions made here!
