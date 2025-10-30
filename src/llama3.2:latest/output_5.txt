@@ -1,0 +1,80 @@
+Here is the resulting JSON object:
+
+```
+{
+  "nodes": [
+    {
+      "id": "Phthalates",
+      "type": "Polymer",
+      "label": "Phthalates"
+    },
+    {
+      "id": "Bisphenols",
+      "type": "Polymer",
+      "label": "Bisphenols"
+    },
+    {
+      "id": "Organotins",
+      "type": "Polymer",
+      "label": "Organotins"
+    },
+    {
+      "id": "PET",
+      "type": "Polymer",
+      "label": "PET"
+    },
+    {
+      "id": "Spring Water",
+      "type": "EnvironmentalCompartment",
+      "label": "Spring Water"
+    },
+    {
+      "id": "Human Stool",
+      "type": "ObservationTarget",
+      "label": "Human Stool"
+    },
+    {
+      "id": "Fetus",
+      "type": "TissueOrgan",
+      "label": "Fetus"
+    },
+    {
+      "id": "Placenta",
+      "type": "TissueOrgan",
+      "label": "Placenta"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Inhalation of indoor air and ingestion of drinking water bottled in plastic",
+      "relation_type": "exposure route",
+      "target": "Phthalates",
+      "label": "Exposure to Phthalates"
+    },
+    {
+      "source": "Bottles and medical devices",
+      "relation_type": "source of exposure",
+      "target": "PET",
+      "label": "Exposure to PET"
+    },
+    {
+      "source": "Human Stool",
+      "relation_type": "measured in",
+      "target": "Fetus",
+      "label": "Maternal transfer of MPs to the developing fetus"
+    },
+    {
+      "source": "Inhalation of indoor air and ingestion of drinking water bottled in plastic",
+      "relation_type": "exposure route",
+      "target": "Bisphenols",
+      "label": "Exposure to Bisphenols"
+    },
+    {
+      "source": "Organotins",
+      "relation_type": "addeditive in plastics",
+      "target": "Human Stool",
+      "label": "Exposure to Organotins"
+    }
+  ]
+}
+```

@@ -1,0 +1,47 @@
+Here is the output in the requested format:
+
+```
+{
+  "nodes": [
+    {
+      "id": "Polyethylene",
+      "type": "Polymer",
+      "label": "Polyethylene"
+    },
+    {
+      "id": "PET",
+      "type": "Polymer",
+      "label": "PET"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ExposurePathway",
+      "relation_type": "context_for",
+      "target": "ClinicalOutcome"
+    },
+    {
+      "source": "ExposurePathway",
+      "relation_type": "links",
+      "target": "EnvironmentalCompartment"
+    },
+    {
+      "source": "EnvironmentalCompartment",
+      "relation_type": "contains",
+      "target": "Sample"
+    },
+    {
+      "source": "TissueOrgan",
+      "relation_type": "shows_effect",
+      "target": "Biomarker"
+    },
+    {
+      "source": "TissueOrgan",
+      "relation_type": "result_of",
+      "target": "ExposurePathway"
+    }
+  ]
+}
+```
+
+Note that I inferred the nodes and relationships based on the abstract, using only concrete features mentioned. I did not invent any new nodes or relationships without direct evidence in the abstract.
