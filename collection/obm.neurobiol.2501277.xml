@@ -1,0 +1,2150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.3 20210610//EN" "JATS-journalpublishing1-3.dtd">
+<article 
+  article-type="review-article" 
+  dtd-version="1.3" 
+  xml:lang="en"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML" 
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <processing-meta
+    tagset-family="jats"
+    base-tagset="publishing"
+    mathml-version="2.0"
+    table-model="xhtml"/>
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">OBM Neurobiology</journal-id>
+            <journal-title-group>
+                <journal-title>OBM Neurobiology</journal-title>
+                <abbrev-journal-title>OBM Neurobiol</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="epub">2573-4407</issn>
+            <issn-l>2573-4407</issn-l>
+            <publisher>
+                <publisher-name>LIDSEN Publishing Inc.</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="publisher-id">neurobiology-09-01-277</article-id>
+            <article-id pub-id-type="publisher-id">OBM Neurobiology</article-id>
+            <article-id pub-id-type="doi">10.21926/obm.neurobiol.2501277</article-id>
+            <article-categories>
+                <subj-group subj-group-type="heading">
+                    <subject>Review</subject>
+                </subj-group>
+            </article-categories>
+            <title-group>
+                <article-title>Neurotoxicity Following Exposure to Micro and Nanoplastics</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Ehsanifar</surname>
+                        <given-names>Mojtaba</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="aff-01">1</xref>
+                    <xref rid="cor-01" ref-type="corresp"><sup>&#x002A;</sup></xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Yavari</surname>
+                        <given-names>Zeinab</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="aff-02">2</xref>
+                </contrib>
+                <aff id="aff-01"><label>1</label>Department of Environmental Health, Torbat Jam Faculty of Medical Sciences, Torbat Jam, Iran; E-Mail: <email>Ehsanifar@gmail.com</email></aff>
+                <aff id="aff-02"><label>2</label>Department of Civil and Architectural Engineering, College of Engineering, Sultan Qaboos University, Muscat, Oman; E-Mail: <email>z.yavari@squ.edu.om</email></aff>
+            </contrib-group>
+            <contrib-group>
+                <contrib contrib-type="editor">
+                    <name>
+                        <surname>Barker</surname>
+                        <given-names>Lynne Ann</given-names>
+                    </name>
+                    <role>Academic Editor</role>
+                </contrib>
+            </contrib-group>
+            <author-notes>
+                <corresp id="cor-01"><label>&#x002A;</label>Correspondence: Mojtaba Ehsanifar; E-Mail: <email>Ehsanifar@gmail.com</email></corresp>
+            </author-notes> 
+            <pub-date date-type="pub" publication-format="electronic" iso-8601-date="2025-03-16">
+                <day>16</day>
+                <month>03</month>
+                <year>2025</year>
+            </pub-date> 
+            <volume>9</volume>
+            <issue>1</issue>
+            <elocation-id>277</elocation-id>
+            <history>
+                <date date-type="received" iso-8601-date="2024-12-13">
+                    <day>13</day>
+                    <month>12</month>
+                    <year>2024</year>
+                </date>
+                <date date-type="accepted" iso-8601-date="2025-03-04">
+                    <day>04</day>
+                    <month>03</month>
+                    <year>2025</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>&#xA9; 2025 by the authors.</copyright-statement>
+                <copyright-year>2025</copyright-year>
+                <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0/">
+                    <license-p>This is an open access article distributed under the conditions of the Creative Commons by Attribution License, which permits unrestricted use, distribution, and reproduction in any medium or format, provided the original work is correctly cited.</license-p>
+                </license>      
+            </permissions>
+            <abstract>
+                <p>The pervasive presence and enduring existence of micro and nanoplastics in the environment render their exposure to humans and aquatic creatures unavoidable. Research indicates these tiny plastic particles can be taken in by aquatic beings and mammals. Once within the body, micro and nanoplastics have the capability to infiltrate the brain, although the level of penetration and the subsequent neurotoxic effects are not fully explored. Previous studies indicate that metal (oxide) nanoparticles can enter the brain and induce neurotoxic effects. Given the chemical resemblances between plastic particles and inert metal (oxide) nanoparticles, this review aims to summarize existing studies on the neurotoxic implications of nanoplastics across various species and in vitro settings. The current evidence, although incomplete, suggests that exposure to nanoplastics may lead to oxidative stress, potentially causing cell damage and raising the risk of developing neurological disorders. Moreover, such exposure could inhibit acetylcholinesterase activity and alter neurotransmitter levels, potentially contributing to observed behavioral changes. There is a notable lack of systematic comparison regarding the neurotoxic effects stemming from different particle types, shapes, and sizes at various concentrations and durations of exposure. Understanding these aspects is essential for further evaluating the neurotoxic danger and risk associated with nanoplastics.</p>
+            </abstract>
+            <kwd-group>
+                <title>Keywords</title>
+                <kwd>Neurotoxicity</kwd>
+                <kwd>microplastic</kwd>
+                <kwd>nanoplastic</kwd>
+                <kwd>oxidative stress</kwd>
+                <kwd>nanoparticles</kwd>
+            </kwd-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec id="sec-01">
+            <label>1.</label>
+            <title>Introduction</title>
+            <p>Plastics are crucial in producing various products, including packaging materials, pharmaceuticals, cosmetics, textiles, masks, and surgical instruments [<xref ref-type="bibr" rid="B-001">1</xref>,<xref ref-type="bibr" rid="B-002">2</xref>,<xref ref-type="bibr" rid="B-003">3</xref>]. Their widespread application can be attributed to their adaptability, strength, water resistance, cost-effectiveness, and ease of production with minimal energy use [<xref ref-type="bibr" rid="B-001">1</xref>,<xref ref-type="bibr" rid="B-002">2</xref>]. These attributes make plastics an excellent choice for fabricating medical devices such as syringes, IV bags, medical packaging, artificial joints, and prosthetics, as well as food storage solutions and other plastic goods [<xref ref-type="bibr" rid="B-004">4</xref>]. Despite these benefits, plastics face criticism due to environmental and health concerns stemming from their long-lasting nature, widespread presence, and potential to contaminate food and water sources for animals [<xref ref-type="bibr" rid="B-001">1</xref>,<xref ref-type="bibr" rid="B-004">4</xref>]. Plastics gained traction alongside the Industrial Revolution, expanding significantly as a consumer product since the 1930s and 1940s. Between 1975 and 2012, global plastic resin production jumped by 620%, reaching 288 million tons [<xref ref-type="bibr" rid="B-005">5</xref>]. Consequently, plastic waste surged from 275 million tons in 2010 to 335 million tons by 2017 [<xref ref-type="bibr" rid="B-005">5</xref>,<xref ref-type="bibr" rid="B-006">6</xref>], posing a grave threat to human health due to its largely unsustainable usage patterns [<xref ref-type="bibr" rid="B-004">4</xref>]. In the U.S., the recycling rate for plastics is merely 8.8% [<xref ref-type="bibr" rid="B-007">7</xref>]. Plastics' slow decomposition remains problematic, as single-use plastics like LDPE bags may take up to 250 years to break down in landfills or natural environments [<xref ref-type="bibr" rid="B-008">8</xref>]. By 2025, it is expected that 192 countries' coasts within 50 km will accumulate around 250 million tons of poorly managed marine plastic waste [<xref ref-type="bibr" rid="B-005">5</xref>]. Over time, these enduring plastics fragment into microplastics and nanoplastics-tiny particles with variable chemical structures formed through degradation processes [<xref ref-type="bibr" rid="B-009">9</xref>,<xref ref-type="bibr" rid="B-010">10</xref>,<xref ref-type="bibr" rid="B-011">11</xref>]. Microplastics and nanoplastics, present everywhere, from the atmosphere to aquatic systems, pose threats due to their minute size and diverse shapes, including fibers, foams, beads, and fragments [<xref ref-type="bibr" rid="B-012">12</xref>]. Interestingly, spherical microplastics may cause fewer gut health issues than irregular ones [<xref ref-type="bibr" rid="B-013">13</xref>]. Although there is debate over the size categories of plastic debris, classifications typically include macroplastics (2.5-100 cm), mesoplastics (0.1-2.5 cm), microplastics (1000 &#x03BC;m-1 &#x00B5;m), and nanoplastics (&#x003C;1 &#x00B5;m) [<xref ref-type="bibr" rid="B-014">14</xref>,<xref ref-type="bibr" rid="B-015">15</xref>,<xref ref-type="bibr" rid="B-016">16</xref>], with some sources defining micro- and nanoplastics as slightly different ranges "small microplastics" (1 &#x00B5;m to &#x003C;100 &#x00B5;m), "sub-micron plastics" (100 nm - &#x003C;1 &#x00B5;m), "nanoplastics" (1 nm to &#x003C;100 nm) [<xref ref-type="bibr" rid="B-017">17</xref>,<xref ref-type="bibr" rid="B-018">18</xref>], or 100 nm-1 nm [<xref ref-type="bibr" rid="B-019">19</xref>,<xref ref-type="bibr" rid="B-020">20</xref>]. However, there is a significant gap in understanding regarding the dimensions, architecture, and cost of micro- and nanoplastics. The toxicological impacts of micro- and nanoplastics on human organs, their cellular absorption pathways, and the underlying molecular mechanisms remain underexplored due to the scant and often inconsistent scientific literature. This study aims to provide an overview of the potential entry of microplastics and nanoplastics into the body and then into the brain and to link exposure and the physicochemical properties of the particles with neurological diseases. In addition, it also provides insights into the mechanisms of the effects of microplastics and nanoplastics on the diseases above.</p>
+        </sec>
+        <sec id="sec-02">
+            <label>2.</label>
+            <title>Methodology</title>
+            <p>A systematic search was conducted across multiple databases, including PubMed, Scopus, and Web of Science, using keywords such as combinations such as Neurotox AND Nanoplastic, Neurotox AND Microplastic, and Neurotox AND plastic particles, neuroinflammation, and oxidative stress markers. The review includes studies published between 2015 and 2024, ensuring that the most current findings are represented. The inclusion criteria were focused on peer-reviewed articles that involved both animal and human models and specifically examined micro and nanoplastics's effects on oxidative stress and neuroinflammation. Studies unrelated to micro and nanoplastics, those involving other pollutants classes, or those lacking molecular insights were excluded. The selected studies were synthesized to assess consistent findings on micro and nanoplastics's ability to induce oxidative stress, including the production of reactive oxygen species (ROS) and lipid peroxidation, as well as its endocrine-disrupting effects on the hypothalamic-pituitary-adrenal (HPA) axis, thyroid function, and other hormonal pathways. Special attention was given to studies addressing micro and nanoplastics's persistence in the environment and their potential for cumulative toxicity through prolonged exposure.</p>
+        </sec>
+        <sec id="sec-03">
+            <label>3.</label>
+            <title>Comparison with Prior Studies</title>
+            <p>While micro and nanoplastics's toxicological effects have been well documented, previous reviews have not thoroughly addressed micro and nanoplastics's interaction with other environmental contaminants or its long-term impact at sub-lethal doses. This review fills these gaps by focusing on micro and nanoplastics's dual role in oxidative stress and endocrine disruption. It also provides a more detailed exploration of micro and nanoplastics's molecular mechanisms, which have mainly been underexplored in earlier work. The integration of recent findings on micro and nanoplastics's environmental persistence and the risks of chronic exposure further distinguishes this review from past analyses, offering a more comprehensive understanding of micro and nanoplastics toxicity.</p>
+        </sec>
+        <sec id="sec-04">
+            <label>4.</label>
+            <title>Ways to Microplastics and Nanoplastics Exposure</title>
+            <p>Recently, the frequent use of plastic has been pinpointed as a substantial contributor to micro and nanoplastics pollution, capturing the focus of environmentalists and medical scholars [<xref ref-type="bibr" rid="B-021">21</xref>]. This pollution is a pressing global issue due to its threat across ecosystems. It includes humans, who face exposure through food, drinking water, inhaled air, and skin contact via cosmetic and pharmaceutical products [<xref ref-type="bibr" rid="B-022">22</xref>]. Research indicates that micro- and nanoplastics are harmful in environmental and laboratory contexts, impacting experimental animal models, cellular assays, and various aquatic and land animal species [<xref ref-type="bibr" rid="B-023">23</xref>,<xref ref-type="bibr" rid="B-024">24</xref>,<xref ref-type="bibr" rid="B-025">25</xref>]. Humans face exposure to these micro- and nanoplastics predominantly through consuming marine animals and other food commodities contaminated with these particles, including everyday consumer products like toothpaste, beer, honey, salt, and sugar [<xref ref-type="bibr" rid="B-026">26</xref>,<xref ref-type="bibr" rid="B-027">27</xref>]. In addition to food sources, humans ingest these plastics through water consumption, mainly mineral and drinking water stored in plastic bottles and cartons [<xref ref-type="bibr" rid="B-026">26</xref>,<xref ref-type="bibr" rid="B-027">27</xref>]. Beyond ingestion, inhalation poses another exposure route, as micro- and nanoplastics can be released from textiles, synthetic rubber tires, and plastic coatings [<xref ref-type="bibr" rid="B-026">26</xref>,<xref ref-type="bibr" rid="B-027">27</xref>,<xref ref-type="bibr" rid="B-028">28</xref>]. Rodent studies over the years have documented the presence of these minuscule particles, particularly those 0.3 &#x03BC;m or smaller, which have been shown to transit to vital organs like the liver and spleen, and systems like the lymphatic system, though at minimal levels [<xref ref-type="bibr" rid="B-029">29</xref>,<xref ref-type="bibr" rid="B-030">30</xref>,<xref ref-type="bibr" rid="B-031">31</xref>]. There is compelling evidence indicating that micro-scale plastic fibers have made their way into human lung tissues, implying the possibility of these micro- and nanoplastic particles entering the body through inhalation processes [<xref ref-type="bibr" rid="B-032">32</xref>,<xref ref-type="bibr" rid="B-033">33</xref>]. This concern extends further, as certain studies have documented the slight absorption of biodegradable polymeric microparticles when ingested via the gastrointestinal tract [<xref ref-type="bibr" rid="B-034">34</xref>]. While these investigative efforts collectively underscore the potential for micro- and nanoplastic entry into the human body through both inhalation and ingestion [<xref ref-type="bibr" rid="B-035">35</xref>], there remains a significant shortfall in research that meticulously examines how these particles are dispersed throughout the body, specifically across various organs, based on differences in particle dose and size. Moreover, the health implications associated with exposure to, absorption of, and the transport mechanisms of micro- and nanoplastics within the human body have not been thoroughly explored, making this a central issue in current scientific discussions and debate [<xref ref-type="bibr" rid="B-024">24</xref>,<xref ref-type="bibr" rid="B-026">26</xref>,<xref ref-type="bibr" rid="B-036">36</xref>].</p>
+        </sec>
+        <sec id="sec-05">
+            <label>5.</label>
+            <title>Microplastics and Nanoplastics Effects on the Nervous System</title>
+            <p>Due to the constraints in obtaining human tissue samples, the repercussions of microplastics and nanoplastics on human health remain inadequately comprehended [<xref ref-type="bibr" rid="B-037">37</xref>]. The human nervous system, a sophisticated network with numerous neurons, oversees various physiological functions [<xref ref-type="bibr" rid="B-038">38</xref>]. Despite the limited research on how microplastics and nanoplastics impact the nervous system, there is potential for nanoplastics to breach physiological barriers like the BBB [<xref ref-type="bibr" rid="B-039">39</xref>]. The transport and build-up of these particles in the brain can result in different types of damage, heightening the brain's susceptibility to neurological disorders by causing oxidative stress [<xref ref-type="bibr" rid="B-040">40</xref>]. Research indicates that microplastics and nanoplastics have detrimental effects on the nervous system, potentially leading to neurodegeneration. Studies have observed that nanoplastics contribute to neurotoxicity by disrupting typical neuron arrangements and characteristics in the cerebral cortex, signified by nuclear pyknosis. In particular, mouse brain tissues exposed to PS-NH2 showed increased caspase-3 signals, a marker for neuron cell apoptosis. Additionally, cytokines like TNF-&#x03B1; and IL-6 were upregulated in these tissues, hinting at inflammation caused by cytokine presence [<xref ref-type="bibr" rid="B-041">41</xref>]. In the case of European seabass, exposure to microplastics reduced the release of the enzyme acetylcholinesterase (AChE), triggered oxidative stress and lipid peroxidation, and forced a shift towards anaerobic energy pathways, which subsequently led to irregular swimming behavior [<xref ref-type="bibr" rid="B-042">42</xref>]. When neural cells were subjected to these particles, toxicity was induced and the metabolic rate decreased. These adverse effects of microplastics and nanoplastics appear to stem from the build-up of immune cells activated within the brain, oxidative stress, and heightened levels of inflammatory cytokines in circulation, particularly TNF-&#x03B1; and IL-6 [<xref ref-type="bibr" rid="B-041">41</xref>,<xref ref-type="bibr" rid="B-043">43</xref>]. Other research supports the neurotoxic impact of these particles [<xref ref-type="bibr" rid="B-044">44</xref>,<xref ref-type="bibr" rid="B-045">45</xref>], such as findings by O'Donovan et al., [<xref ref-type="bibr" rid="B-046">46</xref>] which demonstrated that LDPE microplastic particles in clams could lead to neurotoxicity by altering acetylcholinesterase activity or by infiltrating the brain and causing oxidative stress, culminating in cellular damage that can cause neurodegenerative and neurodevelopmental issues [<xref ref-type="bibr" rid="B-047">47</xref>].</p>
+        </sec>
+        <sec id="sec-06">
+            <label>6.</label>
+            <title>Neurotoxicity of Nanoparticles</title>
+            <p>Metal (oxide) nanoparticles are prevalent in various fields, including food production, personal care products, cosmetics, and biomedical therapy, where they're utilized for drug delivery and gene therapy [<xref ref-type="bibr" rid="B-048">48</xref>,<xref ref-type="bibr" rid="B-049">49</xref>,<xref ref-type="bibr" rid="B-050">50</xref>,<xref ref-type="bibr" rid="B-051">51</xref>]. The impact of these nanoparticles has been extensively studied, with the central nervous system identified as a crucial target for their toxic effects [<xref ref-type="bibr" rid="B-052">52</xref>,<xref ref-type="bibr" rid="B-053">53</xref>,<xref ref-type="bibr" rid="B-054">54</xref>]. These nanoparticles can infiltrate the brain, primarily by traversing the blood-brain barrier (BBB) or through retrograde transport via the olfactory nerve endings [<xref ref-type="bibr" rid="B-047">47</xref>,<xref ref-type="bibr" rid="B-055">55</xref>,<xref ref-type="bibr" rid="B-056">56</xref>,<xref ref-type="bibr" rid="B-057">57</xref>]. The properties of different metal and metal oxide nanoparticles vary widely; intriguingly, some of their physicochemical properties are akin to those observed in plastic particles. Notably, specific metal nanoparticles exhibit high reactivity, capable of inciting oxidative stress and subsequent damage. Notable examples include iron oxide [<xref ref-type="bibr" rid="B-058">58</xref>,<xref ref-type="bibr" rid="B-059">59</xref>], silver [<xref ref-type="bibr" rid="B-060">60</xref>,<xref ref-type="bibr" rid="B-061">61</xref>], and copper oxide [<xref ref-type="bibr" rid="B-062">62</xref>,<xref ref-type="bibr" rid="B-063">63</xref>]. Gold (Au) and titanium dioxide (TiO<sub>2</sub>) nanoparticles closely align with the criteria for hemistry. This is a critical trait when evaluating metal (oxide) nanoparticles alongside plastic micro- and nanoparticles [<xref ref-type="bibr" rid="B-028">28</xref>,<xref ref-type="bibr" rid="B-064">64</xref>,<xref ref-type="bibr" rid="B-065">65</xref>]. Studies have demonstrated that gold nanoparticles can penetrate brain tissues in adult zebrafish and rats. Within these tissues, they are capable of causing oxidative stress, altering energy and mitochondrial metabolism, affecting acetylcholinesterase (AChE) activity, and influencing neurobehavioral functions [<xref ref-type="bibr" rid="B-066">66</xref>,<xref ref-type="bibr" rid="B-067">67</xref>,<xref ref-type="bibr" rid="B-068">68</xref>].</p>
+            <p>Similarly, among the various types of TiO<sub>2</sub> nanoparticles, the most extensively researched are those that enter the brains of aquatic creatures like fish. Here, they can trigger oxidative damage, increase cell mortality, impact neurotransmitter levels, affect motor activity, and alter spatial recognition abilities [<xref ref-type="bibr" rid="B-069">69</xref>,<xref ref-type="bibr" rid="B-070">70</xref>,<xref ref-type="bibr" rid="B-071">71</xref>,<xref ref-type="bibr" rid="B-072">72</xref>]. In rodent models, exposure through the oral, intranasal, or intratracheal routes to TiO<sub>2</sub> nanoparticles (sizing between 5 to 100 nm) has been linked to oxidative stress and neuroinflammation [<xref ref-type="bibr" rid="B-073">73</xref>,<xref ref-type="bibr" rid="B-074">74</xref>]. Such exposure disrupts glutamatergic pathways, modifies neurotransmitter levels [<xref ref-type="bibr" rid="B-073">73</xref>,<xref ref-type="bibr" rid="B-075">75</xref>,<xref ref-type="bibr" rid="B-076">76</xref>], changes AChE activity [<xref ref-type="bibr" rid="B-074">74</xref>,<xref ref-type="bibr" rid="B-075">75</xref>], hinders motor skills [<xref ref-type="bibr" rid="B-077">77</xref>], reduces long-term potentiation, and hampers learning and memory recall [<xref ref-type="bibr" rid="B-075">75</xref>,<xref ref-type="bibr" rid="B-078">78</xref>]. Further in vitro experiments have reinforced the capability of TiO<sub>2</sub> nanoparticles to incite oxidative stress and neuroinflammation [<xref ref-type="bibr" rid="B-079">79</xref>,<xref ref-type="bibr" rid="B-080">80</xref>,<xref ref-type="bibr" rid="B-081">81</xref>,<xref ref-type="bibr" rid="B-082">82</xref>]. Despite specific effects of gold and TiO<sub>2</sub> nanoparticles being observed only after substantial doses or non-natural administration methods (like injections), these nanoparticles can nonetheless reach the brain and impose an array of neuroprotective impacts. The degree to which these findings are relevant to micro- and nanoplastics remains largely unexplored. Given the prevalent nature of micro- and nanoplastics and considering the evident neurotoxic effects tied to gold and TiO<sub>2</sub> nanoparticles of comparable size and chemical neutrality, this review delves into the potential of these plastics to offer neuroprotection.</p>
+        </sec>
+        <sec id="sec-07">
+            <label>7.</label>
+            <title>Microplastics and Nanoplastics Neurotoxic Effects on Marine Invertebrates</title>
+            <p>Caenorhabditis elegans were subjected to five different spherical polystyrene microplastic sizes (0.1-5 &#x03BC;m) in a culture medium at 1 mg/L concentration. This led to excitotoxicity affecting their movement, lowered survival rates, and decreased average lifespan, with the most pronounced effects observed with exposure to 1.0 &#x03BC;m size particles. Additionally, the expression of several neuronal genes declined, which was linked to disruptions in cholinergic and GABA neurons and increased oxidative stress. However, there is no direct proof of the ingestion of these microplastics by C. elegans [<xref ref-type="bibr" rid="B-083">83</xref>,<xref ref-type="bibr" rid="B-084">84</xref>]. Earthworms (Eisenia fetida) exposed to low-density polyethylene particles ranging from 100-200 &#x03BC;m (0.1-1.5 g/kg soil) for a period of up to 28 days within artificial soil, exhibited skin damage, particularly at 1.5 g/kg soil exposure level. Upon analyzing and quantifying polyethylene particles, their uptake (after 14-28 days at 1.5 g/kg soil) was confirmed, yet the detailed distribution of the particles inside the earthworms remains unclear. When exposed to polyethylene particles at a level of 1.0 g/kg soil for 28 days, an increase in catalase activity and malondialdehyde levels was noted, suggesting oxidative stress in these organisms. Notably, exposure levels of 1.0 and 1.5 g/kg soil for 21 and 28 days, respectively, also led to higher AChE activity [<xref ref-type="bibr" rid="B-085">85</xref>]. Freshwater zebra mussels, known as Dreissena polymorpha, were exposed to pristine polystyrene microbeads of two sizes (1 &#x03BC;m and 10 &#x03BC;m) at concentrations of 1 and 4 &#x00D7; 10<sup>6</sup> MPs/L for six days. This led to the accumulation of particles within the gut lumen and further movement to tissues and hemolymph, as observed with confocal microscopy. Importantly, these polystyrene microbeads did not cause genotoxic effects. While both bead sizes boosted dopamine levels, other parameters such as serotonin, glutamate levels, and activities of monoamine oxidase and AChE remained unchanged. Interestingly, the lower-dose mix enhanced catalase activity, lowering glutathione peroxidase and pointing towards moderate cellular stress [<xref ref-type="bibr" rid="B-086">86</xref>]. In a different study involving the bivalve Scrobicularia plana, exposure to 20 &#x03BC;m polystyrene microplastics at a concentration of 1 mg/L resulted in particles being detected in the hemolymph, digestive gland, and gills using light microscopy and infrared spectroscopy. A 7-day exposure to these microplastics in the gills led to sustained increases in superoxide dismutase (SOD) activity and a rise in Glutathione-S-transferase (GST) activity by the end of the exposure, suggesting oxidative stress. During the exposure period of 3 to 14 days, along with post-excretion, a decrease in AChE and lipid peroxidation (LPO) activities was noted in the gills. In the digestive gland, from day 14, SOD activity was elevated, whereas catalase activity was reduced [<xref ref-type="bibr" rid="B-087">87</xref>]. Myetilus gallopro-vincialis (Mediterranean Mussels) were subjected to polystyrene microplastics (0.11 &#x03BC;m, 0.005-50 mg/L) for 96 hours, resulting in notable deviations in the genes' expression linked to biotransformation, cellular stress response, and innate immunity. Distinct responses were observed in the gills (hsp70 at 50 mg/L) and digestive glands (cyp11 at 0.5 mg/L, cyp32 at 5 mg/L, cat at 0.05 and 0.5 mg/L, lys at 5 mg/L). While there wasn't an evident pattern of dose dependence, the mean DNA damage increased with exposure concentrations ranging from 0.05-50 mg/L. There was a reduced cholinesterase activity in the hemolymph at concentrations between 0.05-0.5 mg/L, though no further signs of neurotoxicity were noted. However, there's a lack of evidence concerning the actual uptake of polystyrene microplastics [<xref ref-type="bibr" rid="B-088">88</xref>]. Exposure of the same species to both unpolluted and pyrene-contaminated polyethylene and polystyrene microplastics (100 &#x03BC;m, 1.5 g/L) over seven days led to the introduction of plastic particles within the hemolymph, gills, and intestines, identified through polarized light microscopy. This exposure decreased AChE activity in the gills but not in the hemolymph, also inducing nuclear alterations and DNA damage. Pyrene did not amplify the AChE activity inhibition [<xref ref-type="bibr" rid="B-089">89</xref>]. Corbicula flumina (Asian Freshwater Mussels), when exposed to red fluorescent polymeric microspheres (composition unspecified; 1-5 &#x03BC;m, 0.2 or 0.7 mg/L) for 96 hours, showed plastic particles inside the digestive tract, gland's lumen, connective tissue, hemolymphatic sinuses, and the surface of the gills using light and fluorescent microscopy. Exposure at 0.2 mg/L significantly reduced cholinesterase activity, heightened with florfenicol exposure [<xref ref-type="bibr" rid="B-090">90</xref>]. In another study, these mussels exposed to red fluorescent polymeric microspheres (1-5 &#x03BC;m, 0.13 mg/L) for eight days had increased presence of particles in their digestive tract and gills. The exposure diminished cholinesterase activity and elevated LPO levels, signifying oxidative damage. The effects were reversible after six days of recovery and, surprisingly, were mitigated by simultaneous mercury exposure [<xref ref-type="bibr" rid="B-091">91</xref>]. The exposure of both striped shrimp (Amphibia lanu amphitrite) and brine shrimp (Artemia Franciscan) larvae to 0.1 &#x03BC;m fluorescent polystyrene microparticles, at concentrations ranging from 0.001 to 10 mg/L, over periods of 24 to 48 hours led to plastic particles being detectable within them through fluorescence microscopy. Yet, it remains uncertain whether these particles can penetrate further into surrounding tissues. When exposed to microplastics at concentrations of 1 mg/L or higher for 48 hours, noticeable alterations in the larvae's swimming speeds were observed. Furthermore, the microplastic exposure resulted in various influences on enzyme activities. Notably, there was a significant increase in catalase activity, more evident at a higher concentration of 1 mg/L. In contrast, the influence on cholinesterases, such as acetylcholinesterase and propionylcholinesterase, showed no clear pattern of dose dependency [<xref ref-type="bibr" rid="B-092">92</xref>].</p>
+            <p>Exposure of brine shrimp larvae (Artemia Francesca) to amino-modified polystyrene nanoparticles, with a size of 50 nm, at concentrations of 0.1 to 10 &#x03BC;g/mL over either 48 hours or 14 days caused a decrease in GST and catalase activity. This reduction suggests oxidative stress, along with inhibition of carboxylation and ChE carboxylation processes, particularly at a 1 &#x03BC;g/mL concentration. Unfortunately, despite these effects, there was no substantial evidence to confirm the actual uptake of these polystyrene nanoparticles by the larvae [<xref ref-type="bibr" rid="B-093">93</xref>].</p>
+        </sec>
+        <sec id="sec-08">
+            <label>8.</label>
+            <title>Microplastics and Nanoplastics Neurotoxic Effects in Rodents</title>
+            <p>In contrast to the extensive rodent in vivo research available for metal(oxide) nanoparticles, studies delving into the micro- and nanoplastics neurotoxicity in rodents are notably scarce, with only two such investigations. This scarcity is particularly surprising when considering the documented neurotoxic consequences of micro- and nanoplastics exposure in marine and fish invertebrates. In the solely published mice in vivo study, adult mice were subject to chronic exposure over 30 days to polystyrene microplastics, with sizes of 5 and 20 &#x03BC;m and doses ranging from 0.01 to 0.5 mg per day (approximately 0.5 to 25 mg/kg body weight daily), administered through oral gavage. The exposure to polystyrene microplastics led to the absorption and presence of particles in the mice's gut, liver, and kidneys, confirmed via fluorescence spectrometer analysis of freeze-dried tissues. During the initial week of exposure, particle concentrations in the tissues rose swiftly and stabilized at approximately 0.2, 1.0, and 1.4 mg/g for 5 &#x03BC;m particles in the liver, kidney, and gut, respectively. For 20 &#x03BC;m particles, the concentration was more consistent across the organs, reaching a plateau at about 0.8. Examination of the liver revealed dose-dependent alterations in energy metabolism, including reduced ATP levels and elevated LDH activity, alongside oxidative stress markers such as increased GSH-Px and SOD and decreased CAT. Curiously, liver AChE activity rose, and metabolomic shifts implied possible neurotransmitter level changes. Notably, the difference in effect size between 5 &#x03BC;m and 20 &#x03BC;m particles was minimal when considered on a mass basis. Regrettably, the study did not explore brain tissue [<xref ref-type="bibr" rid="B-042">42</xref>]. Another in vivo study involved chronic exposure, over five weeks, of male rats to significant doses of polystyrene nanoplastics measuring 40 nm, with dosages between 1 and 10 mg/kg body weight per day. However, this exposure did not impact behavior or weight gain, and no evidence was provided of actual polystyrene nanoplastic uptake [<xref ref-type="bibr" rid="B-094">94</xref>].</p>
+        </sec>
+        <sec id="sec-09">
+            <label>9.</label>
+            <title>Factors Affecting the Microplastics and Nanoplastics Neurotoxic Potential</title>
+            <p>Several factors can affect the neurotoxic potential of micro- and nanoplastics. One major factor is the extent of exposure organisms have to these particles, significantly impacting the potential neurotoxic effects [<xref ref-type="bibr" rid="B-095">95</xref>]. In real-life scenarios, the levels of exposure are notably lower than those typically used in laboratory experiments. Conversely, the length of exposure in experimental situations is usually far less than what would be encountered in human exposures. Some research indicates that the neurotoxic impacts of micro- and nanoplastics are dependent on how long one is exposed [<xref ref-type="bibr" rid="B-093">93</xref>,<xref ref-type="bibr" rid="B-096">96</xref>,<xref ref-type="bibr" rid="B-097">97</xref>]. Besides concentration and exposure time, the temperature at which exposure occurs may also play a role in neurotoxicity, especially in fish, with toxicity levels rising as temperatures increase [<xref ref-type="bibr" rid="B-098">98</xref>,<xref ref-type="bibr" rid="B-099">99</xref>]. Apart from these locational factors, the intrinsic properties of the particles themselves may heavily influence their neurotoxic potential. Particle size is considered one of the key characteristics influencing toxicity, with nanoparticles generally being absorbed more readily and have more significant toxicity than microparticles [<xref ref-type="bibr" rid="B-095">95</xref>,<xref ref-type="bibr" rid="B-100">100</xref>]. However, for plastic particles specifically, there is only limited data supporting the idea that smaller particles exhibit higher toxicity [<xref ref-type="bibr" rid="B-042">42</xref>,<xref ref-type="bibr" rid="B-083">83</xref>,<xref ref-type="bibr" rid="B-101">101</xref>]. The hydrodynamic diameter of particles, reflecting the size of secondary particles, could play a significant role in their neurotoxic effects. Though smaller particles tend to exhibit more significant neurotoxicity, they are also prone to aggregation, forming larger clusters. While this aggregation theoretically mitigates neurotoxic potential by increasing the particle size, there is limited research on this phenomenon. Notably, a study discovered that nanoplastics aged for six months expanded from 65 nm to over 1300 nm, amplifying toxicity in comparison to the initial particles, implying that larger aggregated particles might exhibit increased neurotoxicity [<xref ref-type="bibr" rid="B-102">102</xref>]. The extent of particle aggregation is influenced by surface charge and the suspension medium [<xref ref-type="bibr" rid="B-071">71</xref>,<xref ref-type="bibr" rid="B-079">79</xref>,<xref ref-type="bibr" rid="B-080">80</xref>,<xref ref-type="bibr" rid="B-092">92</xref>,<xref ref-type="bibr" rid="B-093">93</xref>]. Moreover, a particle's surface charge is directly implicated in its neurotoxic potential and biological activity, whether micro- or nanoplastics [<xref ref-type="bibr" rid="B-028">28</xref>,<xref ref-type="bibr" rid="B-065">65</xref>]. Specifically, nanoparticles with a negative surface charge tend to undergo greater cellular uptake [<xref ref-type="bibr" rid="B-103">103</xref>], whereas a positive charge leads to increased disruption of the plasma membrane and more significant mitochondrial harm [<xref ref-type="bibr" rid="B-104">104</xref>]. Unfortunately, scant research analyzing the micro- and nanoplastics surface charge investigations into this aspect remains nascent. The particles' zeta potentials span from +40 mV to -50 mV, yet their neurotoxic implications are beginning to be examined. For metal (oxide) particles, the elemental composition has a bearing on toxicity. Likewise, the specific chemical makeup of micro- and nanoplastics is anticipated to influence their neurotoxic potential. The shape of plastic particles, though not exhaustively compared, could substantially impact neurotoxic potential. Variations in shape-such as spheres, fibers, and rods-lead to differences in surface area and potential internalization [<xref ref-type="bibr" rid="B-065">65</xref>]. Therefore, comprehensive research is necessary for comparing neurotoxic effects across various particle types, shapes, and sizes, considering aggregation impacts, through both in vitro and in vivo model systems. Another complexity is the potential for microplastics and nanoplastics to act as carriers for pathogens and chemicals. Although not fully understood, these particles may adsorb different environmental substances [<xref ref-type="bibr" rid="B-105">105</xref>] and potentially even pathogens [<xref ref-type="bibr" rid="B-106">106</xref>]. These adsorption capabilities might inadvertently enhance exposure to these harmful agents, aggravating their neurotoxic impact. Therefore, further investigation is essential to elucidate the detailed role of these factors in particle-induced neurotoxicity.</p>
+        </sec>
+        <sec id="sec-10">
+            <label>10.</label>
+            <title>Mechanisms of Microplastics and Nanoplastics Entry into the Brain</title>
+            <p>Micro- and nanoplastics predominantly infiltrate the brain by traversing the BBB through a permeation process [<xref ref-type="bibr" rid="B-107">107</xref>]. Generally, micro- and nanoplastic internalization involves two primary mechanisms: passive permeation and active endocytosis, which include pinocytosis and phagocytosis [<xref ref-type="bibr" rid="B-108">108</xref>]. Endocytosis can proceed through kaolin-mediated pathways (typically for larger particles) and clathrin-mediated pathways (typically for small nanoplastics) [<xref ref-type="bibr" rid="B-109">109</xref>]. The permeation processes of micro- and nanoplastics are affected by their physicochemical characteristics, such as the shape and size of the particles, their chemical makeup, and their surface charge [<xref ref-type="bibr" rid="B-110">110</xref>,<xref ref-type="bibr" rid="B-111">111</xref>]. There's minimal research regarding how nanoplastic size affects their penetration through the BBB. This is primarily because conducting such experiments is complex, requiring labeled nanoplastics of varying sizes to be detectable within the intricate environments of biological systems [<xref ref-type="bibr" rid="B-112">112</xref>]. Research has demonstrated that smaller, fluorescently labeled polystyrene particles (100 nm) can more effectively penetrate the brain of zebrafish embryos compared to larger particles (500 and 1000 nm), leading to increased entry and neurotoxicity of the smaller particles [<xref ref-type="bibr" rid="B-113">113</xref>]. In the domains of medical and environmental research, numerous studies have utilized various metal nanomaterials to demonstrate the crucial role that particle size plays in the capacity of these nanomaterials to traverse the BBB [<xref ref-type="bibr" rid="B-111">111</xref>]. For example, one investigation established that smaller-sized nanoplastics more readily infiltrate the brain, posing greater toxicity than larger microplastics [<xref ref-type="bibr" rid="B-114">114</xref>]. Another study assessed different sizes of silica nanomaterials regarding their ability to pass through brain endothelial cells in mice [<xref ref-type="bibr" rid="B-115">115</xref>]. The findings indicated that smaller particles, specifically those measuring 25 nm, were absorbed by the brain more effectively than those measuring 50 nm and 100 nm [<xref ref-type="bibr" rid="B-109">109</xref>,<xref ref-type="bibr" rid="B-116">116</xref>]. It has been posited that larger nanomaterials mainly penetrate using active mechanisms such as pinocytosis and phagocytosis. While applying this knowledge directly to nanoplastics is debatable because of variations in particle chemistry and density-factors that greatly influence cellular penetration-these investigations provide a foundational comprehension and form a basis for conducting comparable experiments with nanoplastics [<xref ref-type="bibr" rid="B-117">117</xref>]. The configuration of nanoplastics also has potential ramifications on their penetration through the BBB into the brain, as it can influence their interaction with cellular structures. Research has examined the toxic effects of both spherical and rod-shaped polystyrene nanoplastics in mice. Findings demonstrate that rod-shaped nanoplastics may exhibit a more robust binding ability than their spherical counterparts [<xref ref-type="bibr" rid="B-118">118</xref>]. Further evidence regarding the influence of particle shape on BBB penetration exists for other nanoparticles. For instance, a study highlighted that gold rod-shaped nanomaterials possess a heightened affinity and efficiency for endothelial cells, leading to increased uptake [<xref ref-type="bibr" rid="B-119">119</xref>]. An essential factor affecting the ability of nanoplastics to bypass the BBB is their chemical structure. This aspect also helps distinguish between various types of nanoparticles. Recent investigations indicate that nanoplastics made from polystyrene and polyvinyl chloride (PVC) can move across the BBB, albeit at minimal concentrations. The research further highlights that a biological corona, comprised of proteins and metabolites, significantly alters the permeability efficiency of these nanomaterials through the BBB. The corona's development is directly influenced by the particle's chemical attributes [<xref ref-type="bibr" rid="B-039">39</xref>]. Studies have also demonstrated that polypropylene, polyethylene, polystyrene, and PVC can access the central nervous system (CNS), with polypropylene and polyethylene possibly inducing greater inflammation [<xref ref-type="bibr" rid="B-120">120</xref>. Chemical composition, even with identical particle sizing, can differentially impact the behavior of zebrafish embryos [<xref ref-type="bibr" rid="B-121">121</xref>]. This recognition complicates efforts to comprehend how the composition may affect the biological outcomes and toxicity of nanoparticles [<xref ref-type="bibr" rid="B-122">122</xref>]. The particles' surface charge is crucial in defining their capacity to penetrate the BBB. Nanoplastics with negative charges are typically less likely to cross the membrane because of electrostatic forces. Nevertheless, studies have indicated that cellular membrane ionic imbalances may allow these negatively charged particles to penetrate directly [<xref ref-type="bibr" rid="B-123">123</xref>]. Our prior research has evidenced that nanoparticles from diesel exhaust can creep through the BBB [<xref ref-type="bibr" rid="B-031">31</xref>,<xref ref-type="bibr" rid="B-048">48</xref>,<xref ref-type="bibr" rid="B-054">54</xref>]. Nanoplastics with a positive charge, however, show a heightened capacity to infiltrate the BBB and become localized within cells [<xref ref-type="bibr" rid="B-124">124</xref>]. Negatively charged polystyrene particles measuring 50 nm have been shown to cross the BBB by impacting tight junctions [<xref ref-type="bibr" rid="B-125">125</xref>]. Furthermore, these negatively charged nanoplastics are more inclined to settle in rodent brains than their positively charged counterparts of identical size [<xref ref-type="bibr" rid="B-126">126</xref>]. Conversely, positively charged polystyrene particles, ranging from 20-100 nm, are prone to increasing the permeability of the BBB [<xref ref-type="bibr" rid="B-127">127</xref>]. This increase is partly due to potential membrane damage inflicted by structural disruption [<xref ref-type="bibr" rid="B-128">128</xref>]. While there is evidence that nanoplastics permeating the BBB may lead to neurodegenerative changes, conclusive data remains elusive [<xref ref-type="bibr" rid="B-047">47</xref>]. It should be noted that the literature on polystyrene nanoparticles surpasses that of other plastic varieties in terms of extent and depth.</p>
+        </sec>
+        <sec id="sec-11">
+            <label>11.</label>
+            <title>Conclusions</title>
+            <p>Despite the widespread presence of micro- and nanoplastics in the environment, information on their absorption and toxicity remains limited. Research shows these particles can enter various organisms, including humans, fish, and mammals, through different exposure pathways. There's a significant lack of knowledge about the neurotoxic potential of these plastics. However, studies indicate that they might induce oxidative stress, inhibit the activity of AChE, impact neurotransmitter levels, and alter behavior in some species. It's still unclear if these effects relate to neurodevelopmental or neurodegenerative disorders in humans, unlike metal nanoparticles. Most experimental exposures to date don't mimic real human exposure situations, as they occur over short periods with high doses. In contrast, humans are exposed chronically to lower levels. Moreover, many studies use particle types and shapes that are not typical of environmental conditions. There's also a significant gap in systematically comparing various particle types, shapes, sizes, and concentrations. Most research so far has concentrated on aquatic species. To thoroughly understand the neurotoxin and exposure risks from micro- and nanoplastics, several actions are necessary:</p>
+            <p>1. Improved Monitoring: A better assessment of exposure levels for humans is needed, focusing on different exposure routes like inhalation, ingestion, and retrograde transport after nasal exposure, along with particle characteristics.</p>
+            <p>2. Focused Assessments: Research should investigate absorption through the lungs, nasal epithelium, or gut, potential crossing into the bloodstream, blood-brain barrier penetration, and organ accumulation, including the brain. It must determine direct transfer to the brain via nerve endings or indirect bloodstream transport, helping to identify the most dangerous particles for human health and the most vital exposure reduction measures.</p>
+            <p>3. Enhanced Risk Identification: Exposure time and particle dose standardization should incorporate dose-response curves, considering particle weight and number. Research should utilize various particle types, sizes, shapes, and surface charges, preferably those prevalent in the environment. For realistic assessments, aged and contaminated particles should be studied alongside virgin manufactured particles despite the complex toxicity.</p>
+            <p>4. Diversified Species Use: It's crucial to include different species, particularly mammals, given the variability in exposure routes. Laboratory assays can significantly aid hazard identification, increasing throughput, reducing costs, and providing mechanistic insights. However, the focus should be on subtle, functional effects beyond overt (neuro)toxic endpoints, as such effects may occur only at unrealistic exposure levels. Ultimately, irrespective of the findings from these hazard and risk evaluations of nanoplastics, measures should be implemented to minimize their further contamination and release into the environment.</p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title>Acknowledgments</title>
+            <p>We thank Dr. Ehsanifar Research Lab. Tehran, Iran.</p>
+        </ack>
+        <notes>
+            <title>Author Contributions</title>
+            <p>All the authors contributed to writing, reviewing and editing the manuscript.</p>
+        </notes>
+        <notes>
+            <title>Funding</title>
+            <p>This review received no external funding and was initiated and funded by Dr. Ehsanifar Research Lab, Tehran, Iran.</p>
+        </notes>
+        <notes notes-type="conflict-interest">
+            <title>Competing Interests</title>
+            <p>The authors declare that they have no competing interests.</p>            
+        </notes>
+        <ref-list>
+            <title>References</title>
+            <ref id="B-001">
+                <label>1. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Lebreton</surname><given-names>L</given-names></name>,
+                <name><surname>Andrady</surname><given-names>A</given-names></name>.
+                <article-title>Future scenarios of global plastic waste generation and disposal</article-title>.
+                <source>Palgrave Commun</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>5</volume>: 
+                <fpage>6</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-002">
+                <label>2. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Li</surname><given-names>Y</given-names></name>,
+                <name><surname>Liu</surname><given-names>Z</given-names></name>,
+                <name><surname>Yang</surname><given-names>Y</given-names></name>,
+                <name><surname>Jiang</surname><given-names>Q</given-names></name>,
+                <name><surname>Wu</surname><given-names>D</given-names></name>,
+                <name><surname>Huang</surname><given-names>Y</given-names></name>,
+                <etal/>.
+                <article-title>Effects of nanoplastics on energy metabolism in the oriental river prawn (Macrobrachium nipponense)</article-title>.
+                <source>Environ Pollut</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>268</volume>: 
+                <fpage>115890</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-003">
+                <label>3. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Dris</surname><given-names>R</given-names></name>,
+                <name><surname>Gasperi</surname><given-names>J</given-names></name>,
+                <name><surname>Mirande</surname><given-names>C</given-names></name>,
+                <name><surname>Mandin</surname><given-names>C</given-names></name>,
+                <name><surname>Guerrouache</surname><given-names>M</given-names></name>,
+                <name><surname>Langlois</surname><given-names>V</given-names></name>,
+                <etal/>.
+                <article-title>A first overview of textile fibers, including microplastics, in indoor and outdoor environments</article-title>.
+                <source>Environ Pollut</source>.
+                <year iso-8601-date="2017">2017</year>; 
+                <volume>221</volume>: 
+                <fpage>453</fpage>-<lpage>458</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-004">
+                <label>4. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>North</surname><given-names>EJ</given-names></name>,
+                <name><surname>Halden</surname><given-names>RU</given-names></name>.
+                <article-title>Plastics and environmental health: The road ahead</article-title>.
+                <source>Rev Environ Health</source>.
+                <year iso-8601-date="2013">2013</year>; 
+                <volume>28</volume>: 
+                <fpage>1</fpage>-<lpage>8</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-005">
+                <label>5. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Jambeck</surname><given-names>JR</given-names></name>,
+                <name><surname>Geyer</surname><given-names>R</given-names></name>,
+                <name><surname>Wilcox</surname><given-names>C</given-names></name>,
+                <name><surname>Siegler</surname><given-names>TR</given-names></name>,
+                <name><surname>Perryman</surname><given-names>M</given-names></name>,
+                <name><surname>Andrady</surname><given-names>A</given-names></name>,
+                <etal/>.
+                <article-title>Plastic waste inputs from land into the ocean</article-title>.
+                <source>Science</source>.
+                <year iso-8601-date="2015">2015</year>; 
+                <volume>347</volume>: 
+                <fpage>768</fpage>-<lpage>771</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-006">
+                <label>6. </label>
+                <mixed-citation publication-type="other" publication-format="web">
+                <name><surname>Boucher</surname><given-names>J</given-names></name>,
+                <name><surname>Billard</surname><given-names>G</given-names></name>.
+                <article-title>The challenges of measuring plastic pollution</article-title> [Internet].
+                <publisher-loc>Paris, France</publisher-loc>:
+                <publisher-name>Field Actions Science Reports</publisher-name>;
+                <year iso-8601-date="2019">2019</year>.
+                <comment>Avaliable from: <ext-link  ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://journals.openedition.org/factsreports/5319">https://journals.openedition.org/factsreports/5319</ext-link>.</comment>
+                </mixed-citation>
+            </ref>
+            <ref id="B-007">
+                <label>7. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Gu</surname><given-names>L</given-names></name>,
+                <name><surname>Ozbakkaloglu</surname><given-names>T</given-names></name>.
+                <article-title>Use of recycled plastics in concrete: A critical review</article-title>.
+                <source>Waste Manage</source>.
+                <year iso-8601-date="2016">2016</year>; 
+                <volume>51</volume>: 
+                <fpage>19</fpage>-<lpage>42</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-008">
+                <label>8. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Chamas</surname><given-names>A</given-names></name>,
+                <name><surname>Moon</surname><given-names>H</given-names></name>,
+                <name><surname>Zheng</surname><given-names>J</given-names></name>,
+                <name><surname>Qiu</surname><given-names>Y</given-names></name>,
+                <name><surname>Tabassum</surname><given-names>T</given-names></name>,
+                <name><surname>Jang</surname><given-names>JH</given-names></name>,
+                <etal/>.
+                <article-title>Degradation rates of plastics in the environment</article-title>.
+                <source>ACS Sustain Chem Eng</source>.
+                <year iso-8601-date="2020">2020</year>; 
+                <volume>8</volume>: 
+                <fpage>3494</fpage>-<lpage>3511</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-009">
+                <label>9. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Zhu</surname><given-names>F</given-names></name>,
+                <name><surname>Zhu</surname><given-names>C</given-names></name>,
+                <name><surname>Wang</surname><given-names>C</given-names></name>,
+                <name><surname>Gu</surname><given-names>C</given-names></name>.
+                <article-title>Occurrence and ecological impacts of microplastics in soil systems: A review</article-title>.
+                <source>Bull Environ Contam Toxicol</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>102</volume>: 
+                <fpage>741</fpage>-<lpage>749</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-010">
+                <label>10. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Bajt</surname><given-names>O</given-names></name>.
+                <article-title>From plastics to microplastics and organisms</article-title>.
+                <source>FEBS Open Bio</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>11</volume>: 
+                <fpage>954</fpage>-<lpage>966</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-011">
+                <label>11. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Yuan</surname><given-names>J</given-names></name>,
+                <name><surname>Ma</surname><given-names>J</given-names></name>,
+                <name><surname>Sun</surname><given-names>Y</given-names></name>,
+                <name><surname>Zhou</surname><given-names>T</given-names></name>,
+                <name><surname>Zhao</surname><given-names>Y</given-names></name>,
+                <name><surname>Yu</surname><given-names>F</given-names></name>.
+                <article-title>Microbial degradation and other environmental aspects of microplastics/plastics</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2020">2020</year>; 
+                <volume>715</volume>: 
+                <fpage>136968</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-012">
+                <label>12. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Hirt</surname><given-names>N</given-names></name>,
+                <name><surname>Body-Malapel</surname><given-names>M</given-names></name>.
+                <article-title>Immunotoxicity and intestinal effects of nano-and microplastics: A review of the literature</article-title>.
+                <source>Part Fibre Toxicol</source>.
+                <year iso-8601-date="2020">2020</year>; 
+                <volume>17</volume>: 
+                <fpage>57</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-013">
+                <label>13. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Mazurais</surname><given-names>D</given-names></name>,
+                <name><surname>Ernande</surname><given-names>B</given-names></name>,
+                <name><surname>Quazuguel</surname><given-names>P</given-names></name>,
+                <name><surname>Severe</surname><given-names>A</given-names></name>,
+                <name><surname>Huelvan</surname><given-names>C</given-names></name>,
+                <name><surname>Madec</surname><given-names>L</given-names></name>,
+                <etal/>.
+                <article-title>Evaluation of the impact of polyethylene microbeads ingestion in European sea bass (<italic>Dicentrarchus labrax</italic>) larvae</article-title>.
+                <source>Mar Environ Res</source>.
+                <year iso-8601-date="2015">2015</year>; 
+                <volume>112</volume>: 
+                <fpage>78</fpage>-<lpage>85</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-014">
+                <label>14. </label>
+                <mixed-citation publication-type="other">
+                <name><surname>Hanke</surname><given-names>G</given-names></name>,
+                <name><surname>Galgani</surname><given-names>F</given-names></name>,
+                <name><surname>Werner</surname><given-names>S</given-names></name>,
+                <name><surname>Oosterbaan</surname><given-names>L</given-names></name>,
+                <name><surname>Nilsson</surname><given-names>P</given-names></name>,
+                <name><surname>Fleet</surname><given-names>D</given-names></name>,
+                <etal/>.
+                <article-title>Guidance on monitoring of Marine Litter in European seas: A guidance document within the common implementation strategy for the marine strategy framework directive</article-title>.
+                <publisher-loc>Luxembourg</publisher-loc>:
+                <publisher-name>European Commission, Joint Research Centre</publisher-name>;
+                <year iso-8601-date="2013">2013</year>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-015">
+                <label>15. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Costa</surname><given-names>JP</given-names></name>,
+                <name><surname>Duarte</surname><given-names>AC</given-names></name>,
+                <name><surname>Rocha-Santos</surname><given-names>TA</given-names></name>.
+                <article-title>Microplastics-occurrence, fate and behaviour in the environment</article-title>.
+                <source>Compr Anal Chem</source>.
+                <year iso-8601-date="2017">2017</year>; 
+                <volume>75</volume>: 
+                <fpage>1</fpage>-<lpage>24</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-016">
+                <label>16. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Horton</surname><given-names>AA</given-names></name>,
+                <name><surname>Walton</surname><given-names>A</given-names></name>,
+                <name><surname>Spurgeon</surname><given-names>DJ</given-names></name>,
+                <name><surname>Lahive</surname><given-names>E</given-names></name>,
+                <name><surname>Svendsen</surname><given-names>C</given-names></name>.
+                <article-title>Microplastics in freshwater and terrestrial environments: Evaluating the current understanding to identify the knowledge gaps and future research priorities</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2017">2017</year>; 
+                <volume>586</volume>: 
+                <fpage>127</fpage>-<lpage>141</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-017">
+                <label>17. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Liu</surname><given-names>Z</given-names></name>,
+                <name><surname>Li</surname><given-names>Y</given-names></name>,
+                <name><surname>P&#x00E9;rez</surname><given-names>E</given-names></name>,
+                <name><surname>Jiang</surname><given-names>Q</given-names></name>,
+                <name><surname>Chen</surname><given-names>Q</given-names></name>,
+                <name><surname>Jiao</surname><given-names>Y</given-names></name>,
+                <etal/>.
+                <article-title>Polystyrene nanoplastic induces oxidative stress, immune defense, and glycometabolism change in Daphnia pulex: Application of transcriptome profiling in risk assessment of nanoplastics</article-title>.
+                <source>J Hazard Mater</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>402</volume>: 
+                <fpage>123778</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-018">
+                <label>18. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Wang</surname><given-names>L</given-names></name>,
+                <name><surname>Wu</surname><given-names>WM</given-names></name>,
+                <name><surname>Bolan</surname><given-names>NS</given-names></name>,
+                <name><surname>Tsang</surname><given-names>DC</given-names></name>,
+                <name><surname>Li</surname><given-names>Y</given-names></name>,
+                <name><surname>Qin</surname><given-names>M</given-names></name>,
+                <etal/>.
+                <article-title>Environmental fate, toxicity and risk management strategies of nanoplastics in the environment: Current status and future perspectives</article-title>.
+                <source>J Hazard Mater</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>401</volume>: 
+                <fpage>123415</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-019">
+                <label>19. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Sun</surname><given-names>H</given-names></name>,
+                <name><surname>Jiao</surname><given-names>R</given-names></name>,
+                <name><surname>Wang</surname><given-names>D</given-names></name>.
+                <article-title>The difference of aggregation mechanism between microplastics and nanoplastics: Role of Brownian motion and structural layer force</article-title>.
+                <source>Environ Pollut</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>268</volume>: 
+                <fpage>115942</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-020">
+                <label>20. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Stojkovic</surname><given-names>M</given-names></name>,
+                <name><surname>Stojkovic</surname><given-names>P</given-names></name>,
+                <name><surname>Stankovic</surname><given-names>KM</given-names></name>.
+                <article-title>Human pluripotent stem cells-unique tools to decipher the effects of environmental and intracellular plastic pollution on human health</article-title>.
+                <source>Environ Pollut</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>269</volume>: 
+                <fpage>116144</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-021">
+                <label>21. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Karthik</surname><given-names>R</given-names></name>,
+                <name><surname>Robin</surname><given-names>RS</given-names></name>,
+                <name><surname>Purvaja</surname><given-names>R</given-names></name>,
+                <name><surname>Ganguly</surname><given-names>D</given-names></name>,
+                <name><surname>Anandavelu</surname><given-names>I</given-names></name>,
+                <name><surname>Raghuraman</surname><given-names>R</given-names></name>,
+                <etal/>.
+                <article-title>Microplastics along the beaches of southeast coast of India</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>645</volume>: 
+                <fpage>1388</fpage>-<lpage>1399</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-022">
+                <label>22. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Sangkham</surname><given-names>S</given-names></name>,
+                <name><surname>Faikhaw</surname><given-names>O</given-names></name>,
+                <name><surname>Munkong</surname><given-names>N</given-names></name>,
+                <name><surname>Sakunkoo</surname><given-names>P</given-names></name>,
+                <name><surname>Arunlertaree</surname><given-names>C</given-names></name>,
+                <name><surname>Chavali</surname><given-names>M</given-names></name>,
+                <etal/>.
+                <article-title>A review on microplastics and nanoplastics in the environment: Their occurrence, exposure routes, toxic studies, and potential effects on human health</article-title>.
+                <source>Mar Pollut Bull</source>.
+                <year iso-8601-date="2022">2022</year>; 
+                <volume>181</volume>: 
+                <fpage>113832</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-023">
+                <label>23. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Roman</surname><given-names>C</given-names></name>,
+                <name><surname>Mah&#x00E9;</surname><given-names>P</given-names></name>,
+                <name><surname>Latchere</surname><given-names>O</given-names></name>,
+                <name><surname>Catrouillet</surname><given-names>C</given-names></name>,
+                <name><surname>Gigault</surname><given-names>J</given-names></name>,
+                <name><surname>M&#x00E9;tais</surname><given-names>I</given-names></name>,
+                <etal/>.
+                <article-title>Effect of size continuum from nanoplastics to microplastics on marine mussel <italic>Mytilus edulis</italic>: Comparison <italic>in vitro/in vivo</italic> exposure scenarios</article-title>.
+                <source>Comp Biochem Physiol C Toxicol Pharmacol</source>.
+                <year iso-8601-date="2023">2023</year>; 
+                <volume>264</volume>: 
+                <fpage>109512</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-024">
+                <label>24. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Rubio</surname><given-names>L</given-names></name>,
+                <name><surname>Marcos</surname><given-names>R</given-names></name>,
+                <name><surname>Hern&#x00E1;ndez</surname><given-names>A</given-names></name>.
+                <article-title>Potential adverse health effects of ingested micro-and nanoplastics on humans. Lessons learned from <italic>in vivo</italic> and <italic>in vitro</italic> mammalian models</article-title>.
+                <source>J Toxicol Environ Health B</source>.
+                <year iso-8601-date="2020">2020</year>; 
+                <volume>23</volume>: 
+                <fpage>51</fpage>-<lpage>68</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-025">
+                <label>25. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Qiao</surname><given-names>J</given-names></name>,
+                <name><surname>Chen</surname><given-names>R</given-names></name>,
+                <name><surname>Wang</surname><given-names>M</given-names></name>,
+                <name><surname>Bai</surname><given-names>R</given-names></name>,
+                <name><surname>Cui</surname><given-names>X</given-names></name>,
+                <name><surname>Liu</surname><given-names>Y</given-names></name>,
+                <etal/>.
+                <article-title>Perturbation of gut microbiota plays an important role in micro/nanoplastics-induced gut barrier dysfunction</article-title>.
+                <source>Nanoscale</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>13</volume>: 
+                <fpage>8806</fpage>-<lpage>8816</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-026">
+                <label>26. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Waring</surname><given-names>RH</given-names></name>,
+                <name><surname>Harris</surname><given-names>RM</given-names></name>,
+                <name><surname>Mitchell</surname><given-names>SC</given-names></name>.
+                <article-title></article-title>.
+                <source>Plastic contamination of the food chain: A threat to human health? Maturitas</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>115</volume>: 
+                <fpage>64</fpage>-<lpage>68</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-027">
+                <label>27. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Toussaint</surname><given-names>B</given-names></name>,
+                <name><surname>Raffael</surname><given-names>B</given-names></name>,
+                <name><surname>Angers-Loustau</surname><given-names>A</given-names></name>,
+                <name><surname>Gilliland</surname><given-names>D</given-names></name>,
+                <name><surname>Kestens</surname><given-names>V</given-names></name>,
+                <name><surname>Petrillo</surname><given-names>M</given-names></name>,
+                <etal/>.
+                <article-title>Review of micro-and nanoplastic contamination in the food chain</article-title>.
+                <source>Food Addit Contam Part A</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>36</volume>: 
+                <fpage>639</fpage>-<lpage>673</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-028">
+                <label>28. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Prata</surname><given-names>JC</given-names></name>.
+                <article-title></article-title>.
+                <source>Airborne microplastics: Consequences to human health? Environ Pollut</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>234</volume>: 
+                <fpage>115</fpage>-<lpage>126</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-029">
+                <label>29. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Jani</surname><given-names>P</given-names></name>,
+                <name><surname>Halbert</surname><given-names>GW</given-names></name>,
+                <name><surname>Langridge</surname><given-names>J</given-names></name>,
+                <name><surname>Florence</surname><given-names>AT</given-names></name>.
+                <article-title>Nanoparticle uptake by the rat gastrointestinal mucosa: Quantitation and particle size dependency</article-title>.
+                <source>J Pharm Pharmacol</source>.
+                <year iso-8601-date="1990">1990</year>; 
+                <volume>42</volume>: 
+                <fpage>821</fpage>-<lpage>826</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-030">
+                <label>30. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Stock</surname><given-names>V</given-names></name>,
+                <name><surname>B&#x00F6;hmert</surname><given-names>L</given-names></name>,
+                <name><surname>Lisicki</surname><given-names>E</given-names></name>,
+                <name><surname>Block</surname><given-names>R</given-names></name>,
+                <name><surname>Cara-Carmona</surname><given-names>J</given-names></name>,
+                <name><surname>Pack</surname><given-names>LK</given-names></name>,
+                <etal/>.
+                <article-title>Uptake and effects of orally ingested polystyrene microplastic particles in vitro and in vivo</article-title>.
+                <source>Arch Toxikol</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>93</volume>: 
+                <fpage>1817</fpage>-<lpage>1833</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-031">
+                <label>31. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ehsanifar</surname><given-names>M</given-names></name>,
+                <name><surname>Montazeri</surname><given-names>Z</given-names></name>,
+                <name><surname>Zavareh</surname><given-names>MS</given-names></name>,
+                <name><surname>Rafati</surname><given-names>M</given-names></name>,
+                <name><surname>Wang</surname><given-names>J</given-names></name>.
+                <article-title>Cognitive impairment, depressive-like behaviors and hippocampal microglia activation following exposure to air pollution nanoparticles</article-title>.
+                <source>Environ Sci Pollut Res</source>.
+                <year iso-8601-date="2023">2023</year>; 
+                <volume>30</volume>: 
+                <fpage>23527</fpage>-<lpage>23537</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-032">
+                <label>32. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ehsanifar</surname><given-names>M</given-names></name>.
+                <article-title>Airborne aerosols particles and COVID-19 transition</article-title>.
+                <source>Environ Res</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>200</volume>: 
+                <fpage>111752</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-033">
+                <label>33. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Pauly</surname><given-names>JL</given-names></name>,
+                <name><surname>Stegmeier</surname><given-names>SJ</given-names></name>,
+                <name><surname>Allaart</surname><given-names>HA</given-names></name>,
+                <name><surname>Cheney</surname><given-names>RT</given-names></name>,
+                <name><surname>Zhang</surname><given-names>PJ</given-names></name>,
+                <name><surname>Mayer</surname><given-names>AG</given-names></name>,
+                <etal/>.
+                <article-title>Inhaled cellulosic and plastic fibers found in human lung tissue</article-title>.
+                <source>Cancer Epidemiol Biomarkers Prev</source>.
+                <year iso-8601-date="1998">1998</year>;
+                <volume>7</volume>:
+                <fpage>419</fpage>-<lpage>428</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-034">
+                <label>34. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Schmidt</surname><given-names>C</given-names></name>,
+                <name><surname>Lautenschlaeger</surname><given-names>C</given-names></name>,
+                <name><surname>Collnot</surname><given-names>EM</given-names></name>,
+                <name><surname>Schumann</surname><given-names>M</given-names></name>,
+                <name><surname>Bojarski</surname><given-names>C</given-names></name>,
+                <name><surname>Schulzke</surname><given-names>JD</given-names></name>,
+                <etal/>.
+                <article-title>Nano-and microscaled particles for drug targeting to inflamed intestinal mucosa-A first in vivo study in human patients</article-title>.
+                <source>J Control Release</source>.
+                <year iso-8601-date="2013">2013</year>; 
+                <volume>165</volume>: 
+                <fpage>139</fpage>-<lpage>145</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-035">
+                <label>35. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Vethaak</surname><given-names>AD</given-names></name>,
+                <name><surname>Leslie</surname><given-names>HA</given-names></name>.
+                <article-title>Plastic debris is a human health issue</article-title>.
+                <source>Environ Sci Technol</source>.
+                <year iso-8601-date="2016">2016</year>; 
+                <volume>50</volume>: 
+                <fpage>6825</fpage>-<lpage>6826</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-036">
+                <label>36. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Lehner</surname><given-names>R</given-names></name>,
+                <name><surname>Weder</surname><given-names>C</given-names></name>,
+                <name><surname>Petri-Fink</surname><given-names>A</given-names></name>,
+                <name><surname>Rothen-Rutishauser</surname><given-names>B</given-names></name>.
+                <article-title>Emergence of nanoplastic in the environment and possible impact on human health</article-title>.
+                <source>Environ Sci Technol</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>53</volume>: 
+                <fpage>1748</fpage>-<lpage>1765</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-037">
+                <label>37. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Feng</surname><given-names>Y</given-names></name>,
+                <name><surname>Tu</surname><given-names>C</given-names></name>,
+                <name><surname>Li</surname><given-names>R</given-names></name>,
+                <name><surname>Wu</surname><given-names>D</given-names></name>,
+                <name><surname>Yang</surname><given-names>J</given-names></name>,
+                <name><surname>Xia</surname><given-names>Y</given-names></name>,
+                <etal/>.
+                <article-title>A systematic review of the impacts of exposure to micro-and nano-plastics on human tissue accumulation and health</article-title>.
+                <source>Eco Environ Health</source>.
+                <year iso-8601-date="2023">2023</year>; 
+                <volume>2</volume>: 
+                <fpage>195</fpage>-<lpage>207</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-038">
+                <label>38. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Paing</surname><given-names>YM</given-names></name>,
+                <name><surname>Eom</surname><given-names>Y</given-names></name>,
+                <name><surname>Song</surname><given-names>GB</given-names></name>,
+                <name><surname>Kim</surname><given-names>B</given-names></name>,
+                <name><surname>Choi</surname><given-names>MG</given-names></name>,
+                <name><surname>Hong</surname><given-names>S</given-names></name>,
+                <etal/>.
+                <article-title>Neurotoxic effects of polystyrene nanoplastics on memory and microglial activation: Insights from <italic>in vivo</italic> and <italic>in vitro</italic> studies</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2024">2024</year>; 
+                <volume>924</volume>: 
+                <fpage>171681</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-039">
+                <label>39. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Monikh</surname><given-names>FA</given-names></name>,
+                <name><surname>Lehtonen</surname><given-names>&#x0160;</given-names></name>,
+                <name><surname>Kek&#x00E4;l&#x00E4;inen</surname><given-names>J</given-names></name>,
+                <name><surname>Karkossa</surname><given-names>I</given-names></name>,
+                <name><surname>Auriola</surname><given-names>S</given-names></name>,
+                <name><surname>Schubert</surname><given-names>K</given-names></name>,
+                <etal/>.
+                <article-title>Biotransformation of nanoplastics in human plasma and their permeation through a model <italic>in vitro</italic> blood-brain barrier: An in-depth quantitative analysis</article-title>.
+                <source>Nano Today</source>.
+                <year iso-8601-date="2024">2024</year>; 
+                <volume>59</volume>: 
+                <fpage>102466</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-040">
+                <label>40. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Panizzolo</surname><given-names>M</given-names></name>,
+                <name><surname>Martins</surname><given-names>VH</given-names></name>,
+                <name><surname>Ghelli</surname><given-names>F</given-names></name>,
+                <name><surname>Squillacioti</surname><given-names>G</given-names></name>,
+                <name><surname>Bellisario</surname><given-names>V</given-names></name>,
+                <name><surname>Garzaro</surname><given-names>G</given-names></name>,
+                <etal/>.
+                <article-title>Biomarkers of oxidative stress, inflammation, and genotoxicity to assess exposure to micro-and nanoplastics. A literature review</article-title>.
+                <source>Ecotoxicol Environ Saf</source>.
+                <year iso-8601-date="2023">2023</year>; 
+                <volume>267</volume>: 
+                <fpage>115645</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-041">
+                <label>41. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Xu</surname><given-names>D</given-names></name>,
+                <name><surname>Ma</surname><given-names>Y</given-names></name>,
+                <name><surname>Han</surname><given-names>X</given-names></name>,
+                <name><surname>Chen</surname><given-names>Y</given-names></name>.
+                <article-title>Systematic toxicity evaluation of polystyrene nanoplastics on mice and molecular mechanism investigation about their internalization into Caco-2 cells</article-title>.
+                <source>J Hazard Mater</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>417</volume>: 
+                <fpage>126092</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-042">
+                <label>42. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Deng</surname><given-names>Y</given-names></name>,
+                <name><surname>Zhang</surname><given-names>Y</given-names></name>,
+                <name><surname>Lemos</surname><given-names>B</given-names></name>,
+                <name><surname>Ren</surname><given-names>H</given-names></name>.
+                <article-title>Tissue accumulation of microplastics in mice and biomarker responses suggest widespread health risks of exposure</article-title>.
+                <source>Sci Rep</source>.
+                <year iso-8601-date="2017">2017</year>; 
+                <volume>7</volume>: 
+                <fpage>46687</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-043">
+                <label>43. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>MohanKumar</surname><given-names>SM</given-names></name>,
+                <name><surname>Campbell</surname><given-names>A</given-names></name>,
+                <name><surname>Block</surname><given-names>M</given-names></name>,
+                <name><surname>Veronesi</surname><given-names>B</given-names></name>.
+                <article-title>Particulate matter, oxidative stress and neurotoxicity</article-title>.
+                <source>Neurotoxicology</source>.
+                <year iso-8601-date="2008">2008</year>; 
+                <volume>29</volume>: 
+                <fpage>479</fpage>-<lpage>488</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-044">
+                <label>44. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Barboza</surname><given-names>LG</given-names></name>,
+                <name><surname>Vieira</surname><given-names>LR</given-names></name>,
+                <name><surname>Guilhermino</surname><given-names>L</given-names></name>.
+                <article-title>Single and combined effects of microplastics and mercury on juveniles of the European seabass (<italic>Dicentrarchus labrax</italic>): Changes in behavioural responses and reduction of swimming velocity and resistance time</article-title>.
+                <source>Environ Pollut</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>236</volume>: 
+                <fpage>1014</fpage>-<lpage>1019</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-045">
+                <label>45. </label>
+                <mixed-citation publication-type="book">
+                <name><surname>Barboza</surname><given-names>LG</given-names></name>,
+                <name><surname>C&#x00F3;zar</surname><given-names>A</given-names></name>,
+                <name><surname>Gimenez</surname><given-names>BC</given-names></name>,
+                <name><surname>Barros</surname><given-names>TL</given-names></name>,
+                <name><surname>Kershaw</surname><given-names>PJ</given-names></name>,
+                <name><surname>Guilhermino</surname><given-names>L</given-names></name>.
+                <article-title>Macroplastics pollution in the marine environment</article-title>. In:
+                <source>World seas: An environmental evaluation. 2nd ed</source>.
+                <publisher-loc>Cambridge, MA</publisher-loc>:
+                <publisher-name>Academic Press</publisher-name>;
+                <year iso-8601-date="2019">2019</year>. pp.
+                <fpage>305</fpage>-<lpage>328</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-046">
+                <label>46. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>O'Donovan</surname><given-names>S</given-names></name>,
+                <name><surname>Mestre</surname><given-names>NC</given-names></name>,
+                <name><surname>Abel</surname><given-names>S</given-names></name>,
+                <name><surname>Fonseca</surname><given-names>TG</given-names></name>,
+                <name><surname>Carteny</surname><given-names>CC</given-names></name>,
+                <name><surname>Cormier</surname><given-names>B</given-names></name>,
+                <etal/>.
+                <article-title>Ecotoxicological effects of chemical contaminants adsorbed to microplastics in the clam Scrobicularia plana</article-title>.
+                <source>Front Mar Sci</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>5</volume>: 
+                <fpage>143</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-047">
+                <label>47. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Pr&#x00FC;st</surname><given-names>M</given-names></name>,
+                <name><surname>Meijer</surname><given-names>J</given-names></name>,
+                <name><surname>Westerink</surname><given-names>RH</given-names></name>.
+                <article-title>The plastic brain: Neurotoxicity of micro-and nanoplastics</article-title>.
+                <source>Part Fibre Toxicol</source>.
+                <year iso-8601-date="2020">2020</year>; 
+                <volume>17</volume>: 
+                <fpage>24</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-048">
+                <label>48. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ehsanifar</surname><given-names>M</given-names></name>,
+                <name><surname>Tameh</surname><given-names>AA</given-names></name>,
+                <name><surname>Farzadkia</surname><given-names>M</given-names></name>,
+                <name><surname>Kalantari</surname><given-names>RR</given-names></name>,
+                <name><surname>Zavareh</surname><given-names>MS</given-names></name>,
+                <name><surname>Nikzaad</surname><given-names>H</given-names></name>,
+                <etal/>.
+                <article-title>Exposure to nanoscale diesel exhaust particles: Oxidative stress, neuroinflammation, anxiety and depression on adult male mice</article-title>.
+                <source>Ecotoxicol Environ Saf</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>168</volume>: 
+                <fpage>338</fpage>-<lpage>347</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-049">
+                <label>49. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ehsanifar</surname><given-names>M</given-names></name>,
+                <name><surname>Rajati</surname><given-names>R</given-names></name>,
+                <name><surname>Gholami</surname><given-names>A</given-names></name>,
+                <name><surname>Reiss</surname><given-names>JP</given-names></name>.
+                <article-title>Mold and mycotoxin exposure and brain disorders</article-title>.
+                <source>J Integr Neurosci</source>.
+                <year iso-8601-date="2023">2023</year>; 
+                <volume>22</volume>: 
+                <fpage>137</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-050">
+                <label>50. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ehsanifar</surname><given-names>M</given-names></name>,
+                <name><surname>Montazeri</surname><given-names>Z</given-names></name>,
+                <name><surname>Taheri</surname><given-names>MA</given-names></name>,
+                <name><surname>Rafati</surname><given-names>M</given-names></name>,
+                <name><surname>Behjati</surname><given-names>M</given-names></name>,
+                <name><surname>Karimian</surname><given-names>M</given-names></name>.
+                <article-title>Hippocampal inflammation and oxidative stress following exposure to diesel exhaust nanoparticles in male and female mice</article-title>.
+                <source>Neurochem Int</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>145</volume>: 
+                <fpage>104989</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-051">
+                <label>51. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ehsanifar</surname><given-names>M</given-names></name>,
+                <name><surname>Jafari</surname><given-names>AJ</given-names></name>,
+                <name><surname>Montazeri</surname><given-names>Z</given-names></name>,
+                <name><surname>Kalantari</surname><given-names>RR</given-names></name>,
+                <name><surname>Gholami</surname><given-names>M</given-names></name>,
+                <name><surname>Ashtarinezhad</surname><given-names>A</given-names></name>.
+                <article-title>Learning and memory disorders related to hippocampal inflammation following exposure to air pollution</article-title>.
+                <source>J Environ Health Sci Eng</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>19</volume>: 
+                <fpage>261</fpage>-<lpage>272</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-052">
+                <label>52. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Khan</surname><given-names>FA</given-names></name>,
+                <name><surname>Almohazey</surname><given-names>D</given-names></name>,
+                <name><surname>Alomari</surname><given-names>M</given-names></name>,
+                <name><surname>Almofty</surname><given-names>SA</given-names></name>.
+                <article-title>Impact of nanoparticles on neuron biology: Current research trends</article-title>.
+                <source>Int J Nanomed</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>13</volume>: 
+                <fpage>2767</fpage>-<lpage>2776</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-053">
+                <label>53. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Teleanu</surname><given-names>DM</given-names></name>,
+                <name><surname>Chircov</surname><given-names>C</given-names></name>,
+                <name><surname>Grumezescu</surname><given-names>AM</given-names></name>,
+                <name><surname>Teleanu</surname><given-names>RI</given-names></name>.
+                <article-title>Neurotoxicity of nanomaterials: An up-to-date overview</article-title>.
+                <source>Nanomaterials</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>9</volume>: 
+                <fpage>96</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-054">
+                <label>54. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ehsanifar</surname><given-names>M</given-names></name>,
+                <name><surname>Yavari</surname><given-names>Z</given-names></name>,
+                <name><surname>Rafati</surname><given-names>M</given-names></name>.
+                <article-title>Exposure to urban air pollution particulate matter: Neurobehavioral alteration and hippocampal inflammation</article-title>.
+                <source>Environ Sci Pollut Res</source>.
+                <year iso-8601-date="2022">2022</year>; 
+                <volume>29</volume>: 
+                <fpage>50856</fpage>-<lpage>50866</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-055">
+                <label>55. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Oszl&#x00E1;nczi</surname><given-names>G</given-names></name>,
+                <name><surname>Vez&#x00E9;r</surname><given-names>T</given-names></name>,
+                <name><surname>S&#x00E1;rk&#x00F6;zi</surname><given-names>L</given-names></name>,
+                <name><surname>Horv&#x00E1;th</surname><given-names>E</given-names></name>,
+                <name><surname>Szab&#x00F3;</surname><given-names>A</given-names></name>,
+                <name><surname>Horv&#x00E1;th</surname><given-names>E</given-names></name>,
+                <etal/>.
+                <article-title>Metal deposition and functional neurotoxicity in rats after 3-6 weeks nasal exposure by two physicochemical forms of manganese</article-title>.
+                <source>Environ Toxicol Pharmacol</source>.
+                <year iso-8601-date="2010">2010</year>; 
+                <volume>30</volume>: 
+                <fpage>121</fpage>-<lpage>126</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-056">
+                <label>56. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ehsanifar</surname><given-names>M</given-names></name>,
+                <name><surname>Montazeri</surname><given-names>Z</given-names></name>,
+                <name><surname>Rafati</surname><given-names>M</given-names></name>.
+                <article-title>Alzheimer's disease-like neuropathology following exposure to ambient noise</article-title>.
+                <source>J Biomed Res Environ Sci</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>2</volume>: 
+                <fpage>1159</fpage>-<lpage>1162</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-057">
+                <label>57. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ehsanifar</surname><given-names>M</given-names></name>,
+                <name><surname>Jafari</surname><given-names>AJ</given-names></name>,
+                <name><surname>Nikzad</surname><given-names>H</given-names></name>,
+                <name><surname>Zavareh</surname><given-names>MS</given-names></name>,
+                <name><surname>Atlasi</surname><given-names>MA</given-names></name>,
+                <name><surname>Mohammadi</surname><given-names>H</given-names></name>,
+                <etal/>.
+                <article-title>Prenatal exposure to diesel exhaust particles causes anxiety, spatial memory disorders with alters expression of hippocampal pro-inflammatory cytokines and NMDA receptor subunits in adult male mice offspring</article-title>.
+                <source>Ecotoxicol Environ Saf</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>176</volume>: 
+                <fpage>34</fpage>-<lpage>41</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-058">
+                <label>58. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Fern&#x00E1;ndez-Bert&#x00F3;lez</surname><given-names>N</given-names></name>,
+                <name><surname>Costa</surname><given-names>C</given-names></name>,
+                <name><surname>Bessa</surname><given-names>MJ</given-names></name>,
+                <name><surname>Park</surname><given-names>M</given-names></name>,
+                <name><surname>Carriere</surname><given-names>M</given-names></name>,
+                <name><surname>Dussert</surname><given-names>F</given-names></name>,
+                <etal/>.
+                <article-title>Assessment of oxidative damage induced by iron oxide nanoparticles on different nervous system cells</article-title>.
+                <source>Mutat Res Genet Toxicol Environ Mutagen</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>845</volume>: 
+                <fpage>402989</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-059">
+                <label>59. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Wu</surname><given-names>J</given-names></name>,
+                <name><surname>Ding</surname><given-names>T</given-names></name>,
+                <name><surname>Sun</surname><given-names>J</given-names></name>.
+                <article-title>Neurotoxic potential of iron oxide nanoparticles in the rat brain striatum and hippocampus</article-title>.
+                <source>Neurotoxicology</source>.
+                <year iso-8601-date="2013">2013</year>; 
+                <volume>34</volume>: 
+                <fpage>243</fpage>-<lpage>253</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-060">
+                <label>60. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Haase</surname><given-names>A</given-names></name>,
+                <name><surname>Rott</surname><given-names>S</given-names></name>,
+                <name><surname>Mantion</surname><given-names>A</given-names></name>,
+                <name><surname>Graf</surname><given-names>P</given-names></name>,
+                <name><surname>Plendl</surname><given-names>J</given-names></name>,
+                <name><surname>Th&#x00FC;nemann</surname><given-names>AF</given-names></name>,
+                <etal/>.
+                <article-title>Effects of silver nanoparticles on primary mixed neural cell cultures: Uptake, oxidative stress and acute calcium responses</article-title>.
+                <source>Toxicol Sci</source>.
+                <year iso-8601-date="2012">2012</year>; 
+                <volume>126</volume>: 
+                <fpage>457</fpage>-<lpage>468</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-061">
+                <label>61. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Liu</surname><given-names>Y</given-names></name>,
+                <name><surname>Guan</surname><given-names>W</given-names></name>,
+                <name><surname>Ren</surname><given-names>G</given-names></name>,
+                <name><surname>Yang</surname><given-names>Z</given-names></name>.
+                <article-title>The possible mechanism of silver nanoparticle impact on hippocampal synaptic plasticity and spatial cognition in rats</article-title>.
+                <source>Toxicol Lett</source>.
+                <year iso-8601-date="2012">2012</year>; 
+                <volume>209</volume>: 
+                <fpage>227</fpage>-<lpage>231</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-062">
+                <label>62. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Niska</surname><given-names>K</given-names></name>,
+                <name><surname>Santos-Martinez</surname><given-names>MJ</given-names></name>,
+                <name><surname>Radomski</surname><given-names>MW</given-names></name>,
+                <name><surname>Inkielewicz-Stepniak</surname><given-names>I</given-names></name>.
+                <article-title>CuO nanoparticles induce apoptosis by impairing the antioxidant defense and detoxification systems in the mouse hippocampal HT22 cell line: Protective effect of crocetin</article-title>.
+                <source>Toxicol In Vitro</source>.
+                <year iso-8601-date="2015">2015</year>; 
+                <volume>29</volume>: 
+                <fpage>663</fpage>-<lpage>671</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-063">
+                <label>63. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>An</surname><given-names>L</given-names></name>,
+                <name><surname>Liu</surname><given-names>S</given-names></name>,
+                <name><surname>Yang</surname><given-names>Z</given-names></name>,
+                <name><surname>Zhang</surname><given-names>T</given-names></name>.
+                <article-title>Cognitive impairment in rats induced by nano-CuO and its possible mechanisms</article-title>.
+                <source>Toxicol Lett</source>.
+                <year iso-8601-date="2012">2012</year>; 
+                <volume>213</volume>: 
+                <fpage>220</fpage>-<lpage>227</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-064">
+                <label>64. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Bouwmeester</surname><given-names>H</given-names></name>,
+                <name><surname>Hollman</surname><given-names>PC</given-names></name>,
+                <name><surname>Peters</surname><given-names>RJ</given-names></name>.
+                <article-title>Potential health impact of environmentally released micro-and nanoplastics in the human food production chain: Experiences from nanotoxicology</article-title>.
+                <source>Environ Sci Technol</source>.
+                <year iso-8601-date="2015">2015</year>; 
+                <volume>49</volume>: 
+                <fpage>8932</fpage>-<lpage>8947</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-065">
+                <label>65. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Luyts</surname><given-names>K</given-names></name>,
+                <name><surname>Napierska</surname><given-names>D</given-names></name>,
+                <name><surname>Nemery</surname><given-names>B</given-names></name>,
+                <name><surname>Hoet</surname><given-names>PH</given-names></name>.
+                <article-title>How physico-chemical characteristics of nanoparticles cause their toxicity: Complex and unresolved interrelations</article-title>.
+                <source>Environ Sci Process Impacts</source>.
+                <year iso-8601-date="2013">2013</year>; 
+                <volume>15</volume>: 
+                <fpage>23</fpage>-<lpage>38</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-066">
+                <label>66. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Truong</surname><given-names>L</given-names></name>,
+                <name><surname>Saili</surname><given-names>KS</given-names></name>,
+                <name><surname>Miller</surname><given-names>JM</given-names></name>,
+                <name><surname>Hutchison</surname><given-names>JE</given-names></name>,
+                <name><surname>Tanguay</surname><given-names>RL</given-names></name>.
+                <article-title>Persistent adult zebrafish behavioral deficits results from acute embryonic exposure to gold nanoparticles</article-title>.
+                <source>Comp Biochem Physiol C Toxicol Pharmacol</source>.
+                <year iso-8601-date="2012">2012</year>; 
+                <volume>155</volume>: 
+                <fpage>269</fpage>-<lpage>274</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-067">
+                <label>67. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Dedeh</surname><given-names>A</given-names></name>,
+                <name><surname>Ciutat</surname><given-names>A</given-names></name>,
+                <name><surname>Treguer-Delapierre</surname><given-names>M</given-names></name>,
+                <name><surname>Bourdineaud</surname><given-names>JP</given-names></name>.
+                <article-title>Impact of gold nanoparticles on zebrafish exposed to a spiked sediment</article-title>.
+                <source>Nanotoxicology</source>.
+                <year iso-8601-date="2015">2015</year>; 
+                <volume>9</volume>: 
+                <fpage>71</fpage>-<lpage>80</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-068">
+                <label>68. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ferreira</surname><given-names>GK</given-names></name>,
+                <name><surname>Cardoso</surname><given-names>E</given-names></name>,
+                <name><surname>Vuolo</surname><given-names>FS</given-names></name>,
+                <name><surname>Galant</surname><given-names>LS</given-names></name>,
+                <name><surname>Michels</surname><given-names>M</given-names></name>,
+                <name><surname>Goncalves</surname><given-names>CL</given-names></name>,
+                <etal/>.
+                <article-title>Effect of acute and long-term administration of gold nanoparticles on biochemical parameters in rat brain</article-title>.
+                <source>Mater Sci Eng C</source>.
+                <year iso-8601-date="2017">2017</year>; 
+                <volume>79</volume>: 
+                <fpage>748</fpage>-<lpage>755</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-069">
+                <label>69. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Miranda</surname><given-names>RR</given-names></name>,
+                <name><surname>Damaso da Silveira</surname><given-names>AL</given-names></name>,
+                <name><surname>De Jesus</surname><given-names>IP</given-names></name>,
+                <name><surname>Gr&#x00F6;tzner</surname><given-names>SR</given-names></name>,
+                <name><surname>Voigt</surname><given-names>CL</given-names></name>,
+                <name><surname>Campos</surname><given-names>SX</given-names></name>,
+                <etal/>.
+                <article-title>Effects of realistic concentrations of TiO<sub>2</sub> and ZnO nanoparticles in prochilodus lineatus juvenile fish</article-title>.
+                <source>Environ Sci Pollut Res</source>.
+                <year iso-8601-date="2016">2016</year>; 
+                <volume>23</volume>: 
+                <fpage>5179</fpage>-<lpage>5188</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-070">
+                <label>70. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Sheng</surname><given-names>L</given-names></name>,
+                <name><surname>Wang</surname><given-names>L</given-names></name>,
+                <name><surname>Su</surname><given-names>M</given-names></name>,
+                <name><surname>Zhao</surname><given-names>X</given-names></name>,
+                <name><surname>Hu</surname><given-names>R</given-names></name>,
+                <name><surname>Yu</surname><given-names>X</given-names></name>,
+                <etal/>.
+                <article-title>Mechanism of TiO<sub>2</sub> nanoparticle-induced neurotoxicity in zebrafish (<italic>Danio rerio</italic>)</article-title>.
+                <source>Environ Toxicol</source>.
+                <year iso-8601-date="2016">2016</year>; 
+                <volume>31</volume>: 
+                <fpage>163</fpage>-<lpage>175</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-071">
+                <label>71. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Hu</surname><given-names>Q</given-names></name>,
+                <name><surname>Guo</surname><given-names>F</given-names></name>,
+                <name><surname>Zhao</surname><given-names>F</given-names></name>,
+                <name><surname>Fu</surname><given-names>Z</given-names></name>.
+                <article-title>Effects of titanium dioxide nanoparticles exposure on parkinsonism in zebrafish larvae and PC12</article-title>.
+                <source>Chemosphere</source>.
+                <year iso-8601-date="2017">2017</year>; 
+                <volume>173</volume>: 
+                <fpage>373</fpage>-<lpage>379</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-072">
+                <label>72. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Carmo</surname><given-names>TL</given-names></name>,
+                <name><surname>Siqueira</surname><given-names>PR</given-names></name>,
+                <name><surname>Azevedo</surname><given-names>VC</given-names></name>,
+                <name><surname>Tavares</surname><given-names>D</given-names></name>,
+                <name><surname>Pesenti</surname><given-names>EC</given-names></name>,
+                <name><surname>Cestari</surname><given-names>MM</given-names></name>,
+                <etal/>.
+                <article-title>Overview of the toxic effects of titanium dioxide nanoparticles in blood, liver, muscles, and brain of a neotropical detritivorous fish</article-title>.
+                <source>Environ Toxicol</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>34</volume>: 
+                <fpage>457</fpage>-<lpage>468</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-073">
+                <label>73. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Shrivastava</surname><given-names>R</given-names></name>,
+                <name><surname>Raza</surname><given-names>S</given-names></name>,
+                <name><surname>Yadav</surname><given-names>A</given-names></name>,
+                <name><surname>Kushwaha</surname><given-names>P</given-names></name>,
+                <name><surname>Flora</surname><given-names>SJ</given-names></name>.
+                <article-title>Effects of sub-acute exposure to TiO<sub>2</sub>, ZnO and Al<sub>2</sub>O<sub>3</sub> nanoparticles on oxidative stress and histological changes in mouse liver and brain</article-title>.
+                <source>Drug Chem Toxicol</source>.
+                <year iso-8601-date="2014">2014</year>; 
+                <volume>37</volume>: 
+                <fpage>336</fpage>-<lpage>347</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-074">
+                <label>74. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Grissa</surname><given-names>I</given-names></name>,
+                <name><surname>Guezguez</surname><given-names>S</given-names></name>,
+                <name><surname>Ezzi</surname><given-names>L</given-names></name>,
+                <name><surname>Chakroun</surname><given-names>S</given-names></name>,
+                <name><surname>Sallem</surname><given-names>A</given-names></name>,
+                <name><surname>Kerkeni</surname><given-names>E</given-names></name>,
+                <etal/>.
+                <article-title>The effect of titanium dioxide nanoparticles on neuroinflammation response in rat brain</article-title>.
+                <source>Environ Sci Pollut Res</source>.
+                <year iso-8601-date="2016">2016</year>; 
+                <volume>23</volume>: 
+                <fpage>20205</fpage>-<lpage>20513</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-075">
+                <label>75. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Hu</surname><given-names>R</given-names></name>,
+                <name><surname>Gong</surname><given-names>X</given-names></name>,
+                <name><surname>Duan</surname><given-names>Y</given-names></name>,
+                <name><surname>Li</surname><given-names>N</given-names></name>,
+                <name><surname>Che</surname><given-names>Y</given-names></name>,
+                <name><surname>Cui</surname><given-names>Y</given-names></name>,
+                <etal/>.
+                <article-title>Neurotoxicological effects and the impairment of spatial recognition memory in mice caused by exposure to TiO<sub>2</sub> nanoparticles</article-title>.
+                <source>Biomaterials</source>.
+                <year iso-8601-date="2010">2010</year>; 
+                <volume>31</volume>: 
+                <fpage>8043</fpage>-<lpage>8050</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-076">
+                <label>76. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ze</surname><given-names>X</given-names></name>,
+                <name><surname>Su</surname><given-names>M</given-names></name>,
+                <name><surname>Zhao</surname><given-names>X</given-names></name>,
+                <name><surname>Jiang</surname><given-names>H</given-names></name>,
+                <name><surname>Hong</surname><given-names>J</given-names></name>,
+                <name><surname>Yu</surname><given-names>X</given-names></name>,
+                <etal/>.
+                <article-title>TiO<sub>2</sub> nanoparticle-induced neurotoxicity may be involved in dysfunction of glutamate metabolism and its receptor expression in mice</article-title>.
+                <source>Environ Toxicol</source>.
+                <year iso-8601-date="2016">2016</year>; 
+                <volume>31</volume>: 
+                <fpage>655</fpage>-<lpage>662</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-077">
+                <label>77. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Horv&#x00E1;th</surname><given-names>T</given-names></name>,
+                <name><surname>Vez&#x00E9;r</surname><given-names>T</given-names></name>,
+                <name><surname>Kozma</surname><given-names>G</given-names></name>,
+                <name><surname>Papp</surname><given-names>A</given-names></name>.
+                <article-title>Functional neurotoxicity and tissue metal levels in rats exposed subacutely to titanium dioxide nanoparticles via the airways</article-title>.
+                <source>Ideggyogy Sz</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>71</volume>: 
+                <fpage>35</fpage>-<lpage>42</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-078">
+                <label>78. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ze</surname><given-names>Y</given-names></name>,
+                <name><surname>Sheng</surname><given-names>L</given-names></name>,
+                <name><surname>Zhao</surname><given-names>X</given-names></name>,
+                <name><surname>Ze</surname><given-names>X</given-names></name>,
+                <name><surname>Wang</surname><given-names>X</given-names></name>,
+                <name><surname>Zhou</surname><given-names>Q</given-names></name>,
+                <etal/>.
+                <article-title>Neurotoxic characteristics of spatial recognition damage of the hippocampus in mice following subchronic peroral exposure to TiO<sub>2</sub> nanoparticles</article-title>.
+                <source>J Hazard Mater</source>.
+                <year iso-8601-date="2014">2014</year>; 
+                <volume>264</volume>: 
+                <fpage>219</fpage>-<lpage>229</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-079">
+                <label>79. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Long</surname><given-names>TC</given-names></name>,
+                <name><surname>Saleh</surname><given-names>N</given-names></name>,
+                <name><surname>Tilton</surname><given-names>RD</given-names></name>,
+                <name><surname>Lowry</surname><given-names>GV</given-names></name>,
+                <name><surname>Veronesi</surname><given-names>B</given-names></name>.
+                <article-title>Titanium dioxide (P25) produces reactive oxygen species in immortalized brain microglia (BV2): Implications for nanoparticle neurotoxicity</article-title>.
+                <source>Environ Sci Technol</source>.
+                <year iso-8601-date="2006">2006</year>; 
+                <volume>40</volume>: 
+                <fpage>4346</fpage>-<lpage>4352</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-080">
+                <label>80. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Coccini</surname><given-names>T</given-names></name>,
+                <name><surname>Grandi</surname><given-names>S</given-names></name>,
+                <name><surname>Lonati</surname><given-names>D</given-names></name>,
+                <name><surname>Locatelli</surname><given-names>C</given-names></name>,
+                <name><surname>De Simone</surname><given-names>U</given-names></name>.
+                <article-title>Comparative cellular toxicity of titanium dioxide nanoparticles on human astrocyte and neuronal cells after acute and prolonged exposure</article-title>.
+                <source>Neurotoxicology</source>.
+                <year iso-8601-date="2015">2015</year>; 
+                <volume>48</volume>: 
+                <fpage>77</fpage>-<lpage>89</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-081">
+                <label>81. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Erriquez</surname><given-names>J</given-names></name>,
+                <name><surname>Bolis</surname><given-names>V</given-names></name>,
+                <name><surname>Morel</surname><given-names>S</given-names></name>,
+                <name><surname>Fenoglio</surname><given-names>I</given-names></name>,
+                <name><surname>Fubini</surname><given-names>B</given-names></name>,
+                <name><surname>Quagliotto</surname><given-names>P</given-names></name>,
+                <etal/>.
+                <article-title>Nanosized TiO<sub>2</sub> is internalized by dorsal root ganglion cells and causes damage via apoptosis</article-title>.
+                <source>Nanomedicine</source>.
+                <year iso-8601-date="2015">2015</year>; 
+                <volume>11</volume>: 
+                <fpage>1309</fpage>-<lpage>1319</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-082">
+                <label>82. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>He</surname><given-names>Q</given-names></name>,
+                <name><surname>Zhou</surname><given-names>X</given-names></name>,
+                <name><surname>Liu</surname><given-names>Y</given-names></name>,
+                <name><surname>Gou</surname><given-names>W</given-names></name>,
+                <name><surname>Cui</surname><given-names>J</given-names></name>,
+                <name><surname>Li</surname><given-names>Z</given-names></name>,
+                <etal/>.
+                <article-title>Titanium dioxide nanoparticles induce mouse hippocampal neuron apoptosis via oxidative stress-and calcium imbalance-mediated endoplasmic reticulum stress</article-title>.
+                <source>Environ Toxicol Pharmacol</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>63</volume>: 
+                <fpage>6</fpage>-<lpage>15</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-083">
+                <label>83. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Lei</surname><given-names>L</given-names></name>,
+                <name><surname>Liu</surname><given-names>M</given-names></name>,
+                <name><surname>Song</surname><given-names>Y</given-names></name>,
+                <name><surname>Lu</surname><given-names>S</given-names></name>,
+                <name><surname>Hu</surname><given-names>J</given-names></name>,
+                <name><surname>Cao</surname><given-names>C</given-names></name>,
+                <etal/>.
+                <article-title>Polystyrene (nano) microplastics cause size-dependent neurotoxicity, oxidative damage and other adverse effects in Caenorhabditis elegans</article-title>.
+                <source>Environ Sci Nano</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>5</volume>: 
+                <fpage>2009</fpage>-<lpage>2020</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-084">
+                <label>84. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Guo</surname><given-names>M</given-names></name>,
+                <name><surname>Fang</surname><given-names>Y</given-names></name>,
+                <name><surname>Zhu</surname><given-names>J</given-names></name>,
+                <name><surname>Chen</surname><given-names>C</given-names></name>,
+                <name><surname>Zhang</surname><given-names>Z</given-names></name>,
+                <name><surname>Tian</surname><given-names>X</given-names></name>,
+                <etal/>.
+                <article-title>Investigation of metabolic kinetics in different brain regions of awake rats using the [<sup>1</sup>H-<sup>13</sup>C]-NMR technique</article-title>.
+                <source>J Pharm Biomed Anal</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>204</volume>: 
+                <fpage>114240</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-085">
+                <label>85. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Chen</surname><given-names>Y</given-names></name>,
+                <name><surname>Liu</surname><given-names>X</given-names></name>,
+                <name><surname>Leng</surname><given-names>Y</given-names></name>,
+                <name><surname>Wang</surname><given-names>J</given-names></name>.
+                <article-title>Defense responses in earthworms (Eisenia fetida) exposed to low-density polyethylene microplastics in soils</article-title>.
+                <source>Ecotoxicol Environ Saf</source>.
+                <year iso-8601-date="2020">2020</year>; 
+                <volume>187</volume>: 
+                <fpage>109788</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-086">
+                <label>86. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Magni</surname><given-names>S</given-names></name>,
+                <name><surname>Gagn&#x00E9;</surname><given-names>F</given-names></name>,
+                <name><surname>Andr&#x00E9;</surname><given-names>C</given-names></name>,
+                <name><surname>Della Torre</surname><given-names>C</given-names></name>,
+                <name><surname>Auclair</surname><given-names>J</given-names></name>,
+                <name><surname>Hanana</surname><given-names>H</given-names></name>,
+                <etal/>.
+                <article-title>Evaluation of uptake and chronic toxicity of virgin polystyrene microbeads in freshwater zebra mussel Dreissena polymorpha (Mollusca: Bivalvia)</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>631</volume>: 
+                <fpage>778</fpage>-<lpage>788</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-087">
+                <label>87. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ribeiro</surname><given-names>F</given-names></name>,
+                <name><surname>Garcia</surname><given-names>AR</given-names></name>,
+                <name><surname>Pereira</surname><given-names>BP</given-names></name>,
+                <name><surname>Fonseca</surname><given-names>M</given-names></name>,
+                <name><surname>Mestre</surname><given-names>NC</given-names></name>,
+                <name><surname>Fonseca</surname><given-names>TG</given-names></name>,
+                <etal/>.
+                <article-title>Microplastics effects in Scrobicularia plana</article-title>.
+                <source>Mar Pollut Bull</source>.
+                <year iso-8601-date="2017">2017</year>; 
+                <volume>122</volume>: 
+                <fpage>379</fpage>-<lpage>391</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-088">
+                <label>88. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Brandts</surname><given-names>I</given-names></name>,
+                <name><surname>Teles</surname><given-names>M</given-names></name>,
+                <name><surname>Gon&#x00E7;alves</surname><given-names>AP</given-names></name>,
+                <name><surname>Barreto</surname><given-names>A</given-names></name>,
+                <name><surname>Franco-Martinez</surname><given-names>L</given-names></name>,
+                <name><surname>Tvarijonaviciute</surname><given-names>A</given-names></name>,
+                <etal/>.
+                <article-title>Effects of nanoplastics on Mytilus galloprovincialis after individual and combined exposure with carbamazepine</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>643</volume>: 
+                <fpage>775</fpage>-<lpage>784</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-089">
+                <label>89. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Avio</surname><given-names>CG</given-names></name>,
+                <name><surname>Gorbi</surname><given-names>S</given-names></name>,
+                <name><surname>Milan</surname><given-names>M</given-names></name>,
+                <name><surname>Benedetti</surname><given-names>M</given-names></name>,
+                <name><surname>Fattorini</surname><given-names>D</given-names></name>,
+                <name><surname>d'Errico</surname><given-names>G</given-names></name>,
+                <etal/>.
+                <article-title>Pollutants bioavailability and toxicological risk from microplastics to marine mussels</article-title>.
+                <source>Environ Pollut</source>.
+                <year iso-8601-date="2015">2015</year>; 
+                <volume>198</volume>: 
+                <fpage>211</fpage>-<lpage>222</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-090">
+                <label>90. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Guilhermino</surname><given-names>L</given-names></name>,
+                <name><surname>Vieira</surname><given-names>LR</given-names></name>,
+                <name><surname>Ribeiro</surname><given-names>D</given-names></name>,
+                <name><surname>Tavares</surname><given-names>AS</given-names></name>,
+                <name><surname>Cardoso</surname><given-names>V</given-names></name>,
+                <name><surname>Alves</surname><given-names>A</given-names></name>,
+                <etal/>.
+                <article-title>Uptake and effects of the antimicrobial florfenicol, microplastics and their mixtures on freshwater exotic invasive bivalve Corbicula fluminea</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>622</volume>: 
+                <fpage>1131</fpage>-<lpage>1142</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-091">
+                <label>91. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Oliveira</surname><given-names>P</given-names></name>,
+                <name><surname>Barboza</surname><given-names>LG</given-names></name>,
+                <name><surname>Branco</surname><given-names>V</given-names></name>,
+                <name><surname>Figueiredo</surname><given-names>N</given-names></name>,
+                <name><surname>Carvalho</surname><given-names>C</given-names></name>,
+                <name><surname>Guilhermino</surname><given-names>L</given-names></name>.
+                <article-title>Effects of microplastics and mercury in the freshwater bivalve corbicula fluminea (M&#x00FC;ller, 1774): Filtration rate, biochemical biomarkers and mercury bioconcentration</article-title>.
+                <source>Ecotoxicol Environ Saf</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>164</volume>: 
+                <fpage>155</fpage>-<lpage>163</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-092">
+                <label>92. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Gambardella</surname><given-names>C</given-names></name>,
+                <name><surname>Morgana</surname><given-names>S</given-names></name>,
+                <name><surname>Ferrando</surname><given-names>S</given-names></name>,
+                <name><surname>Bramini</surname><given-names>M</given-names></name>,
+                <name><surname>Piazza</surname><given-names>V</given-names></name>,
+                <name><surname>Costa</surname><given-names>E</given-names></name>,
+                <etal/>.
+                <article-title>Effects of polystyrene microbeads in marine planktonic crustaceans</article-title>.
+                <source>Ecotoxicol Environ Saf</source>.
+                <year iso-8601-date="2017">2017</year>; 
+                <volume>145</volume>: 
+                <fpage>250</fpage>-<lpage>257</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-093">
+                <label>93. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Var&#x00F3;</surname><given-names>I</given-names></name>,
+                <name><surname>Perini</surname><given-names>A</given-names></name>,
+                <name><surname>Torreblanca</surname><given-names>A</given-names></name>,
+                <name><surname>Garcia</surname><given-names>Y</given-names></name>,
+                <name><surname>Bergami</surname><given-names>E</given-names></name>,
+                <name><surname>Vannuccini</surname><given-names>ML</given-names></name>,
+                <etal/>.
+                <article-title>Time-dependent effects of polystyrene nanoparticles in brine shrimp artemia franciscana at physiological, biochemical and molecular levels</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>675</volume>: 
+                <fpage>570</fpage>-<lpage>580</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-094">
+                <label>94. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Rafiee</surname><given-names>M</given-names></name>,
+                <name><surname>Dargahi</surname><given-names>L</given-names></name>,
+                <name><surname>Eslami</surname><given-names>A</given-names></name>,
+                <name><surname>Beirami</surname><given-names>E</given-names></name>,
+                <name><surname>Jahangiri-Rad</surname><given-names>M</given-names></name>,
+                <name><surname>Sabour</surname><given-names>S</given-names></name>,
+                <etal/>.
+                <article-title>Neurobehavioral assessment of rats exposed to pristine polystyrene nanoplastics upon oral exposure</article-title>.
+                <source>Chemosphere</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>193</volume>: 
+                <fpage>745</fpage>-<lpage>753</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-095">
+                <label>95. </label>
+                <mixed-citation publication-type="other">
+                <name><surname>Marsden</surname><given-names>P</given-names></name>,
+                <name><surname>Koelmans</surname><given-names>AA</given-names></name>,
+                <name><surname>Bourdon-Lacombe</surname><given-names>J</given-names></name>,
+                <name><surname>Gouin</surname><given-names>T</given-names></name>,
+                <name><surname>D'anglada</surname><given-names>L</given-names></name>,
+                <name><surname>Cunliffe</surname><given-names>D</given-names></name>,
+                <etal/>.
+                <article-title>Microplastics in drinking water</article-title>.
+                <publisher-loc>Geneva, Switzerland</publisher-loc>:
+                <publisher-name>World Health Organization</publisher-name>;
+                <year iso-8601-date="2019">2019</year>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-096">
+                <label>96. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ding</surname><given-names>J</given-names></name>,
+                <name><surname>Zhang</surname><given-names>S</given-names></name>,
+                <name><surname>Razanajatovo</surname><given-names>RM</given-names></name>,
+                <name><surname>Zou</surname><given-names>H</given-names></name>,
+                <name><surname>Zhu</surname><given-names>W</given-names></name>.
+                <article-title>Accumulation, tissue distribution, and biochemical effects of polystyrene microplastics in the freshwater fish red tilapia (Oreochromis niloticus)</article-title>.
+                <source>Environ Pollut</source>.
+                <year iso-8601-date="2018">2018</year>; 
+                <volume>238</volume>: 
+                <fpage>1</fpage>-<lpage>9</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-097">
+                <label>97. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Zhang</surname><given-names>S</given-names></name>,
+                <name><surname>Ding</surname><given-names>J</given-names></name>,
+                <name><surname>Razanajatovo</surname><given-names>RM</given-names></name>,
+                <name><surname>Jiang</surname><given-names>H</given-names></name>,
+                <name><surname>Zou</surname><given-names>H</given-names></name>,
+                <name><surname>Zhu</surname><given-names>W</given-names></name>.
+                <article-title>Interactive effects of polystyrene microplastics and roxithromycin on bioaccumulation and biochemical status in the freshwater fish red tilapia (Oreochromis niloticus)</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>648</volume>: 
+                <fpage>1431</fpage>-<lpage>1439</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-098">
+                <label>98. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Ferreira</surname><given-names>P</given-names></name>,
+                <name><surname>Fonte</surname><given-names>E</given-names></name>,
+                <name><surname>Soares</surname><given-names>ME</given-names></name>,
+                <name><surname>Carvalho</surname><given-names>F</given-names></name>,
+                <name><surname>Guilhermino</surname><given-names>L</given-names></name>.
+                <article-title>Effects of multi-stressors on juveniles of the marine fish Pomatoschistus microps: Gold nanoparticles, microplastics and temperature</article-title>.
+                <source>Aquat Toxicol</source>.
+                <year iso-8601-date="2016">2016</year>; 
+                <volume>170</volume>: 
+                <fpage>89</fpage>-<lpage>103</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-099">
+                <label>99. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Fonte</surname><given-names>E</given-names></name>,
+                <name><surname>Ferreira</surname><given-names>P</given-names></name>,
+                <name><surname>Guilhermino</surname><given-names>L</given-names></name>.
+                <article-title>Temperature rise and microplastics interact with the toxicity of the antibiotic cefalexin to juveniles of the common goby (Pomatoschistus microps): Post-exposure predatory behaviour, acetylcholinesterase activity and lipid peroxidation</article-title>.
+                <source>Aquat Toxicol</source>.
+                <year iso-8601-date="2016">2016</year>; 
+                <volume>180</volume>: 
+                <fpage>173</fpage>-<lpage>185</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-100">
+                <label>100. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Browne</surname><given-names>MA</given-names></name>,
+                <name><surname>Dissanayake</surname><given-names>A</given-names></name>,
+                <name><surname>Galloway</surname><given-names>TS</given-names></name>,
+                <name><surname>Lowe</surname><given-names>DM</given-names></name>,
+                <name><surname>Thompson</surname><given-names>RC</given-names></name>.
+                <article-title>Ingested microscopic plastic translocates to the circulatory system of the mussel, <italic>Mytilus edulis</italic> (L.)</article-title>.
+                <source>Environ Sci Technol</source>.
+                <year iso-8601-date="2008">2008</year>; 
+                <volume>42</volume>: 
+                <fpage>5026</fpage>-<lpage>5031</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-101">
+                <label>101. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Mattsson</surname><given-names>K</given-names></name>,
+                <name><surname>Johnson</surname><given-names>EV</given-names></name>,
+                <name><surname>Malmendal</surname><given-names>A</given-names></name>,
+                <name><surname>Linse</surname><given-names>S</given-names></name>,
+                <name><surname>Hansson</surname><given-names>LA</given-names></name>,
+                <name><surname>Cedervall</surname><given-names>T</given-names></name>.
+                <article-title>Brain damage and behavioural disorders in fish induced by plastic nanoparticles delivered through the food chain</article-title>.
+                <source>Sci Rep</source>.
+                <year iso-8601-date="2017">2017</year>; 
+                <volume>7</volume>: 
+                <fpage>11452</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-102">
+                <label>102. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Murali</surname><given-names>K</given-names></name>,
+                <name><surname>Li</surname><given-names>Y</given-names></name>,
+                <name><surname>Demeter</surname><given-names>K</given-names></name>,
+                <name><surname>K&#x00F6;rnyei</surname><given-names>Z</given-names></name>,
+                <name><surname>Madar&#x00E1;sz</surname><given-names>E</given-names></name>.
+                <article-title>Uptake and bio-reactivity of polystyrene nanoparticles is affected by surface modifications, ageing and LPS adsorption: In vitro studies on neural tissue cells</article-title>.
+                <source>Nanoscale</source>.
+                <year iso-8601-date="2015">2015</year>; 
+                <volume>7</volume>: 
+                <fpage>4199</fpage>-<lpage>4210</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-103">
+                <label>103. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Patil</surname><given-names>S</given-names></name>,
+                <name><surname>Sandberg</surname><given-names>A</given-names></name>,
+                <name><surname>Heckert</surname><given-names>E</given-names></name>,
+                <name><surname>Self</surname><given-names>W</given-names></name>,
+                <name><surname>Seal</surname><given-names>S</given-names></name>.
+                <article-title>Protein adsorption and cellular uptake of cerium oxide nanoparticles as a function of zeta potential</article-title>.
+                <source>Biomaterials</source>.
+                <year iso-8601-date="2007">2007</year>; 
+                <volume>28</volume>: 
+                <fpage>4600</fpage>-<lpage>4607</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-104">
+                <label>104. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Fr&#x00F6;hlich</surname><given-names>E</given-names></name>.
+                <article-title>The role of surface charge in cellular uptake and cytotoxicity of medical nanoparticles</article-title>.
+                <source>Int J Nanomed</source>.
+                <year iso-8601-date="2012">2012</year>; 
+                <volume>7</volume>: 
+                <fpage>5577</fpage>-<lpage>5591</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-105">
+                <label>105. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Koelmans</surname><given-names>AA</given-names></name>,
+                <name><surname>Bakir</surname><given-names>A</given-names></name>,
+                <name><surname>Burton</surname><given-names>GA</given-names></name>,
+                <name><surname>Janssen</surname><given-names>CR</given-names></name>.
+                <article-title>Microplastic as a vector for chemicals in the aquatic environment: Critical review and model-supported reinterpretation of empirical studies</article-title>.
+                <source>Environ Sci Technol</source>.
+                <year iso-8601-date="2016">2016</year>; 
+                <volume>50</volume>: 
+                <fpage>3315</fpage>-<lpage>3326</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-106">
+                <label>106. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Vir&#x0161;ek</surname><given-names>MK</given-names></name>,
+                <name><surname>Lov&#x0161;in</surname><given-names>MN</given-names></name>,
+                <name><surname>Koren</surname><given-names>&#x0160;</given-names></name>,
+                <name><surname>Kr&#x017E;an</surname><given-names>A</given-names></name>,
+                <name><surname>Peterlin</surname><given-names>M</given-names></name>.
+                <article-title>Microplastics as a vector for the transport of the bacterial fish pathogen species Aeromonas salmonicida</article-title>.
+                <source>Mar Pollut Bull</source>.
+                <year iso-8601-date="2017">2017</year>; 
+                <volume>125</volume>: 
+                <fpage>301</fpage>-<lpage>309</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-107">
+                <label>107. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Xie</surname><given-names>J</given-names></name>,
+                <name><surname>Sun</surname><given-names>Y</given-names></name>,
+                <name><surname>Ma</surname><given-names>Y</given-names></name>,
+                <name><surname>Wu</surname><given-names>D</given-names></name>,
+                <name><surname>Zhang</surname><given-names>Z</given-names></name>.
+                <article-title>Blood-brain barrier damage accelerates the accumulation of micro-and nanoplastics in the human central nervous system</article-title>.
+                <source>J Hazard Mater</source>.
+                <year iso-8601-date="2024">2024</year>; 
+                <volume>480</volume>: 
+                <fpage>136028</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-108">
+                <label>108. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Canton</surname><given-names>I</given-names></name>,
+                <name><surname>Battaglia</surname><given-names>G</given-names></name>.
+                <article-title>Endocytosis at the nanoscale</article-title>.
+                <source>Chem Soc Rev</source>.
+                <year iso-8601-date="2012">2012</year>; 
+                <volume>41</volume>: 
+                <fpage>2718</fpage>-<lpage>2739</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-109">
+                <label>109. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Liu</surname><given-names>S</given-names></name>,
+                <name><surname>Wu</surname><given-names>X</given-names></name>,
+                <name><surname>Gu</surname><given-names>W</given-names></name>,
+                <name><surname>Yu</surname><given-names>J</given-names></name>,
+                <name><surname>Wu</surname><given-names>B</given-names></name>.
+                <article-title>Influence of the digestive process on intestinal toxicity of polystyrene microplastics as determined by in vitro Caco-2 models</article-title>.
+                <source>Chemosphere</source>.
+                <year iso-8601-date="2020">2020</year>; 
+                <volume>256</volume>: 
+                <fpage>127204</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-110">
+                <label>110. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Brown</surname><given-names>TD</given-names></name>,
+                <name><surname>Habibi</surname><given-names>N</given-names></name>,
+                <name><surname>Wu</surname><given-names>D</given-names></name>,
+                <name><surname>Lahann</surname><given-names>J</given-names></name>,
+                <name><surname>Mitragotri</surname><given-names>S</given-names></name>.
+                <article-title>Effect of nanoparticle composition, size, shape, and stiffness on penetration across the blood-brain barrier</article-title>.
+                <source>ACS Biomater Sci Eng</source>.
+                <year iso-8601-date="2020">2020</year>; 
+                <volume>6</volume>: 
+                <fpage>4916</fpage>-<lpage>4928</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-111">
+                <label>111. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Mazumdar</surname><given-names>S</given-names></name>,
+                <name><surname>Chitkara</surname><given-names>D</given-names></name>,
+                <name><surname>Mittal</surname><given-names>A</given-names></name>.
+                <article-title>Exploration and insights into the cellular internalization and intracellular fate of amphiphilic polymeric nanocarriers</article-title>.
+                <source>Acta Pharm Sin B</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>11</volume>: 
+                <fpage>903</fpage>-<lpage>924</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-112">
+                <label>112. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Monikh</surname><given-names>FA</given-names></name>,
+                <name><surname>Vijver</surname><given-names>MG</given-names></name>,
+                <name><surname>Kortet</surname><given-names>R</given-names></name>,
+                <name><surname>Lynch</surname><given-names>I</given-names></name>,
+                <name><surname>Peijnenburg</surname><given-names>WJ</given-names></name>.
+                <article-title>Emerging investigator series: Perspectives on toxicokinetics of nanoscale plastic debris in organisms</article-title>.
+                <source>Environ Sci Nano</source>.
+                <year iso-8601-date="2022">2022</year>; 
+                <volume>9</volume>: 
+                <fpage>1566</fpage>-<lpage>1577</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-113">
+                <label>113. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Zhou</surname><given-names>R</given-names></name>,
+                <name><surname>Zhou</surname><given-names>D</given-names></name>,
+                <name><surname>Yang</surname><given-names>S</given-names></name>,
+                <name><surname>Shi</surname><given-names>Z</given-names></name>,
+                <name><surname>Pan</surname><given-names>H</given-names></name>,
+                <name><surname>Jin</surname><given-names>Q</given-names></name>,
+                <etal/>.
+                <article-title>Neurotoxicity of polystyrene nanoplastics with different particle sizes at environment-related concentrations on early zebrafish embryos</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2023">2023</year>; 
+                <volume>872</volume>: 
+                <fpage>162096</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-114">
+                <label>114. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Yin</surname><given-names>K</given-names></name>,
+                <name><surname>Wang</surname><given-names>Y</given-names></name>,
+                <name><surname>Zhao</surname><given-names>H</given-names></name>,
+                <name><surname>Wang</surname><given-names>D</given-names></name>,
+                <name><surname>Guo</surname><given-names>M</given-names></name>,
+                <name><surname>Mu</surname><given-names>M</given-names></name>,
+                <etal/>.
+                <article-title>A comparative review of microplastics and nanoplastics: Toxicity hazards on digestive, reproductive and nervous system</article-title>.
+                <source>Sci Total Environ</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>774</volume>: 
+                <fpage>145758</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-115">
+                <label>115. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Liu</surname><given-names>D</given-names></name>,
+                <name><surname>Lin</surname><given-names>B</given-names></name>,
+                <name><surname>Shao</surname><given-names>W</given-names></name>,
+                <name><surname>Zhu</surname><given-names>Z</given-names></name>,
+                <name><surname>Ji</surname><given-names>T</given-names></name>,
+                <name><surname>Yang</surname><given-names>C</given-names></name>.
+                <article-title>In vitro and in vivo studies on the transport of PEGylated silica nanoparticles across the blood-brain barrier</article-title>.
+                <source>ACS Appl Mater Interfaces</source>.
+                <year iso-8601-date="2014">2014</year>; 
+                <volume>6</volume>: 
+                <fpage>2131</fpage>-<lpage>2136</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-116">
+                <label>116. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Kopatz</surname><given-names>V</given-names></name>,
+                <name><surname>Wen</surname><given-names>K</given-names></name>,
+                <name><surname>Kov&#x00E1;cs</surname><given-names>T</given-names></name>,
+                <name><surname>Keimowitz</surname><given-names>AS</given-names></name>,
+                <name><surname>Pichler</surname><given-names>V</given-names></name>,
+                <name><surname>Widder</surname><given-names>J</given-names></name>,
+                <etal/>.
+                <article-title>Micro-and nanoplastics breach the blood-brain barrier (BBB): Biomolecular corona's role revealed</article-title>.
+                <source>Nanomaterials</source>.
+                <year iso-8601-date="2023">2023</year>; 
+                <volume>13</volume>: 
+                <fpage>1404</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-117">
+                <label>117. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Da Silva-Candal</surname><given-names>A</given-names></name>,
+                <name><surname>Brown</surname><given-names>T</given-names></name>,
+                <name><surname>Krishnan</surname><given-names>V</given-names></name>,
+                <name><surname>Lopez-Loureiro</surname><given-names>I</given-names></name>,
+                <name><surname>&#x00E1;vila-G&#x00F3;mez</surname><given-names>P</given-names></name>,
+                <name><surname>Pusuluri</surname><given-names>A</given-names></name>,
+                <etal/>.
+                <article-title>Shape effect in active targeting of nanoparticles to inflamed cerebral endothelium under static and flow conditions</article-title>.
+                <source>J Control Release</source>.
+                <year iso-8601-date="2019">2019</year>; 
+                <volume>309</volume>: 
+                <fpage>94</fpage>-<lpage>105</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-118">
+                <label>118. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Kolhar</surname><given-names>P</given-names></name>,
+                <name><surname>Anselmo</surname><given-names>AC</given-names></name>,
+                <name><surname>Gupta</surname><given-names>V</given-names></name>,
+                <name><surname>Pant</surname><given-names>K</given-names></name>,
+                <name><surname>Prabhakarpandian</surname><given-names>B</given-names></name>,
+                <name><surname>Ruoslahti</surname><given-names>E</given-names></name>,
+                <etal/>.
+                <article-title>Using shape effects to target antibody-coated nanoparticles to lung and brain endothelium</article-title>.
+                <source>Proc Natl Acad Sci</source>.
+                <year iso-8601-date="2013">2013</year>; 
+                <volume>110</volume>: 
+                <fpage>10753</fpage>-<lpage>10758</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-119">
+                <label>119. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Salatin</surname><given-names>S</given-names></name>,
+                <name><surname>Maleki Dizaj</surname><given-names>S</given-names></name>,
+                <name><surname>Yari Khosroushahi</surname><given-names>A</given-names></name>.
+                <article-title>Effect of the surface modification, size, and shape on cellular uptake of nanoparticles</article-title>.
+                <source>Cell Biol Int</source>.
+                <year iso-8601-date="2015">2015</year>; 
+                <volume>39</volume>: 
+                <fpage>881</fpage>-<lpage>890</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-120">
+                <label>120. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Urani</surname><given-names>C</given-names></name>,
+                <name><surname>Barbieri</surname><given-names>R</given-names></name>,
+                <name><surname>Alloisio</surname><given-names>S</given-names></name>,
+                <name><surname>Tesauro</surname><given-names>M</given-names></name>.
+                <article-title>From the environment to molecular interactions of nanoplastics: Unraveling the neurotoxic impacts and the implications in neurodegenerative processes</article-title>.
+                <source>Appl Sci</source>.
+                <year iso-8601-date="2024">2024</year>; 
+                <volume>14</volume>: 
+                <fpage>7280</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-121">
+                <label>121. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Monikh</surname><given-names>FA</given-names></name>,
+                <name><surname>Dur&#x00E3;o</surname><given-names>M</given-names></name>,
+                <name><surname>Kipriianov</surname><given-names>PV</given-names></name>,
+                <name><surname>Huuskonen</surname><given-names>H</given-names></name>,
+                <name><surname>Kek&#x00E4;l&#x00E4;inen</surname><given-names>J</given-names></name>,
+                <name><surname>Uusi-Heikkil&#x00E4;</surname><given-names>S</given-names></name>,
+                <etal/>.
+                <article-title>Chemical composition and particle size influence the toxicity of nanoscale plastic debris and their co-occurring benzo (&#x03B1;) pyrene in the model aquatic organisms daphnia magna and danio rerio</article-title>.
+                <source>NanoImpact</source>.
+                <year iso-8601-date="2022">2022</year>; 
+                <volume>25</volume>: 
+                <fpage>100382</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-122">
+                <label>122. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Santoro</surname><given-names>A</given-names></name>,
+                <name><surname>Marino</surname><given-names>M</given-names></name>,
+                <name><surname>Vandenberg</surname><given-names>LN</given-names></name>,
+                <name><surname>Szychlinska</surname><given-names>MA</given-names></name>,
+                <name><surname>Lamparelli</surname><given-names>EP</given-names></name>,
+                <name><surname>Scalia</surname><given-names>F</given-names></name>,
+                <etal/>.
+                <article-title>PLASTAMINATION: Outcomes on the central nervous system and reproduction</article-title>.
+                <source>Curr Neuropharmacol</source>.
+                <year iso-8601-date="2024">2024</year>; 
+                <volume>22</volume>: 
+                <fpage>1870</fpage>-<lpage>1898</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-123">
+                <label>123. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Gan</surname><given-names>AJ</given-names></name>,
+                <name><surname>Chia</surname><given-names>KF</given-names></name>,
+                <name><surname>Lim</surname><given-names>CL</given-names></name>,
+                <name><surname>Tan</surname><given-names>BK</given-names></name>,
+                <name><surname>Wong</surname><given-names>SF</given-names></name>,
+                <name><surname>Chye</surname><given-names>SM</given-names></name>,
+                <etal/>.
+                <article-title>Neurotoxicity of nanoplastics: A review</article-title>.
+                <source>F1000Research</source>.
+                <year iso-8601-date="2024">2024</year>; 
+                <volume>13</volume>: 
+                <fpage>793</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-124">
+                <label>124. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Chirio</surname><given-names>D</given-names></name>,
+                <name><surname>Gallarate</surname><given-names>M</given-names></name>,
+                <name><surname>Peira</surname><given-names>E</given-names></name>,
+                <name><surname>Battaglia</surname><given-names>L</given-names></name>,
+                <name><surname>Muntoni</surname><given-names>E</given-names></name>,
+                <name><surname>Riganti</surname><given-names>C</given-names></name>,
+                <etal/>.
+                <article-title>Positive-charged solid lipid nanoparticles as paclitaxel drug delivery system in glioblastoma treatment</article-title>.
+                <source>Eur J Pharm Biopharm</source>.
+                <year iso-8601-date="2014">2014</year>; 
+                <volume>88</volume>: 
+                <fpage>746</fpage>-<lpage>758</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-125">
+                <label>125. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Shan</surname><given-names>S</given-names></name>,
+                <name><surname>Zhang</surname><given-names>Y</given-names></name>,
+                <name><surname>Zhao</surname><given-names>H</given-names></name>,
+                <name><surname>Zeng</surname><given-names>T</given-names></name>,
+                <name><surname>Zhao</surname><given-names>X</given-names></name>.
+                <article-title>Polystyrene nanoplastics penetrate across the blood-brain barrier and induce activation of microglia in the brain of mice</article-title>.
+                <source>Chemosphere</source>.
+                <year iso-8601-date="2022">2022</year>; 
+                <volume>298</volume>: 
+                <fpage>134261</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-126">
+                <label>126. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Grodzicki</surname><given-names>W</given-names></name>,
+                <name><surname>Dziendzikowska</surname><given-names>K</given-names></name>,
+                <name><surname>Gromadzka-Ostrowska</surname><given-names>J</given-names></name>,
+                <name><surname>Kruszewski</surname><given-names>M</given-names></name>.
+                <article-title>Nanoplastic impact on the gut-brain axis: Current knowledge and future directions</article-title>.
+                <source>Int J Mol Sci</source>.
+                <year iso-8601-date="2021">2021</year>; 
+                <volume>22</volume>: 
+                <fpage>12795</fpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-127">
+                <label>127. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Zhang</surname><given-names>L</given-names></name>,
+                <name><surname>Fan</surname><given-names>J</given-names></name>,
+                <name><surname>Li</surname><given-names>G</given-names></name>,
+                <name><surname>Yin</surname><given-names>Z</given-names></name>,
+                <name><surname>Fu</surname><given-names>BM</given-names></name>.
+                <article-title>Transcellular model for neutral and charged nanoparticles across an in vitro blood-brain barrier</article-title>.
+                <source>Cardiovasc Eng Technol</source>.
+                <year iso-8601-date="2020">2020</year>; 
+                <volume>11</volume>: 
+                <fpage>607</fpage>-<lpage>620</lpage>.
+                </mixed-citation>
+            </ref>
+            <ref id="B-128">
+                <label>128. </label>
+                <mixed-citation publication-type="journal">
+                <name><surname>Fr&#x00F6;hlich</surname><given-names>E</given-names></name>,
+                <name><surname>Meindl</surname><given-names>C</given-names></name>,
+                <name><surname>Roblegg</surname><given-names>E</given-names></name>,
+                <name><surname>Ebner</surname><given-names>B</given-names></name>,
+                <name><surname>Absenger</surname><given-names>M</given-names></name>,
+                <name><surname>Pieber</surname><given-names>TR</given-names></name>.
+                <article-title>Action of polystyrene nanoparticles of different sizes on lysosomal function and integrity</article-title>.
+                <source>Part Fibre Toxicol</source>.
+                <year iso-8601-date="2012">2012</year>; 
+                <volume>9</volume>: 
+                <fpage>26</fpage>.
+                </mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+</article>
