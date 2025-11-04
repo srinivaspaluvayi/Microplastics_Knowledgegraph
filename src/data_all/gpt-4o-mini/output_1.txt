@@ -1,0 +1,144 @@
+{
+  "nodes": [
+    {
+      "id": "biomarker_1",
+      "type": "Biomarker",
+      "name": "Reactive Oxygen Species (ROS)",
+      "assay_type": "oxidative stress markers",
+      "direction_of_change": "increase",
+      "clinical_relevance_notes": "Indicates oxidative stress potentially leading to cell damage."
+    },
+    {
+      "id": "clinical_outcome_1",
+      "type": "ClinicalOutcome",
+      "label": "neurotoxicity",
+      "outcome_type": "symptom",
+      "population": "humans and aquatic creatures",
+      "strength_of_evidence": "suggestive",
+      "notes": "Potential link to neurological disorders."
+    },
+    {
+      "id": "environmental_compartment_1",
+      "type": "EnvironmentalCompartment",
+      "label": "aquatic systems",
+      "geo_context": {
+        "region": "global",
+        "country": "various"
+      }
+    },
+    {
+      "id": "exposure_pathway_1",
+      "type": "ExposurePathway",
+      "pathway_label": "ingestion",
+      "route": "oral",
+      "population_context": "aquatic beings and mammals"
+    },
+    {
+      "id": "mechanism_1",
+      "type": "Mechanism",
+      "label": "oxidative_stress",
+      "evidence_type": "review",
+      "key_biomarkers": ["Reactive Oxygen Species (ROS)"],
+      "species_scope": "various species"
+    },
+    {
+      "id": "sample_1",
+      "type": "Sample",
+      "matrix": "brain tissue",
+      "collection_date": "2024-01-01"
+    },
+    {
+      "id": "method_1",
+      "type": "Method",
+      "method_class": "systematic review",
+      "min_size_reliable": 0.001,
+      "max_size_reliable": 0.1,
+      "identification_capability": "both",
+      "reporting_basis": "qualitative",
+      "LOD": 0.001,
+      "LOQ": 0.01,
+      "detects_particles": true,
+      "identifies_polymer": true
+    },
+    {
+      "id": "particle_size_class_1",
+      "type": "ParticleSizeClass",
+      "label": "nanoplastics",
+      "min_micrometer": 0.001,
+      "max_micrometer": 1,
+      "bin_type": "nano"
+    },
+    {
+      "id": "shape_1",
+      "type": "Shape",
+      "label": "fragment"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "sample_1",
+      "relation_type": "collected_from",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "sample_1",
+      "relation_type": "processed_by",
+      "target": "method_1"
+    },
+    {
+      "source": "sample_1",
+      "relation_type": "produces",
+      "target": "observation_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "about_sample",
+      "target": "sample_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "identified_by",
+      "target": "method_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_size_class",
+      "target": "particle_size_class_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_shape",
+      "target": "shape_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_polymer",
+      "target": "polymer_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "located_in",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "links",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "context_for",
+      "target": "mechanism_1"
+    },
+    {
+      "source": "mechanism_1",
+      "relation_type": "evidenced_by",
+      "target": "biomarker_1"
+    },
+    {
+      "source": "clinical_outcome_1",
+      "relation_type": "arises_from",
+      "target": "mechanism_1"
+    }
+  ]
+}

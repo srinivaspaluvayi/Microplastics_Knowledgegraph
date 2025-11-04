@@ -24,3 +24,7 @@ dependencies:
     - psutil
     - setuptools
     - pdfplumber
+    - huggingface_hub
+    - transformers
+    - PyTorch
+    - tiktoken

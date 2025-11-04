@@ -1,0 +1,287 @@
+{
+  "nodes": [
+    {
+      "id": "biomarker_1",
+      "type": "Biomarker",
+      "name": "IL-6",
+      "assay_type": "ELISA",
+      "tissue_matrix": "blood",
+      "direction_of_change": "increase",
+      "clinical_relevance_notes": "Inflammatory marker associated with oxidative stress.",
+      "citations_ref": ["Green et al., 1998", "Deng et al., 2017"]
+    },
+    {
+      "id": "biomarker_2",
+      "type": "Biomarker",
+      "name": "TNF-a",
+      "assay_type": "ELISA",
+      "tissue_matrix": "blood",
+      "direction_of_change": "increase",
+      "clinical_relevance_notes": "Cytokine involved in systemic inflammation.",
+      "citations_ref": ["Green et al., 1998"]
+    },
+    {
+      "id": "clinical_outcome_1",
+      "type": "ClinicalOutcome",
+      "label": "neurotoxicity",
+      "outcome_type": "symptom",
+      "population": "fish",
+      "strength_of_evidence": "moderate",
+      "citations_ref": ["Deng et al., 2017", "Mu et al., 2021"]
+    },
+    {
+      "id": "clinical_outcome_2",
+      "type": "ClinicalOutcome",
+      "label": "growth retardation",
+      "outcome_type": "symptom",
+      "population": "fish",
+      "strength_of_evidence": "strong",
+      "citations_ref": ["Wang et al., 2022", "Zhang X. et al., 2021"]
+    },
+    {
+      "id": "environmental_compartment_1",
+      "type": "EnvironmentalCompartment",
+      "label": "marine water",
+      "geo_context": {
+        "region": "global",
+        "country": "various"
+      }
+    },
+    {
+      "id": "exposure_pathway_1",
+      "type": "ExposurePathway",
+      "pathway_label": "ingestion_fish",
+      "route": "oral",
+      "population_context": "humans",
+      "assumptions_notes": "Assumes consumption of contaminated fish."
+    },
+    {
+      "id": "mechanism_1",
+      "type": "Mechanism",
+      "label": "oxidative_stress",
+      "evidence_type": "in_vivo",
+      "key_biomarkers": ["IL-6", "TNF-a"],
+      "species_scope": "fish",
+      "citations_ref": ["Güven et al., 2017", "Choi et al., 2018"]
+    },
+    {
+      "id": "method_1",
+      "type": "Method",
+      "method_class": "micro_FTIR",
+      "min_size_reliable": 1,
+      "max_size_reliable": 100,
+      "identification_capability": "polymer",
+      "reporting_basis": "count",
+      "LOD": 0.1,
+      "LOQ": 0.5,
+      "detects_particles": true,
+      "identifies_polymer": true
+    },
+    {
+      "id": "sample_1",
+      "type": "Sample",
+      "matrix": "fish muscle",
+      "collection_date": "2022-01-01"
+    },
+    {
+      "id": "shape_1",
+      "type": "Shape",
+      "label": "fragment"
+    },
+    {
+      "id": "source_1",
+      "type": "Source",
+      "label": "plastic waste",
+      "source_type": "primary",
+      "sector": "consumer",
+      "emission_rate_estimate": {
+        "value": 20,
+        "unit": "Mt/year"
+      }
+    },
+    {
+      "id": "tissue_organ_1",
+      "type": "TissueOrgan",
+      "label": "gills",
+      "species": "fish"
+    },
+    {
+      "id": "tissue_organ_2",
+      "type": "TissueOrgan",
+      "label": "gut",
+      "species": "fish"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "sample_1",
+      "relation_type": "collected_from",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "sample_1",
+      "relation_type": "processed_by",
+      "target": "method_1"
+    },
+    {
+      "source": "sample_1",
+      "relation_type": "produces",
+      "target": "observation_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "about_sample",
+      "target": "sample_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "identified_by",
+      "target": "method_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_size_class",
+      "target": "particle_size_class_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_shape",
+      "target": "shape_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_polymer",
+      "target": "polymer_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "located_in",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "links",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "links",
+      "target": "tissue_organ_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "context_for",
+      "target": "mechanism_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "context_for",
+      "target": "clinical_outcome_1"
+    },
+    {
+      "source": "mechanism_1",
+      "relation_type": "evidenced_by",
+      "target": "biomarker_1"
+    },
+    {
+      "source": "mechanism_1",
+      "relation_type": "impacts",
+      "target": "tissue_organ_1"
+    },
+    {
+      "source": "biomarker_1",
+      "relation_type": "measured_in",
+      "target": "tissue_organ_1"
+    },
+    {
+      "source": "biomarker_1",
+      "relation_type": "influences",
+      "target": "clinical_outcome_1"
+    },
+    {
+      "source": "tissue_organ_1",
+      "relation_type": "shows_effect",
+      "target": "biomarker_1"
+    },
+    {
+      "source": "tissue_organ_1",
+      "relation_type": "shows_effect",
+      "target": "mechanism_1"
+    },
+    {
+      "source": "tissue_organ_1",
+      "relation_type": "result_of",
+      "target": "exposure_pathway_1"
+    },
+    {
+      "source": "clinical_outcome_1",
+      "relation_type": "arises_from",
+      "target": "mechanism_1"
+    },
+    {
+      "source": "clinical_outcome_1",
+      "relation_type": "arises_from",
+      "target": "tissue_organ_1"
+    },
+    {
+      "source": "clinical_outcome_1",
+      "relation_type": "studied_via",
+      "target": "exposure_pathway_1"
+    },
+    {
+      "source": "source_1",
+      "relation_type": "emits_to",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "source_1",
+      "relation_type": "releases",
+      "target": "sample_1"
+    },
+    {
+      "source": "method_1",
+      "relation_type": "detects",
+      "target": "polymer_1"
+    },
+    {
+      "source": "method_1",
+      "relation_type": "detects",
+      "target": "shape_1"
+    },
+    {
+      "source": "method_1",
+      "relation_type": "detects",
+      "target": "particle_size_class_1"
+    },
+    {
+      "source": "method_1",
+      "relation_type": "used_for",
+      "target": "sample_1"
+    },
+    {
+      "source": "method_1",
+      "relation_type": "used_for",
+      "target": "observation_1"
+    },
+    {
+      "source": "environmental_compartment_1",
+      "relation_type": "contains",
+      "target": "sample_1"
+    },
+    {
+      "source": "environmental_compartment_1",
+      "relation_type": "contains",
+      "target": "observation_1"
+    },
+    {
+      "source": "environmental_compartment_1",
+      "relation_type": "contains",
+      "target": "source_1"
+    },
+    {
+      "source": "environmental_compartment_1",
+      "relation_type": "affected_by",
+      "target": "source_1"
+    }
+  ]
+}

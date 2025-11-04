@@ -207,3 +207,4 @@ marimo/_lsp/
 __marimo__/
 
 collection/project_papers.xlsx
+src/local_model
