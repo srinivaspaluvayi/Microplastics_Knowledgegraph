@@ -1,87 +1,59 @@
-Here is the resulting JSON object:
-
-```
 {
   "nodes": [
     {
-      "id": "Air Pollution",
-      "type": "Source",
-      "label": "Air pollution"
+      "id": "ROS",
+      "type": "Reactive Oxygen Species",
+      "label": "Reactive Oxygen Species"
     },
     {
-      "id": "Dementia",
-      "type": "ClinicalOutcome",
-      "label": "Dementia"
+      "id": "microplastics",
+      "type": "Microplastic",
+      "label": "Microplastic",
+      "attributes": {
+        "size": "smaller than 5 mm"
+      }
     },
     {
-      "id": "Microplastics",
-      "type": "Polymer",
-      "label": "Microplastics"
+      "id": "Aβ40",
+      "type": "Amyloid-β 40",
+      "label": "Amyloid-β 40"
     },
     {
-      "id": "Industrial Waste",
-      "type": "Source",
-      "label": "Industrial waste"
+      "id": "PET",
+      "type": "Polyethylene Terephthalate",
+      "label": "PET"
     },
     {
       "id": "Synthetic Textiles",
-      "type": "Source",
-      "label": "Synthetic textiles"
-    },
-    {
-      "id": "Plastic Degradation Products",
-      "type": "Source",
-      "label": "Plastic degradation products"
-    },
-    {
-      "id": "Tire Wear Particles",
-      "type": "Source",
-      "label": "Tire wear particles"
-    },
-    {
-      "id": "Human Brain",
-      "type": "TissueOrgan",
-      "label": "Human brain"
+      "type": "Synthetic Textile",
+      "label": "Synthetic Textile"
     }
   ],
   "relationships": [
     {
-      "source": "Air Pollution",
-      "relation_type": "emits_to",
-      "target": "Microplastics"
+      "source": "ROS",
+      "relation_type": "produces",
+      "target": "Oxidative Stress"
     },
     {
-      "source": "Industrial Waste",
-      "relation_type": "source_of",
+      "source": "microplastics",
+      "relation_type": "enters human body through ingestion of contaminated food and water",
+      "target": "ROS"
+    },
+    {
+      "source": "Aβ40",
+      "relation_type": "nucleates",
+      "target": "Amyloid-β 42"
+    },
+    {
+      "source": "PET",
+      "relation_type": "used in research on microplastic-induced neurodegeneration",
       "target": "Microplastics"
     },
     {
       "source": "Synthetic Textiles",
-      "relation_type": "source_of",
-      "target": "Microplastics"
-    },
-    {
-      "source": "Plastic Degradation Products",
-      "relation_type": "source_of",
-      "target": "Microplastics"
-    },
-    {
-      "source": "Tire Wear Particles",
-      "relation_type": "source_of",
-      "target": "Microplastics"
-    },
-    {
-      "source": "Air Pollution",
-      "relation_type": "contains",
-      "target": "Human Brain"
-    },
-    {
-      "source": "Dementia",
-      "relation_type": "arises_from",
+      "relation_type": "a source of environmental microplastics",
       "target": "Air Pollution"
     }
   ]
 }
-```
-
-Note that I've added some specific nodes and relationships based on the abstract, but not all possible combinations. Also, I've only included concrete features mentioned in the abstract, as per your instructions.

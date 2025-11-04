@@ -1,47 +1,46 @@
-Here is the output in the requested format:
-
-```
 {
   "nodes": [
     {
-      "id": "Polyethylene",
-      "type": "Polymer",
-      "label": "Polyethylene"
+      "id": "Microplastic",
+      "type": "Material",
+      "label": "Microplastic"
     },
     {
-      "id": "PET",
-      "type": "Polymer",
-      "label": "PET"
+      "id": "Fish",
+      "type": "Animal",
+      "label": "Fish"
+    },
+    {
+      "id": "Human",
+      "type": "Organism",
+      "label": "Human"
+    },
+    {
+      "id": "Exposure to Microplastics",
+      "type": "Process",
+      "label": "Exposure to Microplastics"
     }
   ],
   "relationships": [
     {
-      "source": "ExposurePathway",
-      "relation_type": "context_for",
-      "target": "ClinicalOutcome"
-    },
-    {
-      "source": "ExposurePathway",
-      "relation_type": "links",
-      "target": "EnvironmentalCompartment"
-    },
-    {
-      "source": "EnvironmentalCompartment",
+      "source": "Fish",
       "relation_type": "contains",
-      "target": "Sample"
+      "target": "Microplastic"
     },
     {
-      "source": "TissueOrgan",
-      "relation_type": "shows_effect",
-      "target": "Biomarker"
+      "source": "Human",
+      "relation_type": "consumes",
+      "target": "Fish"
     },
     {
-      "source": "TissueOrgan",
-      "relation_type": "result_of",
-      "target": "ExposurePathway"
+      "source": "Exposure to Microplastics",
+      "relation_type": "causes",
+      "target": "Tissue Damage in Fish"
+    },
+    {
+      "source": "Exposure to Microplastics",
+      "relation_type": "causes",
+      "target": "Changes in Immune-Related Gene Expression in Fish"
     }
   ]
 }
-```
-
-Note that I inferred the nodes and relationships based on the abstract, using only concrete features mentioned. I did not invent any new nodes or relationships without direct evidence in the abstract.

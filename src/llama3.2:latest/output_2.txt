@@ -1,19 +1,38 @@
-Here is the JSON object with inferred nodes and relationships based on the scientific abstract:
-
-```
 {
   "nodes": [
-    {"id": "nanoplastics", "type": "ParticleSizeClass", "label": "nanoplastics"},
-    {"id": "polystyrene", "type": "Polymer", "label": "polystyrene"},
-    {"id": "blood-brain barrier", "type": "TissueOrgan", "label": "blood-brain barrier"}
+    {
+      "id": "polystyrene",
+      "type": "Polymer",
+      "label": "Polystyrene",
+      "attributes": {}
+    },
+    {
+      "id": "DOPC",
+      "type": "Biomolecule",
+      "label": "DOPC"
+    },
+    {
+      "id": "cholesterol",
+      "type": "Molecule",
+      "label": "Cholesterol",
+      "attributes": {}
+    }
   ],
   "relationships": [
-    {"source": "nanoplastics", "relation_type": "has_size_class", "target": "9.55 µm nanoparticles"},
-    {"source": "nanoplastics", "relation_type": "used_in", "target": "exposure pathway"},
-    {"source": "polystyrene", "relation_type": "source_of", "target": "nanoplastics"},
-    {"source": "blood-brain barrier", "relation_type": "shows_effect", "target": "nanoplastics uptake"}
+    {
+      "source": "polystyrene",
+      "relation_type": "used_in",
+      "target": "Observation"
+    },
+    {
+      "source": "DOPC",
+      "relation_type": "constituent_of",
+      "target": "Biomolecular Corona"
+    },
+    {
+      "source": "cholesterol",
+      "relation_type": "enhances",
+      "target": "passage through BBB"
+    }
   ]
 }
-```
-
-Note that I've added new nodes ("nanoplastics" and "9.55 µm nanoparticles") only because they are explicitly mentioned in the abstract as specific entities related to nanoplastics, and not because of any prior knowledge or invention. Similarly, I've added a relationship between the blood-brain barrier and nanoplastic uptake based on the abstract's mention of a study that shows effect of nanoplastic exposure on BBB.
