@@ -1,9 +1,8 @@
 import ollama
 import json
 import os
-from transformers import AutoTokenizer
 
-MODEL_NAME1 = "cniongolo/biomistral:latest"
+MODEL_NAME1 = "alibayram/medgemma"
 MODEL_NAME2 = "llama3.2:latest" 
 
 
@@ -18,7 +17,7 @@ def get_relationships():
   return raw_relationships
 
 def get_data():
-  with open("../extraction/data.json", "r", encoding="utf-8") as f:
+  with open("../extraction/data_all.json", "r", encoding="utf-8") as f:
     data = json.load(f)
   return data
 
@@ -84,20 +83,18 @@ def get_prompt(raw_nodes, raw_relationships, abstract):
   - Relationship templates:
   {json.dumps(raw_relationships, indent=2)}
 
-  - Input Scientific abstract:
+  - Scientific abstract:
   {abstract}
 
   Instructions:
   1. Using ONLY evidence from the abstract, infer the most plausible, specific scientific instance(s) for each node template (e.g., "Polyethylene", "PET", "Spring Water").
   2. You MAY also create new nodes or relationship types if you find additional scientific entities or relations clearly described in the abstract, beyond the provided templates.
   3. For node features, fill in only those that are actually stated or can be confidently inferred from the abstract.
-  4. DO NOT invent nodes or relations without direct evidence in the abstract. DO NOT repeat the input—only provide the output JSON.
-
+  
   Follow these instructions carefully:
     - Do NOT provide any greetings, explanations, or additional commentary.
     - Only output a single JSON object strictly following this format:
 
-    Output JSON:
     {{
       "nodes": [
         {{"id": "...", "type": "...", "label": "...", "attributes": {{ ... }} }},
@@ -108,13 +105,31 @@ def get_prompt(raw_nodes, raw_relationships, abstract):
         ...
       ]
     }}
+
+  DO NOT invent nodes or relations without direct evidence in the abstract. DO NOT repeat the input—only provide the output JSON.
   """
 
   return prompt
 
+def get_chunk_text(text, max_length=1000):
+    words = text.split()
+    chunks = []
+    current_chunk = []
+    current_length = 0
+    for word in words:
+        current_chunk.append(word)
+        current_length += 1
+        if current_length >= max_length:
+            chunks.append(' '.join(current_chunk))
+            current_chunk = []
+            current_length = 0
+    if current_chunk:
+        chunks.append(' '.join(current_chunk))
+    return chunks
+
 def write_output(response_text, index, MODEL_NAME):
     base_dir = os.path.dirname(os.path.abspath(__file__))  # Directory of the current script file
-    directory = os.path.join(base_dir, MODEL_NAME)
+    directory = os.path.join(base_dir, "data_all",MODEL_NAME)
     
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -124,21 +139,15 @@ def write_output(response_text, index, MODEL_NAME):
     with open(output_filename, "w", encoding="utf-8", newline="\n") as f:
         f.write(response_text)
 
-def chunk_text(text: str, max_tokens=4000):
-    tokens = tokenizer.encode(text)
-    chunks = []
-    for i in range(0, len(tokens), max_tokens):
-        chunk_tokens = tokens[i:i+max_tokens]
-        chunk_text = tokenizer.decode(chunk_tokens)
-        chunks.append(chunk_text)
-    return chunks
 
 def execute_llm(prompt_chunks, MODEL_NAME):
   response_text = ""
-  for i, chunk in enumerate(prompt_chunks):
-    response = ollama.generate(model=MODEL_NAME, prompt=chunk, stream=False)
-    print(f"Chunk {i+1} response:")
-    print(response['response'])
+  for chunk in prompt_chunks:
+    response = ollama.generate(
+        model=MODEL_NAME,
+        prompt=chunk,
+        stream=False
+    )
     response_text += response['response']
   return response_text
 
@@ -146,20 +155,18 @@ def process_data(MODEL_NAME):
   data = get_data()
   entities = get_entities()
   relationships = get_relationships()
-  # Initialize tokenizer for your model; adapt if using Ollama's internal tokenizer.
-  tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
   i=0
   for entry in data:
     title = entry.get("title", "")
     abstract = entry.get("abstract", "")
     prompt = get_prompt(entities, relationships, abstract)
-    chunks = chunk_text(prompt, max_tokens=4000)
-    response_text = execute_llm(chunks, MODEL_NAME)
+    chunk_text = get_chunk_text(prompt)
+    response_text = execute_llm(chunk_text, MODEL_NAME)
     write_output(response_text, i, MODEL_NAME)
     i+=1
     print(f"Processed entry {i}")
 
-process_data(MODEL_NAME1)
-#process_data(MODEL_NAME2)
+#process_data(MODEL_NAME1)
+process_data(MODEL_NAME2)
 
