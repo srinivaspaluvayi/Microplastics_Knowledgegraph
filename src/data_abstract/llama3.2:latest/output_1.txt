@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {"id": "nanoplastics_1", "type": "ExposurePathway", "label": "exposure to nanoplastics", "attributes": {"context_for": ["neurotoxic effects"]}},
+    {"id": "oxidative_stress_2", "type": "Mechanism", "label": "oxidative stress", "attributes": {}},
+    {"id": "cell_damage_3", "type": "ClinicalOutcome", "label": "cell damage", "attributes": {"influences": ["oxidative stress"]}},
+    {"id": "neurological_disorders_4", "type": "ClinicalOutcome", "label": "neurological disorders", "attributes": {"result_of": ["oxidative stress"]}},
+    {"id": "acetylcholinesterase_activity_5", "type": "Biomarker", "label": "acetylcholinesterase activity", "attributes": {"influences": ["nanoplastics_1"]}},
+    {"id": "neurotransmitter_levels_6", "type": "Biomarker", "label": "neurotransmitter levels", "attributes": {"influences": ["nanoplastics_1"]}},
+    {"id": "behavioral_changes_7", "type": "ClinicalOutcome", "label": "behavioral changes", "attributes": {"result_of": ["nanoplastics_1"]}},
+    {"id": "European_seabass_8", "type": "Organism", "label": "European seabass", "attributes": {"species_name": "Dicentrarchus labrax"}},
+    {"id": "polyethylene_9", "type": "Polymer", "label": "polyethylene", "attributes": {}},
+    {"id": "polystyrene_10", "type": "Polymer", "label": "polystyrene", "attributes": {}}
+  ],
+  "relationships": [
+    {"source": "nanoplastics_1", "relation_type": "exposure_to", "target": "European_seabass_8"},
+    {"source": "oxidative_stress_2", "relation_type": "mechanism_of", "target": "cell_damage_3"},
+    {"source": "oxidative_stress_2", "relation_type": "mechanism_of", "target": "neurological_disorders_4"},
+    {"source": "acetylcholinesterase_activity_5", "relation_type": "affected_by", "target": "behavioral_changes_7"},
+    {"source": "acetylcholinesterase_activity_5", "relation_type": "measures", "target": "oxidative_stress_2"},
+    {"source": "neurotransmitter_levels_6", "relation_type": "affected_by", "target": "behavioral_changes_7"},
+    {"source": "neurotransmitter_levels_6", "relation_type": "measures", "target": "oxidative_stress_2"}
+  ]
+}

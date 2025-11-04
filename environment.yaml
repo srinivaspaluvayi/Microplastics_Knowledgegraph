@@ -27,3 +27,4 @@ dependencies:
     - huggingface_hub
     - transformers
     - PyTorch
+    - tiktoken

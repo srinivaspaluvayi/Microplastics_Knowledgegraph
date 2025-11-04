@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {"id": "polymer_1", "type": "Polymer", "label": "Polystyrene", "attributes": {"chemical_structure": "[-CH2-CH(C6H5)-]n"}},
+    {"id": "polymer_2", "type": "Polymer", "label": "DOPC", "attributes": {"chemical_structure": "[CH2-PO-CH2-OH]-n"}},
+    {"id": "environment_1", "type": "EnvironmentalCompartment", "label": "Blood–brain barrier"},
+    {"id": "organism_1", "type": "Organism", "label": "Mice"}
+  ],
+  "relationships": [
+    {"source": "polymer_2", "relation_type": "interaction_with_corona", "target": "environment_1"},
+    {"source": "environment_1", "relation_type": "protected_by", "target": "organism_1"},
+    {"source": "polymer_2", "relation_type": "transported_through", "target": "organism_1"}
+  ]
+}

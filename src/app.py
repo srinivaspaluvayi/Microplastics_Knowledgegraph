@@ -1,9 +1,7 @@
 import ollama
 import json
 import os
-from transformers import AutoTokenizer
 
-MODEL_NAME1 = "cniongolo/biomistral:latest"
 MODEL_NAME2 = "llama3.2:latest" 
 
 
@@ -25,78 +23,36 @@ def get_data():
 def get_prompt(raw_nodes, raw_relationships, abstract):
   prompt = f"""
   As a scientific knowledge extraction specialist, your objective is to convert microplastics research data into a formal knowledge graph representation.
-
-  Example 1:
-  Given:
   - Node types and feature templates:
-  {json.dumps(raw_nodes, indent=2)}
+  {json.dumps(raw_nodes, separators=(',', ':'))}
   - Relationship templates:
-  {json.dumps(raw_relationships, indent=2)}
+  {json.dumps(raw_relationships, separators=(',', ':'))}
+
+  Example 1: Use the above node and relationship templates to convert the following scientific abstract into a knowledge graph representation.
+  Given:
   - Scientific abstract:
   'Polyethylene and polystyrene microplastics have been detected in Mediterranean Sea water. European seabass (Dicentrarchus labrax) is known to ingest these microplastics.'
-
   Output JSON:
   {{
     "nodes": [
       {{"id": "polymer_1", "type": "Polymer", "label": "Polyethylene", "attributes": {{"chemical_structure": "[-CH2-CH2-]n"}}}},
-      {{"id": "polymer_2", "type": "Polymer", "label": "Polystyrene", "attributes": {{"chemical_structure": "[-CH2-CH(C6H5)-]n"}}}},
-      {{"id": "environment_1", "type": "Environment", "label": "Mediterranean Sea", "attributes": {{"location_name": "Mediterranean Sea"}}}},
       {{"id": "organism_1", "type": "Organism", "label": "European seabass", "attributes": {{"species_name": "Dicentrarchus labrax"}}}}
     ],
     "relationships": [
-      {{"source": "organism_1", "relation_type": "ingests", "target": "polymer_1"}},
-      {{"source": "organism_1", "relation_type": "ingests", "target": "polymer_2"}},
-      {{"source": "polymer_1", "relation_type": "found_in", "target": "environment_1"}},
-      {{"source": "polymer_2", "relation_type": "found_in", "target": "environment_1"}}
+      {{"source": "organism_1", "relation_type": "ingests", "target": "polymer_1"}}
     ]
   }}
-
-  Example 2:
-  Given:
-  - Node types and feature templates:
-  {json.dumps(raw_nodes, indent=2)}
-  - Relationship templates:
-  {json.dumps(raw_relationships, indent=2)}
-  - Scientific abstract:
-  'Microplastics, including PET and PVC, have bioaccumulated in freshwater fish species in the Rhine River.'
-
-  Output JSON:
-  {{
-    "nodes": [
-      {{"id": "polymer_1", "type": "Polymer", "label": "PET", "attributes": {{}}}},
-      {{"id": "polymer_2", "type": "Polymer", "label": "PVC", "attributes": {{}}}},
-      {{"id": "organism_1", "type": "Organism", "label": "Freshwater fish", "attributes": {{}}}},
-      {{"id": "environment_1", "type": "Environment", "label": "Rhine River", "attributes": {{}}}}
-    ],
-    "relationships": [
-      {{"source": "organism_1", "relation_type": "bioaccumulates", "target": "polymer_1"}},
-      {{"source": "organism_1", "relation_type": "bioaccumulates", "target": "polymer_2"}},
-      {{"source": "polymer_1", "relation_type": "found_in", "target": "environment_1"}},
-      {{"source": "polymer_2", "relation_type": "found_in", "target": "environment_1"}}
-    ]
-  }}
-
-  Now you are given the following input:
-
-  - Node types and feature templates:
-  {json.dumps(raw_nodes, indent=2)}
-
-  - Relationship templates:
-  {json.dumps(raw_relationships, indent=2)}
-
+  
+  Now you are given the following input, Use the nodes and relationships templates above to convert the scientific abstract into a knowledge graph representation:
   - Input Scientific abstract:
   {abstract}
-
   Instructions:
   1. Using ONLY evidence from the abstract, infer the most plausible, specific scientific instance(s) for each node template (e.g., "Polyethylene", "PET", "Spring Water").
   2. You MAY also create new nodes or relationship types if you find additional scientific entities or relations clearly described in the abstract, beyond the provided templates.
   3. For node features, fill in only those that are actually stated or can be confidently inferred from the abstract.
   4. DO NOT invent nodes or relations without direct evidence in the abstract. DO NOT repeat the input—only provide the output JSON.
-
   Follow these instructions carefully:
-    - Do NOT provide any greetings, explanations, or additional commentary.
     - Only output a single JSON object strictly following this format:
-
     Output JSON:
     {{
       "nodes": [
@@ -114,7 +70,7 @@ def get_prompt(raw_nodes, raw_relationships, abstract):
 
 def write_output(response_text, index, MODEL_NAME):
     base_dir = os.path.dirname(os.path.abspath(__file__))  # Directory of the current script file
-    directory = os.path.join(base_dir, MODEL_NAME)
+    directory = os.path.join(base_dir, "data_abstract", MODEL_NAME)
     
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -124,42 +80,28 @@ def write_output(response_text, index, MODEL_NAME):
     with open(output_filename, "w", encoding="utf-8", newline="\n") as f:
         f.write(response_text)
 
-def chunk_text(text: str, max_tokens=4000):
-    tokens = tokenizer.encode(text)
-    chunks = []
-    for i in range(0, len(tokens), max_tokens):
-        chunk_tokens = tokens[i:i+max_tokens]
-        chunk_text = tokenizer.decode(chunk_tokens)
-        chunks.append(chunk_text)
-    return chunks
-
-def execute_llm(prompt_chunks, MODEL_NAME):
-  response_text = ""
-  for i, chunk in enumerate(prompt_chunks):
-    response = ollama.generate(model=MODEL_NAME, prompt=chunk, stream=False)
-    print(f"Chunk {i+1} response:")
-    print(response['response'])
-    response_text += response['response']
+def execute_llm(prompt, MODEL_NAME):
+  response = ollama.generate(
+    model=MODEL_NAME,
+    prompt=prompt,
+    stream=False)
+  response_text = response['response']
   return response_text
 
 def process_data(MODEL_NAME):
   data = get_data()
   entities = get_entities()
   relationships = get_relationships()
-  # Initialize tokenizer for your model; adapt if using Ollama's internal tokenizer.
-  tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
   i=0
   for entry in data:
     title = entry.get("title", "")
     abstract = entry.get("abstract", "")
     prompt = get_prompt(entities, relationships, abstract)
-    chunks = chunk_text(prompt, max_tokens=4000)
-    response_text = execute_llm(chunks, MODEL_NAME)
+    response_text = execute_llm(prompt, MODEL_NAME)
     write_output(response_text, i, MODEL_NAME)
     i+=1
     print(f"Processed entry {i}")
 
-process_data(MODEL_NAME1)
-#process_data(MODEL_NAME2)
+process_data(MODEL_NAME2)
 

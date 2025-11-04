@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {"id": "polymer_1", "type": "Polymer", "label": "Microplastics (MPs)"},
+    {"id": "organism_1", "type": "Organism", "label": "Fish"},
+    {"id": "chemical_1", "type": "Chemical", "label": "Toxicity effects"}
+  ],
+  "relationships": [
+    {"source": "polymer_1", "relation_type": "causes", "target": "organism_1"},
+    {"source": "organism_1", "relation_type": "contributes_to", "target": "chemical_1"},
+    {"source": "polymer_1", "relation_type": "impacts", "target": "antioxidant_status"}
+  ]
+}

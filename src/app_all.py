@@ -1,9 +1,10 @@
-import ollama
 import json
 import os
+from dotenv import load_dotenv
+from openai import OpenAI
 
-MODEL_NAME1 = "alibayram/medgemma"
-MODEL_NAME2 = "llama3.2:latest" 
+MODEL_NAME1 = "gpt-4o-mini"
+load_dotenv(override=True)
 
 
 def get_entities():
@@ -21,26 +22,22 @@ def get_data():
     data = json.load(f)
   return data
 
-def get_prompt(raw_nodes, raw_relationships, abstract):
-  prompt = f"""
+def get_prompt(raw_nodes, raw_relationships, data):
+  system_prompt = f"""
   As a scientific knowledge extraction specialist, your objective is to convert microplastics research data into a formal knowledge graph representation.
 
   Example 1:
-  Given:
-  - Node types and feature templates:
-  {json.dumps(raw_nodes, indent=2)}
-  - Relationship templates:
-  {json.dumps(raw_relationships, indent=2)}
-  - Scientific abstract:
+  Given:convert the following scientific data into a knowledge graph representation.
+  - Scientific data:
   'Polyethylene and polystyrene microplastics have been detected in Mediterranean Sea water. European seabass (Dicentrarchus labrax) is known to ingest these microplastics.'
 
   Output JSON:
   {{
     "nodes": [
       {{"id": "polymer_1", "type": "Polymer", "label": "Polyethylene", "attributes": {{"chemical_structure": "[-CH2-CH2-]n"}}}},
-      {{"id": "polymer_2", "type": "Polymer", "label": "Polystyrene", "attributes": {{"chemical_structure": "[-CH2-CH(C6H5)-]n"}}}},
-      {{"id": "environment_1", "type": "Environment", "label": "Mediterranean Sea", "attributes": {{"location_name": "Mediterranean Sea"}}}},
-      {{"id": "organism_1", "type": "Organism", "label": "European seabass", "attributes": {{"species_name": "Dicentrarchus labrax"}}}}
+      {{"id": "organism_1", "type": "Organism", "label": "European seabass", "attributes": {{"species_name": "Dicentrarchus labrax"}}}},
+      {{"id": "polymer_2", "type": "Polymer", "label": "Polystyrene"}},
+      {{"id": "environment_1", "type": "Environment", "label": "Mediterranean Sea"}}
     ],
     "relationships": [
       {{"source": "organism_1", "relation_type": "ingests", "target": "polymer_1"}},
@@ -49,42 +46,6 @@ def get_prompt(raw_nodes, raw_relationships, abstract):
       {{"source": "polymer_2", "relation_type": "found_in", "target": "environment_1"}}
     ]
   }}
-
-  Example 2:
-  Given:
-  - Node types and feature templates:
-  {json.dumps(raw_nodes, indent=2)}
-  - Relationship templates:
-  {json.dumps(raw_relationships, indent=2)}
-  - Scientific abstract:
-  'Microplastics, including PET and PVC, have bioaccumulated in freshwater fish species in the Rhine River.'
-
-  Output JSON:
-  {{
-    "nodes": [
-      {{"id": "polymer_1", "type": "Polymer", "label": "PET", "attributes": {{}}}},
-      {{"id": "polymer_2", "type": "Polymer", "label": "PVC", "attributes": {{}}}},
-      {{"id": "organism_1", "type": "Organism", "label": "Freshwater fish", "attributes": {{}}}},
-      {{"id": "environment_1", "type": "Environment", "label": "Rhine River", "attributes": {{}}}}
-    ],
-    "relationships": [
-      {{"source": "organism_1", "relation_type": "bioaccumulates", "target": "polymer_1"}},
-      {{"source": "organism_1", "relation_type": "bioaccumulates", "target": "polymer_2"}},
-      {{"source": "polymer_1", "relation_type": "found_in", "target": "environment_1"}},
-      {{"source": "polymer_2", "relation_type": "found_in", "target": "environment_1"}}
-    ]
-  }}
-
-  Now you are given the following input:
-
-  - Node types and feature templates:
-  {json.dumps(raw_nodes, indent=2)}
-
-  - Relationship templates:
-  {json.dumps(raw_relationships, indent=2)}
-
-  - Scientific abstract:
-  {abstract}
 
   Instructions:
   1. Using ONLY evidence from the abstract, infer the most plausible, specific scientific instance(s) for each node template (e.g., "Polyethylene", "PET", "Spring Water").
@@ -98,34 +59,30 @@ def get_prompt(raw_nodes, raw_relationships, abstract):
     {{
       "nodes": [
         {{"id": "...", "type": "...", "label": "...", "attributes": {{ ... }} }},
-        ...
       ],
       "relationships": [
         {{"source": "...", "relation_type": "...", "target": "..."}},
-        ...
       ]
     }}
 
   DO NOT invent nodes or relations without direct evidence in the abstract. DO NOT repeat the input—only provide the output JSON.
   """
 
-  return prompt
+  user_prompt = f"""  Now you are given the following input and Using the nodes and relationships templates below, convert the following scientific data into a knowledge graph representation:
+  - Node types and feature templates:
+  {json.dumps(raw_nodes, separators=(',', ':'))}
 
-def get_chunk_text(text, max_length=1000):
-    words = text.split()
-    chunks = []
-    current_chunk = []
-    current_length = 0
-    for word in words:
-        current_chunk.append(word)
-        current_length += 1
-        if current_length >= max_length:
-            chunks.append(' '.join(current_chunk))
-            current_chunk = []
-            current_length = 0
-    if current_chunk:
-        chunks.append(' '.join(current_chunk))
-    return chunks
+  - Relationship templates:
+  {json.dumps(raw_relationships, separators=(',', ':'))}
+  - Scientific data:
+  {json.dumps(data, separators=(',', ':'))}
+  """
+
+  messages = [
+    {"role": "system", "content": system_prompt},
+    {"role": "user", "content": user_prompt}
+    ]
+  return messages
 
 def write_output(response_text, index, MODEL_NAME):
     base_dir = os.path.dirname(os.path.abspath(__file__))  # Directory of the current script file
@@ -139,34 +96,27 @@ def write_output(response_text, index, MODEL_NAME):
     with open(output_filename, "w", encoding="utf-8", newline="\n") as f:
         f.write(response_text)
 
+def execute_llm(client, messages, MODEL_NAME):
+  response = client.chat.completions.create(
+    model=MODEL_NAME,
+    messages=messages,
+    temperature=0
+  )
+  return response.choices[0].message.content
 
-def execute_llm(prompt_chunks, MODEL_NAME):
-  response_text = ""
-  for chunk in prompt_chunks:
-    response = ollama.generate(
-        model=MODEL_NAME,
-        prompt=chunk,
-        stream=False
-    )
-    response_text += response['response']
-  return response_text
 
 def process_data(MODEL_NAME):
   data = get_data()
   entities = get_entities()
   relationships = get_relationships()
-
+  client = OpenAI()
   i=0
   for entry in data:
-    title = entry.get("title", "")
-    abstract = entry.get("abstract", "")
-    prompt = get_prompt(entities, relationships, abstract)
-    chunk_text = get_chunk_text(prompt)
-    response_text = execute_llm(chunk_text, MODEL_NAME)
+    messages = get_prompt(entities, relationships, entry)
+    response_text = execute_llm(client, messages, MODEL_NAME)
     write_output(response_text, i, MODEL_NAME)
     i+=1
     print(f"Processed entry {i}")
 
-#process_data(MODEL_NAME1)
-process_data(MODEL_NAME2)
+process_data(MODEL_NAME1)
 

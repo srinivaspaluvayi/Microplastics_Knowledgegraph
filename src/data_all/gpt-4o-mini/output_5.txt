@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "id": "biomarker_1",
+      "type": "Biomarker",
+      "name": "PPARs",
+      "assay_type": "unknown",
+      "tissue_matrix": "human",
+      "direction_of_change": "increase",
+      "clinical_relevance_notes": "Linked to lipid metabolism and obesity.",
+      "citations_ref": []
+    },
+    {
+      "id": "clinical_outcome_1",
+      "type": "ClinicalOutcome",
+      "label": "obesity",
+      "outcome_type": "symptom",
+      "population": "general",
+      "strength_of_evidence": "moderate",
+      "citations_ref": [],
+      "notes": "Potential link to microplastic exposure."
+    },
+    {
+      "id": "environmental_compartment_1",
+      "type": "EnvironmentalCompartment",
+      "label": "human food chain",
+      "geo_context": {
+        "region": "global",
+        "country": "various"
+      },
+      "depth_or_height_range": {}
+    },
+    {
+      "id": "exposure_pathway_1",
+      "type": "ExposurePathway",
+      "pathway_label": "ingestion_diet",
+      "route": "oral",
+      "population_context": "humans",
+      "assumptions_notes": "Includes various food products.",
+      "citations_ref": []
+    },
+    {
+      "id": "mechanism_1",
+      "type": "Mechanism",
+      "label": "endocrine_disruption",
+      "evidence_type": "in_vivo",
+      "key_biomarkers": ["PPARs"],
+      "species_scope": "humans",
+      "notes": "Linked to microplastic exposure.",
+      "citations_ref": []
+    },
+    {
+      "id": "method_1",
+      "type": "Method",
+      "method_class": "unknown",
+      "min_size_reliable": 0.1,
+      "max_size_reliable": 20,
+      "identification_capability": "polymer",
+      "reporting_basis": "count",
+      "LOD": 0.1,
+      "LOQ": 0.5,
+      "detects_particles": true,
+      "identifies_polymer": true
+    },
+    {
+      "id": "observation_1",
+      "type": "Observation",
+      "sample_ref": "sample_1",
+      "method_ref": "method_1",
+      "value": 100,
+      "unit": "particles/week",
+      "value_uncertainty": 10
+    },
+    {
+      "id": "sample_1",
+      "type": "Sample",
+      "matrix": "human stool",
+      "collection_date": "2023-01-01"
+    },
+    {
+      "id": "particle_size_class_1",
+      "type": "ParticleSizeClass",
+      "label": "<20 µm",
+      "min_micrometer": 0,
+      "max_micrometer": 20,
+      "bin_type": "micro",
+      "synonyms": [],
+      "definition_notes": "Microplastics that can penetrate biological membranes."
+    },
+    {
+      "id": "shape_1",
+      "type": "Shape",
+      "label": "fragment",
+      "synonyms": [],
+      "definition_notes": "Common shape of microplastics."
+    },
+    {
+      "id": "source_1",
+      "type": "Source",
+      "label": "plastic packaging",
+      "source_type": "primary",
+      "sector": "consumer",
+      "emission_rate_estimate": {
+        "value": 300000,
+        "unit": "tons/year",
+        "context": "EU plastic breakdown",
+        "uncertainty": 50000
+      },
+      "notes": "Major source of microplastics."
+    },
+    {
+      "id": "tissue_organ_1",
+      "type": "TissueOrgan",
+      "label": "placenta",
+      "species": "human",
+      "histology_notes": "Critical for fetal development.",
+      "vulnerability_notes": "Potential for maternal transfer of microplastics.",
+      "citations_ref": []
+    }
+  ],
+  "relationships": [
+    {
+      "source": "sample_1",
+      "relation_type": "collected_from",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "sample_1",
+      "relation_type": "processed_by",
+      "target": "method_1"
+    },
+    {
+      "source": "sample_1",
+      "relation_type": "produces",
+      "target": "observation_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "about_sample",
+      "target": "sample_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "identified_by",
+      "target": "method_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_size_class",
+      "target": "particle_size_class_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_shape",
+      "target": "shape_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_polymer",
+      "target": "source_1"
+    },
+    {
+      "source": "source_1",
+      "relation_type": "emits_to",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "links",
+      "target": "tissue_organ_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "context_for",
+      "target": "mechanism_1"
+    },
+    {
+      "source": "mechanism_1",
+      "relation_type": "evidenced_by",
+      "target": "biomarker_1"
+    },
+    {
+      "source": "biomarker_1",
+      "relation_type": "influences",
+      "target": "clinical_outcome_1"
+    },
+    {
+      "source": "tissue_organ_1",
+      "relation_type": "shows_effect",
+      "target": "biomarker_1"
+    }
+  ]
+}

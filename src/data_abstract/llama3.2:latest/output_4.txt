@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {"id": "air_pollution", "type": "EnvironmentalCompartment", "label": "Air Pollution"},
+    {"id": "microplastics", "type": "Polymer", "label": "Microplastics", "attributes": {"smaller_than_5mm": true}},
+    {"id": "reactive_oxygen_species", "type": "Biomarker", "label": "Reactive Oxygen Species (ROS)"},
+    {"id": "neuroinflammation", "type": "ClinicalOutcome", "label": "Neuroinflammation"},
+    {"id": "neurotoxicity", "type": "ClinicalOutcome", "label": "Neurotoxicity"},
+    {"id": "amyloid-beta_pathology", "type": "ClinicalOutcome", "label": "Amyloid-Beta Pathology"},
+    {"id": "dementia", "type": "TissueOrgan", "label": "Dementia"},
+    {"id": "environmental_microplastics", "type": "Source", "label": "Environmental Microplastics"}
+  ],
+  "relationships": [
+    {"source": "air_pollution", "relation_type": "contributes_to", "target": "microplastics"},
+    {"source": "microplastics", "relation_type": "entering_body_through", "target": "dementia"},
+    {"source": "reactive_oxygen_species", "relation_type": "mediates_microplastic_induced_neurodegeneration", "target": "neuroinflammation"},
+    {"source": "neuroinflammation", "relation_type": "result_of", "target": "neurotoxicity"},
+    {"source": "neuroinflammation", "relation_type": "mediates_microplastic_induced_neurodegeneration", "target": "amyloid-beta_pathology"},
+    {"source": "air_pollution", "relation_type": "linked_to_exposure_pathway", "target": "microplastics"},
+    {"source": "environmental_microplastics", "relation_type": "emits_to", "target": "dementia"}
+  ]
+}
