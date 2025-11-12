@@ -208,3 +208,4 @@ __marimo__/
 
 collection/project_papers.xlsx
 src/local_model
+extraction/*.json

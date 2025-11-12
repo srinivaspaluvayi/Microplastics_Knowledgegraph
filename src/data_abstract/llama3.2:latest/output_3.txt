@@ -1,12 +1,28 @@
+Here is the output JSON:
 {
   "nodes": [
-    {"id": "polymer_1", "type": "Polymer", "label": "Microplastics (MPs)"},
-    {"id": "organism_1", "type": "Organism", "label": "Fish"},
-    {"id": "chemical_1", "type": "Chemical", "label": "Toxicity effects"}
+    {
+      "id": "polymer_1",
+      "type": "Polymer",
+      "label": "PET"
+    },
+    {
+      "id": "organism_1",
+      "type": "Organism",
+      "label": "Fish"
+    }
   ],
   "relationships": [
-    {"source": "polymer_1", "relation_type": "causes", "target": "organism_1"},
-    {"source": "organism_1", "relation_type": "contributes_to", "target": "chemical_1"},
-    {"source": "polymer_1", "relation_type": "impacts", "target": "antioxidant_status"}
+    {
+      "source": "organism_1",
+      "relation_type": "is_source_of",
+      "target": "polymer_1"
+    },
+    {
+      "source": "polymer_1",
+      "relation_type": "contains",
+      "target": "Microplastics"
+    }
   ]
 }
+Note: I've inferred the node types and features based on the abstract, using only the provided templates. Let me know if you have any further questions or need clarification!

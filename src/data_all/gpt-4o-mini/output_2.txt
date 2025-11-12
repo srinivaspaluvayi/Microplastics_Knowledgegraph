@@ -5,44 +5,46 @@
       "type": "Biomarker",
       "name": "Cholesterol",
       "assay_type": "molecular dynamics simulations",
-      "clinical_relevance_notes": "Enhances uptake of contaminants into the BBB membrane."
+      "direction_of_change": "increase",
+      "clinical_relevance_notes": "Enhances uptake of polystyrene nanoparticles into the blood-brain barrier."
     },
     {
       "id": "biomarker_2",
       "type": "Biomarker",
       "name": "Protein",
       "assay_type": "molecular dynamics simulations",
-      "clinical_relevance_notes": "Inhibits uptake of contaminants into the BBB membrane."
+      "direction_of_change": "decrease",
+      "clinical_relevance_notes": "Inhibits uptake of polystyrene nanoparticles into the blood-brain barrier."
     },
     {
       "id": "clinical_outcome_1",
       "type": "ClinicalOutcome",
-      "label": "neurotoxicity",
+      "label": "neurological disorders",
       "outcome_type": "symptom",
       "population": "mice",
-      "strength_of_evidence": "strong",
-      "notes": "Potential cognitive impairment and neurological disorders due to MNP contamination."
+      "strength_of_evidence": "suggestive",
+      "notes": "Potential cognitive impairment due to microplastic contamination in brain tissue."
     },
     {
       "id": "environmental_compartment_1",
       "type": "EnvironmentalCompartment",
-      "label": "Blood–Brain Barrier",
+      "label": "blood-brain barrier",
       "geo_context": {
         "region": "brain",
-        "country": "not specified"
+        "country": "human"
       }
     },
     {
       "id": "exposure_pathway_1",
       "type": "ExposurePathway",
-      "pathway_label": "oral_gavage",
+      "pathway_label": "oral ingestion",
       "route": "oral",
       "population_context": "mice"
     },
     {
       "id": "mechanism_1",
       "type": "Mechanism",
-      "label": "transport_through_BBB",
+      "label": "transport through blood-brain barrier",
       "evidence_type": "in_vivo",
       "key_biomarkers": ["Cholesterol", "Protein"],
       "species_scope": "mice"
@@ -50,9 +52,16 @@
     {
       "id": "method_1",
       "type": "Method",
-      "method_class": "molecular_dynamics_simulation",
+      "method_class": "molecular dynamics simulations",
       "identification_capability": "mechanism of transport",
-      "reporting_basis": "simulation results"
+      "reporting_basis": "qualitative"
+    },
+    {
+      "id": "polymer_1",
+      "type": "Polymer",
+      "name": "Polystyrene",
+      "CAS_number": "9003-53-6",
+      "polymer_class": "thermoplastic"
     },
     {
       "id": "sample_1",
@@ -62,28 +71,16 @@
       "location": {
         "lat": 0,
         "lon": 0,
-        "region": "not specified"
-      }
-    },
-    {
-      "id": "particle_size_class_1",
-      "type": "ParticleSizeClass",
-      "label": "nanoplastics",
-      "min_micrometer": 0.1,
-      "max_micrometer": 1,
-      "bin_type": "nano"
+        "region": "brain"
+      },
+      "depth_or_height": 0,
+      "volume_or_mass_processed": 0.3,
+      "volume_or_mass_unit": "mg"
     },
     {
       "id": "shape_1",
       "type": "Shape",
       "label": "nanoparticle"
-    },
-    {
-      "id": "polymer_1",
-      "type": "Polymer",
-      "name": "Polystyrene",
-      "CAS_number": "9003-53-6",
-      "polymer_class": "thermoplastic"
     }
   ],
   "relationships": [
@@ -114,11 +111,6 @@
     },
     {
       "source": "observation_1",
-      "relation_type": "has_size_class",
-      "target": "particle_size_class_1"
-    },
-    {
-      "source": "observation_1",
       "relation_type": "has_shape",
       "target": "shape_1"
     },
@@ -126,11 +118,6 @@
       "source": "observation_1",
       "relation_type": "has_polymer",
       "target": "polymer_1"
-    },
-    {
-      "source": "observation_1",
-      "relation_type": "located_in",
-      "target": "environmental_compartment_1"
     },
     {
       "source": "exposure_pathway_1",
@@ -144,18 +131,13 @@
     },
     {
       "source": "mechanism_1",
-      "relation_type": "impacts",
-      "target": "environmental_compartment_1"
+      "relation_type": "evidenced_by",
+      "target": "biomarker_1"
     },
     {
-      "source": "biomarker_1",
-      "relation_type": "measured_in",
-      "target": "environmental_compartment_1"
-    },
-    {
-      "source": "biomarker_2",
-      "relation_type": "measured_in",
-      "target": "environmental_compartment_1"
+      "source": "mechanism_1",
+      "relation_type": "evidenced_by",
+      "target": "biomarker_2"
     },
     {
       "source": "clinical_outcome_1",
