@@ -185,8 +185,7 @@
     "required": [
       "id",
       "type",
-      "pathway_label",
-      "route"
+      "pathway_label"
     ],
     "additionalProperties": false,
     "properties": {
@@ -375,75 +374,13 @@
     }
   },
   {
-    "title": "Observation",
-    "description": "A measured microplastic result from a sample, using a defined method and classification.",
-    "type": "object",
-    "required": [
-      "id",
-      "type",
-      "sample_ref",
-      "method_ref",
-      "value",
-      "unit"
-    ],
-    "additionalProperties": false,
-    "properties": {
-      "id": {
-        "type": "string",
-        "description": "Observation identifier."
-      },
-      "type": {
-        "const": "Observation",
-        "description": "Type tag for the node."
-      },
-      "sample_ref": {
-        "type": "string",
-        "description": "ID for the associated sample node."
-      },
-      "method_ref": {
-        "type": "string",
-        "description": "ID for the analytical method used."
-      },
-      "polymer_ref": {
-        "type": "string",
-        "description": "ID for the polymer class, if identified."
-      },
-      "size_class_ref": {
-        "type": "string",
-        "description": "ID for particle size class."
-      },
-      "shape_ref": {
-        "type": "string",
-        "description": "ID for shape, if known."
-      },
-      "compartment_ref": {
-        "type": "string",
-        "description": "ID for sampled environmental compartment."
-      },
-      "value": {
-        "type": "number",
-        "description": "Numeric value of the observation."
-      },
-      "unit": {
-        "type": "string",
-        "description": "Unit (e.g., count_per_L, mass_per_kg)."
-      },
-      "value_uncertainty": {
-        "type": "number",
-        "description": "Measurement uncertainty, if available."
-      }
-    }
-  },
-  {
     "title": "ParticleSizeClass",
     "description": "A size bin for a microplastic particle (e.g. 1–10 µm, 1–5 mm).",
     "type": "object",
     "required": [
       "id",
       "type",
-      "label",
-      "min_micrometer",
-      "max_micrometer"
+      "label"
     ],
     "additionalProperties": false,
     "properties": {
@@ -495,8 +432,7 @@
     "required": [
       "id",
       "type",
-      "title",
-      "jurisdiction"
+      "title"
     ],
     "additionalProperties": false,
     "properties": {
@@ -666,8 +602,7 @@
     "required": [
       "id",
       "type",
-      "matrix",
-      "collection_date"
+      "matrix"
     ],
     "additionalProperties": false,
     "properties": {

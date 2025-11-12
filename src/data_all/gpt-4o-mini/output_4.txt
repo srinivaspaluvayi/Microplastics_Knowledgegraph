@@ -7,18 +7,18 @@
       "assay_type": "not specified",
       "tissue_matrix": "brain",
       "direction_of_change": "increase",
-      "clinical_relevance_notes": "Indicates oxidative stress linked to neurodegeneration.",
+      "clinical_relevance_notes": "Linked to oxidative stress in neurodegeneration.",
       "citations_ref": []
     },
     {
       "id": "clinical_outcome_1",
       "type": "ClinicalOutcome",
-      "label": "increased dementia risk",
+      "label": "dementia",
       "outcome_type": "diagnosis",
       "population": "general",
       "strength_of_evidence": "suggestive",
       "citations_ref": [],
-      "notes": "Linked to chronic microplastic exposure."
+      "notes": "Potentially linked to microplastic exposure."
     },
     {
       "id": "environmental_compartment_1",
@@ -28,19 +28,15 @@
         "region": "global",
         "country": "not specified"
       },
-      "depth_or_height_range": {
-        "min": 0,
-        "max": 0,
-        "unit": "m"
-      }
+      "depth_or_height_range": {}
     },
     {
       "id": "exposure_pathway_1",
       "type": "ExposurePathway",
       "pathway_label": "ingestion_inhalation_dermal",
-      "route": "oral",
+      "route": "oral, inhalation, dermal",
       "population_context": "general",
-      "assumptions_notes": "Microplastics can enter the body through food, water, and air.",
+      "assumptions_notes": "Microplastics can enter the body through food, air, and skin.",
       "citations_ref": []
     },
     {
@@ -48,48 +44,30 @@
       "type": "Mechanism",
       "label": "oxidative_stress",
       "evidence_type": "review",
+      "dose_context": {
+        "min": 0,
+        "max": 5,
+        "unit": "mm"
+      },
       "key_biomarkers": ["Reactive Oxygen Species (ROS)"],
       "species_scope": "human",
-      "notes": "Involves ROS production leading to neurodegeneration.",
-      "citations_ref": []
-    },
-    {
-      "id": "mechanism_2",
-      "type": "Mechanism",
-      "label": "neuroinflammation",
-      "evidence_type": "review",
-      "key_biomarkers": [],
-      "species_scope": "human",
-      "notes": "Involves microglial activation and chronic inflammatory responses.",
-      "citations_ref": []
-    },
-    {
-      "id": "mechanism_3",
-      "type": "Mechanism",
-      "label": "neurotoxicity",
-      "evidence_type": "review",
-      "key_biomarkers": [],
-      "species_scope": "human",
-      "notes": "Involves transport of persistent organic pollutants and heavy metals.",
-      "citations_ref": []
-    },
-    {
-      "id": "mechanism_4",
-      "type": "Mechanism",
-      "label": "amyloid_beta_pathology",
-      "evidence_type": "review",
-      "key_biomarkers": [],
-      "species_scope": "human",
-      "notes": "Accelerated amyloid-beta pathology through enhanced nucleation.",
+      "notes": "Increased ROS production linked to microplastic exposure.",
       "citations_ref": []
     },
     {
       "id": "source_1",
       "type": "Source",
       "label": "microplastics",
-      "source_type": "secondary",
+      "source_type": "primary",
       "sector": "environment",
-      "notes": "Includes industrial waste, synthetic textiles, plastic degradation products, and tire wear particles."
+      "emission_rate_estimate": {
+        "value": 0,
+        "unit": "not specified",
+        "context": "Various sources including industrial waste and tire wear.",
+        "uncertainty": 0
+      },
+      "mitigation_options_ref": [],
+      "notes": "Includes industrial waste, synthetic textiles, and tire wear."
     }
   ],
   "relationships": [
@@ -104,49 +82,9 @@
       "target": "mechanism_1"
     },
     {
-      "source": "exposure_pathway_1",
-      "relation_type": "context_for",
-      "target": "mechanism_2"
-    },
-    {
-      "source": "exposure_pathway_1",
-      "relation_type": "context_for",
-      "target": "mechanism_3"
-    },
-    {
-      "source": "exposure_pathway_1",
-      "relation_type": "context_for",
-      "target": "mechanism_4"
-    },
-    {
       "source": "mechanism_1",
-      "relation_type": "impacts",
-      "target": "environmental_compartment_1"
-    },
-    {
-      "source": "mechanism_2",
-      "relation_type": "impacts",
-      "target": "environmental_compartment_1"
-    },
-    {
-      "source": "mechanism_3",
-      "relation_type": "impacts",
-      "target": "environmental_compartment_1"
-    },
-    {
-      "source": "mechanism_4",
-      "relation_type": "impacts",
-      "target": "environmental_compartment_1"
-    },
-    {
-      "source": "source_1",
-      "relation_type": "emits_to",
-      "target": "environmental_compartment_1"
-    },
-    {
-      "source": "source_1",
-      "relation_type": "releases",
-      "target": "exposure_pathway_1"
+      "relation_type": "evidenced_by",
+      "target": "biomarker_1"
     },
     {
       "source": "clinical_outcome_1",
@@ -154,19 +92,9 @@
       "target": "mechanism_1"
     },
     {
-      "source": "clinical_outcome_1",
-      "relation_type": "arises_from",
-      "target": "mechanism_2"
-    },
-    {
-      "source": "clinical_outcome_1",
-      "relation_type": "arises_from",
-      "target": "mechanism_3"
-    },
-    {
-      "source": "clinical_outcome_1",
-      "relation_type": "arises_from",
-      "target": "mechanism_4"
+      "source": "source_1",
+      "relation_type": "emits_to",
+      "target": "environmental_compartment_1"
     }
   ]
 }

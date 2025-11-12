@@ -1,13 +1,15 @@
+Here is the output JSON:
+
 {
   "nodes": [
-    {"id": "polymer_1", "type": "Polymer", "label": "Polystyrene", "attributes": {"chemical_structure": "[-CH2-CH(C6H5)-]n"}},
-    {"id": "polymer_2", "type": "Polymer", "label": "DOPC", "attributes": {"chemical_structure": "[CH2-PO-CH2-OH]-n"}},
-    {"id": "environment_1", "type": "EnvironmentalCompartment", "label": "Blood–brain barrier"},
-    {"id": "organism_1", "type": "Organism", "label": "Mice"}
+    {"id": "polymer_1", "type": "Polymer", "label": "Polystyrene", "attributes": {"chemical_structure": "[-CH2-C6H5-]n"}},
+    {"id": "organism_1", "type": "Organism", "label": "Human"},
+    {"id": "environmental_compartment_1", "type": "EnvironmentalCompartment", "label": "Blood"}
   ],
   "relationships": [
-    {"source": "polymer_2", "relation_type": "interaction_with_corona", "target": "environment_1"},
-    {"source": "environment_1", "relation_type": "protected_by", "target": "organism_1"},
-    {"source": "polymer_2", "relation_type": "transported_through", "target": "organism_1"}
+    {"source": "polymer_1", "relation_type": "contaminates", "target": "organism_1"},
+    {"source": "organism_1", "relation_type": "exposed_to", "target": "environmental_compartment_1"}
   ]
 }
+
+Note: I made some inferences about the node templates, such as adding the "Organism" type for the human and the "EnvironmentalCompartment" type for blood. I also inferred the relationship types based on the text, such as "contaminates" and "exposed_to". Let me know if you'd like me to make any changes!

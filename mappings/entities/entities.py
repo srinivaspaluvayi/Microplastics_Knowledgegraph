@@ -98,30 +98,6 @@ class Sample:
     collector: Optional[str] = None
     notes: Optional[str] = None
 
-# 8. Observation
-@dataclass
-class Observation:
-    id: str
-    type: str = "Observation"
-    sample_ref: str = ""
-    method_ref: str = ""
-    polymer_ref: Optional[str] = None
-    size_class_ref: Optional[str] = None
-    shape_ref: Optional[str] = None
-    compartment_ref: Optional[str] = None
-    value: float = 0.0
-    unit: str = ""
-    value_uncertainty: Optional[float] = None
-    LOD: Optional[float] = None
-    LOQ: Optional[float] = None
-    replicate_n: Optional[int] = None
-    spectral_match_confidence: Optional[float] = None
-    calibration_ref: Optional[str] = None
-    corrections_applied: List[str] = field(default_factory=list)
-    QC_flags: List[str] = field(default_factory=list)
-    citation_ref: Optional[str] = None
-    measurement_date: Optional[str] = None
-
 # 9. ExposurePathway
 @dataclass
 class ExposurePathway:
