@@ -77,12 +77,8 @@ def write_output(response_text, index, MODEL_NAME):
         
     output_filename = os.path.join(directory, f"output_{index+1}.json")
 
-    try:
-      with open(output_filename, 'r', encoding='utf-8') as f:
-        json.dump(response_text, f, ensure_ascii=False, indent=4)
-    except Exception as e:
-      with open(os.path.join(directory, f"output_{index+1}.txt"), "w", encoding="utf-8", newline="\n") as f:
-        f.write(response_text)
+    with open(os.path.join(directory, f"output_{index+1}.txt"), "w", encoding="utf-8", newline="\n") as f:
+      f.write(response_text)
 
 def execute_llm(prompt, MODEL_NAME):
   response = ollama.generate(

@@ -2,6 +2,7 @@ import pdfplumber
 import xml.etree.ElementTree as ET
 import os
 import json
+import re
 
 xml_folder = "../collection/"
 
@@ -28,10 +29,6 @@ def extract_sections(file_path, sections):
     xml_root = tree.getroot()
     extracted_data = {}
 
-    for section in sections:
-        # Initialize empty content
-        extracted_data[section] = ""
-
     # This example assumes sections are identified by <sec> tags or <title> tags inside the XML.
     # Modify xpath and logic according to your XML schemas.
 
@@ -41,10 +38,11 @@ def extract_sections(file_path, sections):
         section_title = title_element.text.lower() if title_element is not None else ""
         for sec_name in sections:
             if sec_name.lower() in section_title:
-                # Concatenate all text elements inside the section,
-                # you may wish to refine which tags/content to extract
-                #texts = [elem.text.strip() for elem in sec.iter() if elem.text]
-                extracted_data[sec_name] = get_full_text(sec).strip()
+                # Replace tabs/newlines/multiple spaces with single space, then strip
+                cleaned = re.sub(r'[\t\n]+', ' ', get_full_text(sec).strip())
+                cleaned = re.sub(r' +', ' ', cleaned)
+                cleaned = cleaned.replace('\"', '').replace('“', '').replace('”', '')
+                extracted_data[section_title] = cleaned
                 break
 
     # Some XML formats store abstract in a separate tag, so extract separately if needed
@@ -64,7 +62,7 @@ def extract_all():
     xml_file_list = list_xml_files(xml_folder)
     data = []
     # Sections to extract, adjust names as per your XML files
-    sections_to_extract = ['Abstract', 'Introduction', 'Methods', 'Methodology', 'Results', 'Conclusion', 'Title']
+    sections_to_extract = ['Abstract', 'Introduction', 'Method', 'Methodology', 'Results', 'Conclusion', 'Title', 'Effects']
     for file in xml_file_list:
         file_path = os.path.join(xml_folder, file)
         extracted_content = extract_sections(file_path, sections_to_extract)
