@@ -48,10 +48,11 @@ def get_prompt(raw_nodes, raw_relationships, data):
   }}
 
   Instructions:
-  1. Using ONLY evidence from the abstract, infer the most plausible, specific scientific instance(s) for each node template (e.g., "Polyethylene", "PET", "Spring Water").
-  2. You MAY also create new nodes or relationship types if you find additional scientific entities or relations clearly described in the abstract, beyond the provided templates.
-  3. For node features, fill in only those that are actually stated or can be confidently inferred from the abstract.
-  
+  1. Using ONLY evidence from the scientific data provided by the user, infer the most plausible, specific scientific instance(s) for each node template (e.g., "Polyethylene", "PET", "Spring Water").
+  2. You MAY also create new nodes or relationship types if you find additional scientific entities or relations clearly described in the scientific data, beyond the provided templates.
+  3. For node features, fill in only those that are actually stated or can be confidently inferred from the scientific data.
+  4. DO invent nodes or relations only with direct evidence in the data. 
+
   Follow these instructions carefully:
     - Do NOT provide any greetings, explanations, or additional commentary.
     - Only output a single JSON object strictly following this format:
@@ -65,7 +66,6 @@ def get_prompt(raw_nodes, raw_relationships, data):
       ]
     }}
 
-  DO NOT invent nodes or relations without direct evidence in the abstract. DO NOT repeat the input—only provide the output JSON.
   """
 
   user_prompt = f"""  Now you are given the following input and Using the nodes and relationships templates below, convert the following scientific data into a knowledge graph representation:
@@ -93,18 +93,16 @@ def write_output(response_text, index, MODEL_NAME):
         
     output_filename = os.path.join(directory, f"output_{index+1}.json")
 
-    try:
-      with open(output_filename, 'r', encoding='utf-8') as f:
-        json.dump(response_text, f, ensure_ascii=False, indent=4)
-    except Exception as e:
-      with open(os.path.join(directory, f"output_{index+1}.txt"), "w", encoding="utf-8", newline="\n") as f:
-        f.write(response_text)
+
+    with open(os.path.join(directory, f"output_{index+1}.txt"), "w", encoding="utf-8", newline="\n") as f:
+      f.write(response_text)
 
 def execute_llm(client, messages, MODEL_NAME):
   response = client.chat.completions.create(
     model=MODEL_NAME,
     messages=messages,
-    temperature=0
+    temperature=0,
+    max_tokens=4096
   )
   return response.choices[0].message.content
 
