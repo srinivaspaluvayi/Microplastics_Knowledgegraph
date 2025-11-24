@@ -1,0 +1,43 @@
+.main-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  border: none;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-header-custom {
+  background: var(--primary-gradient);
+  color: white;
+  padding: 2rem;
+  border: none;
+}
+
+.action-btn {
+  background: var(--primary-gradient);
+  border: none;
+  border-radius: 12px;
+  padding: 1.25rem 2rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.action-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  color: white;
+}
+
+.action-btn i {
+  font-size: 1.5rem;
+}
+

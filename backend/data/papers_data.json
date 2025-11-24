@@ -1,0 +1,2585 @@
+[
+    {
+    "nodes": [
+        {
+            "id": "biomarker_1",
+            "type": "Biomarker",
+            "name": "IL-6",
+            "assay_type": "Cytokine measurement",
+            "tissue_matrix": "blood",
+            "direction_of_change": "increase",
+            "clinical_relevance_notes": "Upregulated in response to inflammation.",
+            "citations_ref": [
+                "41",
+                "43"
+            ]
+        },
+        {
+            "id": "biomarker_2",
+            "type": "Biomarker",
+            "name": "TNF-α",
+            "assay_type": "Cytokine measurement",
+            "tissue_matrix": "blood",
+            "direction_of_change": "increase",
+            "clinical_relevance_notes": "Indicates inflammatory response.",
+            "citations_ref": [
+                "41",
+                "43"
+            ]
+        },
+        {
+            "id": "clinical_outcome_1",
+            "type": "ClinicalOutcome",
+            "label": "neurodegeneration",
+            "outcome_type": "diagnosis",
+            "population": "general",
+            "strength_of_evidence": "suggestive",
+            "citations_ref": [
+                "40",
+                "42"
+            ],
+            "notes": "Linked to oxidative stress and inflammation."
+        },
+        {
+            "id": "environment_1",
+            "type": "EnvironmentalCompartment",
+            "label": "marine environment",
+            "geo_context": {
+                "region": "global",
+                "country": "various"
+            }
+        },
+        {
+            "id": "exposure_pathway_1",
+            "type": "ExposurePathway",
+            "pathway_label": "ingestion",
+            "route": "oral",
+            "population_context": "aquatic organisms",
+            "assumptions_notes": "Assumes direct ingestion of microplastics.",
+            "citations_ref": []
+        },
+        {
+            "id": "mechanism_1",
+            "type": "Mechanism",
+            "label": "oxidative_stress",
+            "evidence_type": "in_vivo",
+            "key_biomarkers": [
+                "IL-6",
+                "TNF-α"
+            ],
+            "species_scope": "various",
+            "citations_ref": [
+                "40",
+                "42"
+            ]
+        },
+        {
+            "id": "method_1",
+            "type": "Method",
+            "method_class": "fluorescence microscopy",
+            "min_size_reliable": 0.1,
+            "max_size_reliable": 50,
+            "identification_capability": "both",
+            "reporting_basis": "count",
+            "LOD": 0.1,
+            "LOQ": 0.5,
+            "detects_particles": true,
+            "identifies_polymer": true
+        },
+        {
+            "id": "particle_size_class_1",
+            "type": "ParticleSizeClass",
+            "label": "microplastics",
+            "min_micrometer": 1,
+            "max_micrometer": 100,
+            "bin_type": "micro",
+            "synonyms": [
+                "small microplastics"
+            ],
+            "definition_notes": "Defined as particles between 1 and 100 micrometers."
+        },
+        {
+            "id": "source_1",
+            "type": "Source",
+            "label": "plastic packaging",
+            "source_type": "primary",
+            "sector": "consumer goods",
+            "notes": "Major contributor to microplastic pollution."
+        },
+        {
+            "id": "tissue_1",
+            "type": "TissueOrgan",
+            "label": "brain",
+            "species": "human",
+            "citations_ref": [
+                "39",
+                "40"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "source": "exposure_pathway_1",
+            "relation_type": "links",
+            "target": "environment_1"
+        },
+        {
+            "source": "exposure_pathway_1",
+            "relation_type": "context_for",
+            "target": "mechanism_1"
+        },
+        {
+            "source": "mechanism_1",
+            "relation_type": "evidenced_by",
+            "target": "biomarker_1"
+        },
+        {
+            "source": "mechanism_1",
+            "relation_type": "evidenced_by",
+            "target": "biomarker_2"
+        },
+        {
+            "source": "mechanism_1",
+            "relation_type": "impacts",
+            "target": "tissue_1"
+        },
+        {
+            "source": "biomarker_1",
+            "relation_type": "influences",
+            "target": "clinical_outcome_1"
+        },
+        {
+            "source": "biomarker_2",
+            "relation_type": "influences",
+            "target": "clinical_outcome_1"
+        },
+        {
+            "source": "source_1",
+            "relation_type": "emits_to",
+            "target": "environment_1"
+        },
+        {
+            "source": "method_1",
+            "relation_type": "used_for",
+            "target": "exposure_pathway_1"
+        }
+    ],
+    "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},
+{
+  "nodes": [
+    {
+      "id": "biomarker_1",
+      "type": "Biomarker",
+      "name": "Cholesterol",
+      "assay_type": "molecular dynamics simulations",
+      "tissue_matrix": "blood-brain barrier",
+      "direction_of_change": "increase",
+      "clinical_relevance_notes": "Enhances uptake of contaminants into the membrane of the BBB.",
+      "citations_ref": []
+    },
+    {
+      "id": "biomarker_2",
+      "type": "Biomarker",
+      "name": "Protein",
+      "assay_type": "molecular dynamics simulations",
+      "tissue_matrix": "blood-brain barrier",
+      "direction_of_change": "decrease",
+      "clinical_relevance_notes": "Inhibits uptake of contaminants into the membrane of the BBB.",
+      "citations_ref": []
+    },
+    {
+      "id": "clinical_outcome_1",
+      "type": "ClinicalOutcome",
+      "label": "neurological disorders",
+      "outcome_type": "symptom",
+      "population": "mammals",
+      "strength_of_evidence": "strong",
+      "citations_ref": [],
+      "notes": "Potentially attributed to MNP contamination in brain tissue."
+    },
+    {
+      "id": "environmental_compartment_1",
+      "type": "EnvironmentalCompartment",
+      "label": "blood-brain barrier",
+      "geo_context": {
+        "region": "brain",
+        "country": "human"
+      },
+      "depth_or_height_range": {}
+    },
+    {
+      "id": "exposure_pathway_1",
+      "type": "ExposurePathway",
+      "pathway_label": "oral_gavage",
+      "route": "oral",
+      "population_context": "mice",
+      "assumptions_notes": "Assumes particles can cross the BBB.",
+      "citations_ref": []
+    },
+    {
+      "id": "mechanism_1",
+      "type": "Mechanism",
+      "label": "transport through blood-brain barrier",
+      "evidence_type": "in_vivo",
+      "dose_context": {
+        "min": 0.293,
+        "max": 0.293,
+        "unit": "µm"
+      },
+      "key_biomarkers": ["Cholesterol", "Protein"],
+      "species_scope": "mice",
+      "notes": "Transport depends on the biomolecular corona.",
+      "citations_ref": []
+    },
+    {
+      "id": "method_1",
+      "type": "Method",
+      "method_class": "molecular dynamics simulations",
+      "min_size_reliable": 0.293,
+      "max_size_reliable": 9.55,
+      "identification_capability": "both",
+      "reporting_basis": "count",
+      "LOD": 0.1,
+      "LOQ": 0.5,
+      "detects_particles": true,
+      "identifies_polymer": true
+    },
+    {
+      "id": "particle_size_class_1",
+      "type": "ParticleSizeClass",
+      "label": "nanoplastics",
+      "min_micrometer": 0.1,
+      "max_micrometer": 1,
+      "bin_type": "nano",
+      "synonyms": ["nanoplastic"],
+      "definition_notes": "Particles less than 1 µm."
+    },
+    {
+      "id": "particle_size_class_2",
+      "type": "ParticleSizeClass",
+      "label": "microplastics",
+      "min_micrometer": 1,
+      "max_micrometer": 5,
+      "bin_type": "micro",
+      "synonyms": ["microplastic"],
+      "definition_notes": "Particles between 1 µm and 5 mm."
+    },
+    {
+      "id": "polymer_1",
+      "type": "Polymer",
+      "name": "Polystyrene",
+      "synonyms": ["PS"],
+      "CAS_number": "9003-53-6",
+      "polymer_class": "thermoplastic",
+      "notes": "Commonly used model plastic for studying transport through membranes."
+    },
+    {
+      "id": "sample_1",
+      "type": "Sample",
+      "matrix": "brain tissue",
+      "collection_date": "2022-01-01",
+      "location": {
+        "lat": 0,
+        "lon": 0,
+        "region": "brain"
+      },
+      "depth_or_height": 0,
+      "volume_or_mass_processed": 0.5,
+      "volume_or_mass_unit": "g",
+      "sample_prep": "processed according to isopropanol protocol",
+      "contamination_controls": "field/lab blanks used",
+      "storage_conditions": "stored at -20°C",
+      "collector": "research team",
+      "notes": "Sample collected from mice after gavage."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "sample_1",
+      "relation_type": "collected_from",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "sample_1",
+      "relation_type": "processed_by",
+      "target": "method_1"
+    },
+    {
+      "source": "sample_1",
+      "relation_type": "produces",
+      "target": "observation_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "about_sample",
+      "target": "sample_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "identified_by",
+      "target": "method_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_size_class",
+      "target": "particle_size_class_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_shape",
+      "target": "shape_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "has_polymer",
+      "target": "polymer_1"
+    },
+    {
+      "source": "observation_1",
+      "relation_type": "located_in",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "links",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "links",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "context_for",
+      "target": "mechanism_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "context_for",
+      "target": "biomarker_1"
+    },
+    {
+      "source": "exposure_pathway_1",
+      "relation_type": "context_for",
+      "target": "clinical_outcome_1"
+    },
+    {
+      "source": "mechanism_1",
+      "relation_type": "evidenced_by",
+      "target": "biomarker_1"
+    },
+    {
+      "source": "mechanism_1",
+      "relation_type": "impacts",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "biomarker_1",
+      "relation_type": "measured_in",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "biomarker_1",
+      "relation_type": "influences",
+      "target": "clinical_outcome_1"
+    },
+    {
+      "source": "environmental_compartment_1",
+      "relation_type": "shows_effect",
+      "target": "biomarker_1"
+    },
+    {
+      "source": "environmental_compartment_1",
+      "relation_type": "shows_effect",
+      "target": "mechanism_1"
+    },
+    {
+      "source": "environmental_compartment_1",
+      "relation_type": "result_of",
+      "target": "exposure_pathway_1"
+    },
+    {
+      "source": "clinical_outcome_1",
+      "relation_type": "arises_from",
+      "target": "mechanism_1"
+    },
+    {
+      "source": "clinical_outcome_1",
+      "relation_type": "arises_from",
+      "target": "environmental_compartment_1"
+    },
+    {
+      "source": "clinical_outcome_1",
+      "relation_type": "studied_via",
+      "target": "exposure_pathway_1"
+    }
+  ]
+},
+{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},
+{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},
+{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},
+{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},
+{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+}
+,{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+}
+,{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+},{
+  "nodes": [
+      {
+          "id": "biomarker_1",
+          "type": "Biomarker",
+          "name": "IL-6",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Upregulated in response to inflammation.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "biomarker_2",
+          "type": "Biomarker",
+          "name": "TNF-α",
+          "assay_type": "Cytokine measurement",
+          "tissue_matrix": "blood",
+          "direction_of_change": "increase",
+          "clinical_relevance_notes": "Indicates inflammatory response.",
+          "citations_ref": [
+              "41",
+              "43"
+          ]
+      },
+      {
+          "id": "clinical_outcome_1",
+          "type": "ClinicalOutcome",
+          "label": "neurodegeneration",
+          "outcome_type": "diagnosis",
+          "population": "general",
+          "strength_of_evidence": "suggestive",
+          "citations_ref": [
+              "40",
+              "42"
+          ],
+          "notes": "Linked to oxidative stress and inflammation."
+      },
+      {
+          "id": "environment_1",
+          "type": "EnvironmentalCompartment",
+          "label": "marine environment",
+          "geo_context": {
+              "region": "global",
+              "country": "various"
+          }
+      },
+      {
+          "id": "exposure_pathway_1",
+          "type": "ExposurePathway",
+          "pathway_label": "ingestion",
+          "route": "oral",
+          "population_context": "aquatic organisms",
+          "assumptions_notes": "Assumes direct ingestion of microplastics.",
+          "citations_ref": []
+      },
+      {
+          "id": "mechanism_1",
+          "type": "Mechanism",
+          "label": "oxidative_stress",
+          "evidence_type": "in_vivo",
+          "key_biomarkers": [
+              "IL-6",
+              "TNF-α"
+          ],
+          "species_scope": "various",
+          "citations_ref": [
+              "40",
+              "42"
+          ]
+      },
+      {
+          "id": "method_1",
+          "type": "Method",
+          "method_class": "fluorescence microscopy",
+          "min_size_reliable": 0.1,
+          "max_size_reliable": 50,
+          "identification_capability": "both",
+          "reporting_basis": "count",
+          "LOD": 0.1,
+          "LOQ": 0.5,
+          "detects_particles": true,
+          "identifies_polymer": true
+      },
+      {
+          "id": "particle_size_class_1",
+          "type": "ParticleSizeClass",
+          "label": "microplastics",
+          "min_micrometer": 1,
+          "max_micrometer": 100,
+          "bin_type": "micro",
+          "synonyms": [
+              "small microplastics"
+          ],
+          "definition_notes": "Defined as particles between 1 and 100 micrometers."
+      },
+      {
+          "id": "source_1",
+          "type": "Source",
+          "label": "plastic packaging",
+          "source_type": "primary",
+          "sector": "consumer goods",
+          "notes": "Major contributor to microplastic pollution."
+      },
+      {
+          "id": "tissue_1",
+          "type": "TissueOrgan",
+          "label": "brain",
+          "species": "human",
+          "citations_ref": [
+              "39",
+              "40"
+          ]
+      }
+  ],
+  "relationships": [
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "links",
+          "target": "environment_1"
+      },
+      {
+          "source": "exposure_pathway_1",
+          "relation_type": "context_for",
+          "target": "mechanism_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_1"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "evidenced_by",
+          "target": "biomarker_2"
+      },
+      {
+          "source": "mechanism_1",
+          "relation_type": "impacts",
+          "target": "tissue_1"
+      },
+      {
+          "source": "biomarker_1",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "biomarker_2",
+          "relation_type": "influences",
+          "target": "clinical_outcome_1"
+      },
+      {
+          "source": "source_1",
+          "relation_type": "emits_to",
+          "target": "environment_1"
+      },
+      {
+          "source": "method_1",
+          "relation_type": "used_for",
+          "target": "exposure_pathway_1"
+      }
+  ],
+  "Title": "Neurotoxicity Following Exposure to Micro and Nanoplastics"
+}
+]
