@@ -211,7 +211,6 @@ src/local_model
 extraction/*.json
 
 backend/node_modules/
-backend/.gitignore
 backend/*.md
 backend/package-lock.json
 backend/.env
