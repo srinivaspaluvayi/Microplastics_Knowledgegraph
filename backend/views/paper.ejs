@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= paper.title %></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/paper.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main-card">
+      <div class="back-link-section">
+        <a href="/" class="back-link">
+          <i class="bi bi-arrow-left"></i> Back to Papers
+        </a>
+      </div>
+      <div class="card-header-custom">
+        <h1 class="mb-0" style="font-size: 2rem; font-weight: 700;"><%= paper.title %></h1>
+      </div>
+      <div class="card-body p-4">
+        <p class="text-muted mb-4 fs-5">Select an option to explore the paper's data:</p>
+        
+        <div class="d-grid gap-3">
+          <a href="/paper/<%= paperId %>/entities" class="action-btn">
+            <span><i class="bi bi-diagram-3"></i> View Entities</span>
+            <i class="bi bi-chevron-right"></i>
+          </a>
+          <a href="/paper/<%= paperId %>/relationships" class="action-btn">
+            <span><i class="bi bi-arrow-left-right"></i> View Relationships</span>
+            <i class="bi bi-chevron-right"></i>
+          </a>
+          <a href="/paper/<%= paperId %>/knowledgegraph" class="action-btn">
+            <span><i class="bi bi-diagram-2"></i> View Knowledge Graph</span>
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

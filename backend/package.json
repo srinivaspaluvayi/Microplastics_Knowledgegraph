@@ -1,0 +1,29 @@
+{
+  "name": "microplastics_knowledgegraph",
+  "version": "1.0.0",
+  "description": "visualization of nodes, entities, knowledge graphs of microplastics research papers",
+  "homepage": "https://github.com/srinivaspaluvayi/Microplastics_Knowledgegraph#readme",
+  "bugs": {
+    "url": "https://github.com/srinivaspaluvayi/Microplastics_Knowledgegraph/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srinivaspaluvayi/Microplastics_Knowledgegraph.git"
+  },
+  "license": "ISC",
+  "author": "srini",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
