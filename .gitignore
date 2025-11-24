@@ -209,3 +209,5 @@ __marimo__/
 collection/
 src/local_model
 extraction/*.json
+
+backend/

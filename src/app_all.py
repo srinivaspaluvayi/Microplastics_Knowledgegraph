@@ -84,18 +84,27 @@ def get_prompt(raw_nodes, raw_relationships, data):
     ]
   return messages
 
-def write_output(response_text, index, MODEL_NAME):
+def write_output(response_text, title, index, MODEL_NAME):
     base_dir = os.path.dirname(os.path.abspath(__file__))  # Directory of the current script file
     directory = os.path.join(base_dir, "data_all",MODEL_NAME)
     
     if not os.path.exists(directory):
         os.makedirs(directory)
         
-    output_filename = os.path.join(directory, f"output_{index+1}.json")
+    output_filename = os.path.join(directory, f"output_{index+1}.txt")
 
 
-    with open(os.path.join(directory, f"output_{index+1}.txt"), "w", encoding="utf-8", newline="\n") as f:
+    with open(output_filename, "w", encoding="utf-8", newline="\n") as f:
       f.write(response_text)
+
+    os.rename(output_filename, output_filename.replace('.txt', '.json'))
+
+    output_filename = output_filename.replace('.txt', '.json')
+    with open(output_filename, "r", encoding="utf-8") as f:
+      data = json.load(f)
+      data['Title'] = title
+      with open(output_filename, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 def execute_llm(client, messages, MODEL_NAME):
   response = client.chat.completions.create(
@@ -116,7 +125,7 @@ def process_data(MODEL_NAME):
   for entry in data:
     messages = get_prompt(entities, relationships, entry)
     response_text = execute_llm(client, messages, MODEL_NAME)
-    write_output(response_text, i, MODEL_NAME)
+    write_output(response_text, entry.get("Title"), i, MODEL_NAME)
     i+=1
     print(f"Processed entry {i}")
 

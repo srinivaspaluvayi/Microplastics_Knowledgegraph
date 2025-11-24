@@ -1,5 +1,6 @@
 import pdfplumber
 import xml.etree.ElementTree as ET
+from io import StringIO
 import os
 import json
 import re
@@ -18,6 +19,17 @@ def get_full_text(elem):
         text += (child.tail or '')
     return text
 
+def parse_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Replace undefined entities with their Unicode equivalent or remove them
+    content = content.replace('&copy;', '©')
+
+    # Parse the cleaned XML string
+    tree = ET.parse(StringIO(content))
+    return tree
+
 def extract_sections(file_path, sections):
     """
     Extracts the specified sections text from the XML root.
@@ -25,7 +37,7 @@ def extract_sections(file_path, sections):
     :param sections: List of section tags or partial titles to search for
     :return: Dictionary with section title as key and extracted text as value
     """
-    tree = ET.parse(file_path)
+    tree = parse_file(file_path)
     xml_root = tree.getroot()
     extracted_data = {}
 
@@ -66,6 +78,8 @@ def extract_all():
     for file in xml_file_list:
         file_path = os.path.join(xml_folder, file)
         extracted_content = extract_sections(file_path, sections_to_extract)
+        if not extracted_content:
+            print(file_path)
         data.append(extracted_content)
     return data
 
