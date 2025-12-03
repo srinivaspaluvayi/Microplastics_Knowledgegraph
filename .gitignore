@@ -207,7 +207,7 @@ marimo/_lsp/
 __marimo__/
 
 collection/
-src/local_model
+src/data_all
 extraction/*.json
 
 backend/node_modules/

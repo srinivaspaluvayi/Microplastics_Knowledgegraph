@@ -80,7 +80,8 @@ def extract_all():
         extracted_content = extract_sections(file_path, sections_to_extract)
         if not extracted_content:
             print(file_path)
-        data.append(extracted_content)
+        else:
+            data.append(extracted_content)
     return data
 
 def execute_extraction_all():
